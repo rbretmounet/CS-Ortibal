@@ -21,7 +21,7 @@ void init_clocks() {
 	volatile int id_lot_l = *(uint32_t*)(UID_BASE+0x4) & 0xFFFFFF00;
 	volatile int id_lot_h = *(uint32_t*)(UID_BASE+0x8);
 	volatile char id_lot[7] = {
-		(id_lot_l >> 8) & 0xFF,
+		(id_lot_l >> 8) & 0xFF,//test
 		(id_lot_l >> 16) & 0xFF,
 		(id_lot_l >> 24) & 0xFF,
 		(id_lot_h) & 0xFF,
