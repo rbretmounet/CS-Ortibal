@@ -1,7 +1,11 @@
 
 # Computer Systems Oribtal 
 Welcome to the GitHub repository for the Space And Systems Satellite Club's Computer Systems Team! Our goal is to design and build a CubeSat that will be launched into space. This repository contains the code for our team's computer systems, which will be responsible for controlling and monitoring the CubeSat's various subsystems.
-## Appendix
+## Getting Started
+To get started with our code, you'll need to have a basic understanding of programming and the tools we're using. We're primarily using C++ for our code. You'll also need to follow the instructions listed in the following sections:
+- [Prerequisites](#Prerequisites)
+- [Running Locally](#Running-Locally)
+- [Developing on the board](#Developing-on-the-board)
 
 
 
@@ -42,6 +46,7 @@ Under the "Select Scopes" check the boxes
 repo
 gist
 ```
+After you will be given a randomly generated token **MAKE SURE TO SAVE THE KEY.**
 ### Install EGit
 Setup EGit in STM32CubeIDE
 
@@ -57,7 +62,7 @@ In the "find:" search bar type
 ```
 
 Hit install and restart STM32CubeIDE when complete.
-### Cloneing the repository
+### Cloning the repository
 Right click on "Project Explorer" and navigate to
 `Import->Git->Projects from Git->Clone URL`.
 Enter in the "URL:" field
