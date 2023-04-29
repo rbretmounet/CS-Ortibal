@@ -1,8 +1,6 @@
 
 # Computer Systems Oribtal 
-
-
-
+Welcome to the GitHub repository for the Space And Systems Satellite Club's Computer Systems Team! Our goal is to design and build a CubeSat that will be launched into space. This repository contains the code for our team's computer systems, which will be responsible for controlling and monitoring the CubeSat's various subsystems.
 ## Appendix
 
 
