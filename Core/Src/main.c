@@ -33,7 +33,7 @@ void init_clocks() {
 	RCC->AHB3ENR = 0x00000100; // enable clock to QSPI 
 	RCC->APB1ENR1 = 
 		1 << 28 // enable power control 
-		| 1 << 22 // enable i2c2 //test change
+		| 1 << 22 // enable i2c2 //test change///fds
 		| 1 << 15 // enable spi3 
 		| 1 << 14 // enable spi2 
 		| 1 << 10; // enable rtc apb 
