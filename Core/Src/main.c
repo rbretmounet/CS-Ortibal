@@ -825,6 +825,7 @@ int16_t op1_mag_read_temp() {
 	return softi2c_read_reg_hl(OP1_I2C2, MAG_ADDR, 0x08, 0x07);
 }
 
+
 /**
  * Computes the absolute value of a 16-bit integer.
  *
