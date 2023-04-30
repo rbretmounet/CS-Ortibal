@@ -4,7 +4,7 @@
 // The above attribution must be included regardless of license. 
 // This is not permissively licensed software. 
 
-#include "./system/stm32l476xx.h"
+#include "stm32l476xx.h"
 #include <math.h> // for sqrt 
 typedef enum { false, true } bool;
 
