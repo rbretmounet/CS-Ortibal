@@ -82,3 +82,12 @@ Navigate to `Target -> Connect` the device memory should popluate with addresses
 ### Flashing the board
 Navigate to  `Target->Program`. The application with ask your for a file that ends in `.bin,.srec, or .hex`. If `STM32CubeIDE` is correctly configured [See how to configure](#Setting-up-the-project-properties). These files are generated in the projects `Debug` folder. 
 Navigate to the project directory `~/orbital_r1/Debug/` and select the file that ends in the correct file format.
+## Resources
+- [EGit Tutorial](https://eclipsesource.com/blogs/tutorials/egit-tutorial/)
+- [DoxyGen](https://www.doxygen.nl/manual/index.html)
+STM32L476 vendor documentation 
+- [Webpage](https://www.st.com/en/microcontrollers-microprocessors/stm32l476zg.html) - software support and complete information
+- [Datasheet](https://www.st.com/resource/en/datasheet/stm32l476zg.pdf) - overview of features and electrical specifications 
+- [Reference manual](https://www.st.com/resource/en/reference_manual/rm0351-stm32l47xxx-stm32l48xxx-stm32l49xxx-and-stm32l4axxx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf) - details of every peripheral and subsystem 
+- [Programming manual](https://www.st.com/resource/en/programming_manual/pm0214-stm32-cortexm4-mcus-and-mpus-programming-manual-stmicroelectronics.pdf) - details of microarchitecture, not necessary unless
+
