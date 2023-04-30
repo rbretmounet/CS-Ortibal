@@ -1,0 +1,222 @@
+\hypertarget{stm32l4xx_8h_source}{}\doxysection{stm32l4xx.\+h}
+\label{stm32l4xx_8h_source}\index{Core/Src/system/stm32l4xx.h@{Core/Src/system/stm32l4xx.h}}
+\mbox{\hyperlink{stm32l4xx_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#ifndef\ \_\_STM32L4xx\_H}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ \_\_STM32L4xx\_H}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00041\ \ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_cplusplus\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#if\ !defined\ (STM32L4)}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ STM32L4}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ STM32L4\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{comment}{/*\ Uncomment\ the\ line\ below\ according\ to\ the\ target\ STM32L4\ device\ used\ in\ your}}
+\DoxyCodeLine{00056\ \textcolor{comment}{\ \ \ application}}
+\DoxyCodeLine{00057\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#if\ !defined\ (STM32L412xx)\ \&\&\ !defined\ (STM32L422xx)\ \&\&\ \(\backslash\)}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\ \ \ \ !defined\ (STM32L431xx)\ \&\&\ !defined\ (STM32L432xx)\ \&\&\ !defined\ (STM32L433xx)\ \&\&\ !defined\ (STM32L442xx)\ \&\&\ !defined\ (STM32L443xx)\ \&\&\ \(\backslash\)}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\ \ \ \ !defined\ (STM32L451xx)\ \&\&\ !defined\ (STM32L452xx)\ \&\&\ !defined\ (STM32L462xx)\ \&\&\ \(\backslash\)}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\ \ \ \ !defined\ (STM32L471xx)\ \&\&\ !defined\ (STM32L475xx)\ \&\&\ !defined\ (STM32L476xx)\ \&\&\ !defined\ (STM32L485xx)\ \&\&\ !defined\ (STM32L486xx)\ \&\&\ \(\backslash\)}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\ \ \ \ !defined\ (STM32L496xx)\ \&\&\ !defined\ (STM32L4A6xx)\ \&\&\ \(\backslash\)}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\ \ \ \ !defined\ (STM32L4P5xx)\ \&\&\ !defined\ (STM32L4Q5xx)\ \&\&\ \(\backslash\)}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\ \ \ \ !defined\ (STM32L4R5xx)\ \&\&\ !defined\ (STM32L4R7xx)\ \&\&\ !defined\ (STM32L4R9xx)\ \&\&\ !defined\ (STM32L4S5xx)\ \&\&\ !defined\ (STM32L4S7xx)\ \&\&\ !defined\ (STM32L4S9xx)}}
+\DoxyCodeLine{00066\ \ \ \textcolor{comment}{/*\ \#define\ STM32L412xx\ */}\ \ \ }
+\DoxyCodeLine{00067\ \ \ \textcolor{comment}{/*\ \#define\ STM32L422xx\ */}\ \ \ }
+\DoxyCodeLine{00068\ \ \ \textcolor{comment}{/*\ \#define\ STM32L431xx\ */}\ \ \ }
+\DoxyCodeLine{00069\ \ \ \textcolor{comment}{/*\ \#define\ STM32L432xx\ */}\ \ \ }
+\DoxyCodeLine{00070\ \ \ \textcolor{comment}{/*\ \#define\ STM32L433xx\ */}\ \ \ }
+\DoxyCodeLine{00071\ \ \ \textcolor{comment}{/*\ \#define\ STM32L442xx\ */}\ \ \ }
+\DoxyCodeLine{00072\ \ \ \textcolor{comment}{/*\ \#define\ STM32L443xx\ */}\ \ \ }
+\DoxyCodeLine{00073\ \ \ \textcolor{comment}{/*\ \#define\ STM32L451xx\ */}\ \ \ }
+\DoxyCodeLine{00074\ \ \ \textcolor{comment}{/*\ \#define\ STM32L452xx\ */}\ \ \ }
+\DoxyCodeLine{00075\ \ \ \textcolor{comment}{/*\ \#define\ STM32L462xx\ */}\ \ \ }
+\DoxyCodeLine{00076\ \ \ \textcolor{comment}{/*\ \#define\ STM32L471xx\ */}\ \ \ }
+\DoxyCodeLine{00077\ \ \ \textcolor{comment}{/*\ \#define\ STM32L475xx\ */}\ \ \ }
+\DoxyCodeLine{00078\ \ \ \textcolor{comment}{/*\ \#define\ STM32L476xx\ */}\ \ \ }
+\DoxyCodeLine{00079\ \ \ \textcolor{comment}{/*\ \#define\ STM32L485xx\ */}\ \ \ }
+\DoxyCodeLine{00080\ \ \ \textcolor{comment}{/*\ \#define\ STM32L486xx\ */}\ \ \ }
+\DoxyCodeLine{00081\ \ \ \textcolor{comment}{/*\ \#define\ STM32L496xx\ */}\ \ \ }
+\DoxyCodeLine{00082\ \ \ \textcolor{comment}{/*\ \#define\ STM32L4A6xx\ */}\ \ \ }
+\DoxyCodeLine{00083\ \ \ \textcolor{comment}{/*\ \#define\ STM32L4P5xx\ */}\ \ \ }
+\DoxyCodeLine{00084\ \ \ \textcolor{comment}{/*\ \#define\ STM32L4R5xx\ */}\ \ \ }
+\DoxyCodeLine{00085\ \ \ \textcolor{comment}{/*\ \#define\ STM32L4R7xx\ */}\ \ \ }
+\DoxyCodeLine{00086\ \ \ \textcolor{comment}{/*\ \#define\ STM32L4R9xx\ */}\ \ \ }
+\DoxyCodeLine{00087\ \ \ \textcolor{comment}{/*\ \#define\ STM32L4S5xx\ */}\ \ \ }
+\DoxyCodeLine{00088\ \ \ \textcolor{comment}{/*\ \#define\ STM32L4S7xx\ */}\ \ \ }
+\DoxyCodeLine{00089\ \ \ \textcolor{comment}{/*\ \#define\ STM32L4S9xx\ */}\ \ \ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{comment}{/*\ \ Tip:\ To\ avoid\ modifying\ this\ file\ each\ time\ you\ need\ to\ switch\ between\ these}}
+\DoxyCodeLine{00093\ \textcolor{comment}{\ \ \ \ \ \ \ \ devices,\ you\ can\ define\ the\ device\ in\ your\ toolchain\ compiler\ preprocessor.}}
+\DoxyCodeLine{00094\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#if\ !defined\ \ (USE\_HAL\_DRIVER)}}
+\DoxyCodeLine{00101\ \ \ \textcolor{comment}{/*\#define\ USE\_HAL\_DRIVER\ */}}
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ USE\_HAL\_DRIVER\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#define\ \_\_STM32L4\_CMSIS\_VERSION\_MAIN\ \ \ (0x01)\ }}
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#define\ \_\_STM32L4\_CMSIS\_VERSION\_SUB1\ \ \ (0x07)\ }}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#define\ \_\_STM32L4\_CMSIS\_VERSION\_SUB2\ \ \ (0x02)\ }}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#define\ \_\_STM32L4\_CMSIS\_VERSION\_RC\ \ \ \ \ (0x00)\ }}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#define\ \_\_STM32L4\_CMSIS\_VERSION\ \ \ \ \ \ \ \ ((\_\_STM32L4\_CMSIS\_VERSION\_MAIN\ <<\ 24)\(\backslash\)}}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |(\_\_STM32L4\_CMSIS\_VERSION\_SUB1\ <<\ 16)\(\backslash\)}}
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |(\_\_STM32L4\_CMSIS\_VERSION\_SUB2\ <<\ 8\ )\(\backslash\)}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |(\_\_STM32L4\_CMSIS\_VERSION\_RC))}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#if\ defined(STM32L412xx)}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l412xx.h"{}}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#elif\ defined(STM32L422xx)}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l422xx.h"{}}}
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#elif\ defined(STM32L431xx)}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l431xx.h"{}}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#elif\ defined(STM32L432xx)}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l432xx.h"{}}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#elif\ defined(STM32L433xx)}}
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l433xx.h"{}}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#elif\ defined(STM32L442xx)}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l442xx.h"{}}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#elif\ defined(STM32L443xx)}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l443xx.h"{}}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#elif\ defined(STM32L451xx)}}
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l451xx.h"{}}}
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#elif\ defined(STM32L452xx)}}
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l452xx.h"{}}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#elif\ defined(STM32L462xx)}}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l462xx.h"{}}}
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\#elif\ defined(STM32L471xx)}}
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l471xx.h"{}}}
+\DoxyCodeLine{00146\ \textcolor{preprocessor}{\#elif\ defined(STM32L475xx)}}
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l475xx.h"{}}}
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\#elif\ defined(STM32L476xx)}}
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\ \ \#include\ "{}\mbox{\hyperlink{stm32l476xx_8h}{stm32l476xx.h}}"{}}}
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\#elif\ defined(STM32L485xx)}}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l485xx.h"{}}}
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\#elif\ defined(STM32L486xx)}}
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l486xx.h"{}}}
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\#elif\ defined(STM32L496xx)}}
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l496xx.h"{}}}
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\#elif\ defined(STM32L4A6xx)}}
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l4a6xx.h"{}}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\#elif\ defined(STM32L4P5xx)}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l4p5xx.h"{}}}
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\#elif\ defined(STM32L4Q5xx)}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l4q5xx.h"{}}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\#elif\ defined(STM32L4R5xx)}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l4r5xx.h"{}}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\#elif\ defined(STM32L4R7xx)}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l4r7xx.h"{}}}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#elif\ defined(STM32L4R9xx)}}
+\DoxyCodeLine{00167\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l4r9xx.h"{}}}
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\#elif\ defined(STM32L4S5xx)}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l4s5xx.h"{}}}
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#elif\ defined(STM32L4S7xx)}}
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l4s7xx.h"{}}}
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\#elif\ defined(STM32L4S9xx)}}
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\ \ \#include\ "{}stm32l4s9xx.h"{}}}
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00185\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00186\ \{}
+\DoxyCodeLine{00187\ \ \ RESET\ =\ 0,}
+\DoxyCodeLine{00188\ \ \ SET\ =\ !RESET}
+\DoxyCodeLine{00189\ \}\ FlagStatus,\ ITStatus;}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00192\ \{}
+\DoxyCodeLine{00193\ \ \ DISABLE\ =\ 0,}
+\DoxyCodeLine{00194\ \ \ ENABLE\ =\ !DISABLE}
+\DoxyCodeLine{00195\ \}\ FunctionalState;}
+\DoxyCodeLine{00196\ \textcolor{preprocessor}{\#define\ IS\_FUNCTIONAL\_STATE(STATE)\ (((STATE)\ ==\ DISABLE)\ ||\ ((STATE)\ ==\ ENABLE))}}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00199\ \{}
+\DoxyCodeLine{00200\ \ \ SUCCESS\ =\ 0,}
+\DoxyCodeLine{00201\ \ \ ERROR\ =\ !SUCCESS}
+\DoxyCodeLine{00202\ \}\ ErrorStatus;}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00212\ \textcolor{preprocessor}{\#define\ SET\_BIT(REG,\ BIT)\ \ \ \ \ ((REG)\ |=\ (BIT))}}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \textcolor{preprocessor}{\#define\ CLEAR\_BIT(REG,\ BIT)\ \ \ ((REG)\ \&=\ \string~(BIT))}}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \textcolor{preprocessor}{\#define\ READ\_BIT(REG,\ BIT)\ \ \ \ ((REG)\ \&\ (BIT))}}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \textcolor{preprocessor}{\#define\ CLEAR\_REG(REG)\ \ \ \ \ \ \ \ ((REG)\ =\ (0x0))}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \textcolor{preprocessor}{\#define\ WRITE\_REG(REG,\ VAL)\ \ \ ((REG)\ =\ (VAL))}}
+\DoxyCodeLine{00221\ }
+\DoxyCodeLine{00222\ \textcolor{preprocessor}{\#define\ READ\_REG(REG)\ \ \ \ \ \ \ \ \ ((REG))}}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \textcolor{preprocessor}{\#define\ MODIFY\_REG(REG,\ CLEARMASK,\ SETMASK)\ \ WRITE\_REG((REG),\ (((READ\_REG(REG))\ \&\ (\string~(CLEARMASK)))\ |\ (SETMASK)))}}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00226\ \textcolor{comment}{/*\ Use\ of\ CMSIS\ compiler\ intrinsics\ for\ register\ exclusive\ access\ */}}
+\DoxyCodeLine{00227\ \textcolor{comment}{/*\ Atomic\ 32-\/bit\ register\ access\ macro\ to\ set\ one\ or\ several\ bits\ */}}
+\DoxyCodeLine{00228\ \textcolor{preprocessor}{\#define\ ATOMIC\_SET\_BIT(REG,\ BIT)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00229\ \textcolor{preprocessor}{\ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00230\ \textcolor{preprocessor}{\ \ \ \ uint32\_t\ val;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00231\ \textcolor{preprocessor}{\ \ \ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00232\ \textcolor{preprocessor}{\ \ \ \ \ \ val\ =\ \_\_LDREXW((\_\_IO\ uint32\_t\ *)\&(REG))\ |\ (BIT);\ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00233\ \textcolor{preprocessor}{\ \ \ \ \}\ while\ ((\_\_STREXW(val,(\_\_IO\ uint32\_t\ *)\&(REG)))\ !=\ 0U);\ \(\backslash\)}}
+\DoxyCodeLine{00234\ \textcolor{preprocessor}{\ \ \}\ while(0)}}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \textcolor{comment}{/*\ Atomic\ 32-\/bit\ register\ access\ macro\ to\ clear\ one\ or\ several\ bits\ */}}
+\DoxyCodeLine{00237\ \textcolor{preprocessor}{\#define\ ATOMIC\_CLEAR\_BIT(REG,\ BIT)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00238\ \textcolor{preprocessor}{\ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00239\ \textcolor{preprocessor}{\ \ \ \ uint32\_t\ val;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00240\ \textcolor{preprocessor}{\ \ \ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00241\ \textcolor{preprocessor}{\ \ \ \ \ \ val\ =\ \_\_LDREXW((\_\_IO\ uint32\_t\ *)\&(REG))\ \&\ \string~(BIT);\ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00242\ \textcolor{preprocessor}{\ \ \ \ \}\ while\ ((\_\_STREXW(val,(\_\_IO\ uint32\_t\ *)\&(REG)))\ !=\ 0U);\ \(\backslash\)}}
+\DoxyCodeLine{00243\ \textcolor{preprocessor}{\ \ \}\ while(0)}}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00245\ \textcolor{comment}{/*\ Atomic\ 32-\/bit\ register\ access\ macro\ to\ clear\ and\ set\ one\ or\ several\ bits\ */}}
+\DoxyCodeLine{00246\ \textcolor{preprocessor}{\#define\ ATOMIC\_MODIFY\_REG(REG,\ CLEARMSK,\ SETMASK)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00247\ \textcolor{preprocessor}{\ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00248\ \textcolor{preprocessor}{\ \ \ \ uint32\_t\ val;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00249\ \textcolor{preprocessor}{\ \ \ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00250\ \textcolor{preprocessor}{\ \ \ \ \ \ val\ =\ (\_\_LDREXW((\_\_IO\ uint32\_t\ *)\&(REG))\ \&\ \string~(CLEARMSK))\ |\ (SETMASK);\ \(\backslash\)}}
+\DoxyCodeLine{00251\ \textcolor{preprocessor}{\ \ \ \ \}\ while\ ((\_\_STREXW(val,(\_\_IO\ uint32\_t\ *)\&(REG)))\ !=\ 0U);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00252\ \textcolor{preprocessor}{\ \ \}\ while(0)}}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00254\ \textcolor{comment}{/*\ Atomic\ 16-\/bit\ register\ access\ macro\ to\ set\ one\ or\ several\ bits\ */}}
+\DoxyCodeLine{00255\ \textcolor{preprocessor}{\#define\ ATOMIC\_SETH\_BIT(REG,\ BIT)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00256\ \textcolor{preprocessor}{\ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00257\ \textcolor{preprocessor}{\ \ \ \ uint16\_t\ val;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00258\ \textcolor{preprocessor}{\ \ \ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00259\ \textcolor{preprocessor}{\ \ \ \ \ \ val\ =\ \_\_LDREXH((\_\_IO\ uint16\_t\ *)\&(REG))\ |\ (BIT);\ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00260\ \textcolor{preprocessor}{\ \ \ \ \}\ while\ ((\_\_STREXH(val,(\_\_IO\ uint16\_t\ *)\&(REG)))\ !=\ 0U);\ \(\backslash\)}}
+\DoxyCodeLine{00261\ \textcolor{preprocessor}{\ \ \}\ while(0)}}
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00263\ \textcolor{comment}{/*\ Atomic\ 16-\/bit\ register\ access\ macro\ to\ clear\ one\ or\ several\ bits\ */}}
+\DoxyCodeLine{00264\ \textcolor{preprocessor}{\#define\ ATOMIC\_CLEARH\_BIT(REG,\ BIT)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00265\ \textcolor{preprocessor}{\ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00266\ \textcolor{preprocessor}{\ \ \ \ uint16\_t\ val;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00267\ \textcolor{preprocessor}{\ \ \ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00268\ \textcolor{preprocessor}{\ \ \ \ \ \ val\ =\ \_\_LDREXH((\_\_IO\ uint16\_t\ *)\&(REG))\ \&\ \string~(BIT);\ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00269\ \textcolor{preprocessor}{\ \ \ \ \}\ while\ ((\_\_STREXH(val,(\_\_IO\ uint16\_t\ *)\&(REG)))\ !=\ 0U);\ \(\backslash\)}}
+\DoxyCodeLine{00270\ \textcolor{preprocessor}{\ \ \}\ while(0)}}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00272\ \textcolor{comment}{/*\ Atomic\ 16-\/bit\ register\ access\ macro\ to\ clear\ and\ set\ one\ or\ several\ bits\ */}}
+\DoxyCodeLine{00273\ \textcolor{preprocessor}{\#define\ ATOMIC\_MODIFYH\_REG(REG,\ CLEARMSK,\ SETMASK)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00274\ \textcolor{preprocessor}{\ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00275\ \textcolor{preprocessor}{\ \ \ \ uint16\_t\ val;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00276\ \textcolor{preprocessor}{\ \ \ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00277\ \textcolor{preprocessor}{\ \ \ \ \ \ val\ =\ (\_\_LDREXH((\_\_IO\ uint16\_t\ *)\&(REG))\ \&\ \string~(CLEARMSK))\ |\ (SETMASK);\ \(\backslash\)}}
+\DoxyCodeLine{00278\ \textcolor{preprocessor}{\ \ \ \ \}\ while\ ((\_\_STREXH(val,(\_\_IO\ uint16\_t\ *)\&(REG)))\ !=\ 0U);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00279\ \textcolor{preprocessor}{\ \ \}\ while(0)}}
+\DoxyCodeLine{00280\ }
+\DoxyCodeLine{00281\ \textcolor{preprocessor}{\#define\ POSITION\_VAL(VAL)\ \ \ \ \ (\_\_CLZ(\_\_RBIT(VAL)))}}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00287\ \textcolor{preprocessor}{\#if\ defined\ (USE\_HAL\_DRIVER)}}
+\DoxyCodeLine{00288\ \textcolor{preprocessor}{\ \#include\ "{}stm32l4xx\_hal.h"{}}}
+\DoxyCodeLine{00289\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ USE\_HAL\_DRIVER\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00291\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00292\ \}}
+\DoxyCodeLine{00293\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_cplusplus\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00294\ }
+\DoxyCodeLine{00295\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_STM32L4xx\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

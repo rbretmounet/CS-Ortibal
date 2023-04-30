@@ -1,0 +1,34 @@
+\hypertarget{system__stm32l4xx_8h_source}{}\doxysection{system\+\_\+stm32l4xx.\+h}
+\label{system__stm32l4xx_8h_source}\index{Core/Src/system/system\_stm32l4xx.h@{Core/Src/system/system\_stm32l4xx.h}}
+\mbox{\hyperlink{system__stm32l4xx_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#ifndef\ \_\_SYSTEM\_STM32L4XX\_H}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ \_\_SYSTEM\_STM32L4XX\_H}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00034\ \ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00049\ \ \ \textcolor{comment}{/*\ The\ SystemCoreClock\ variable\ is\ updated\ in\ three\ ways:}}
+\DoxyCodeLine{00050\ \textcolor{comment}{\ \ \ \ \ \ 1)\ by\ calling\ CMSIS\ function\ SystemCoreClockUpdate()}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ \ \ \ \ \ 2)\ by\ calling\ HAL\ API\ function\ HAL\_RCC\_GetSysClockFreq()}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ \ \ \ \ \ 3)\ each\ time\ HAL\_RCC\_ClockConfig()\ is\ called\ to\ configure\ the\ system\ clock\ frequency}}
+\DoxyCodeLine{00053\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ Note:\ If\ you\ use\ this\ function\ to\ configure\ the\ system\ clock;\ then\ there}}
+\DoxyCodeLine{00054\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ is\ no\ need\ to\ call\ the\ 2\ first\ functions\ listed\ above,\ since\ SystemCoreClock}}
+\DoxyCodeLine{00055\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ variable\ is\ updated\ automatically.}}
+\DoxyCodeLine{00056\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{00057\ \textcolor{keyword}{extern}\ uint32\_t\ \mbox{\hyperlink{group___s_t_m32_l4xx___system___exported___variables_gaa3cd3e43291e81e795d642b79b6088e6}{SystemCoreClock}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ uint8\_t\ \ \mbox{\hyperlink{group___s_t_m32_l4xx___system___exported___variables_ga6e1d9cd666f0eacbfde31e9932a93466}{AHBPrescTable}}[16];\ \ \ \ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ uint8\_t\ \ \mbox{\hyperlink{group___s_t_m32_l4xx___system___exported___variables_ga5b4f8b768465842cf854a8f993b375e9}{APBPrescTable}}[8];\ \ \ \ \ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ uint32\_t\ \mbox{\hyperlink{group___s_t_m32_l4xx___system___exported___variables_ga4d9e663c3c5bd4ca3361bf97d48158bf}{MSIRangeTable}}[12];\ \ \ \ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___s_t_m32_l4xx___system___exported___functions_ga93f514700ccf00d08dbdcff7f1224eb2}{SystemInit}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00088\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___s_t_m32_l4xx___system___exported___functions_gae0c36a9591fe6e9c45ecb21a794f0f0f}{SystemCoreClockUpdate}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00094\ \}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\_\_SYSTEM\_STM32L4XX\_H\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00098\ }
+
+\end{DoxyCode}

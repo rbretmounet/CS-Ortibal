@@ -1,1 +1,15 @@
+
+# Ignore build output
+build/
 /Debug/
+
+# Ignore IDE-specific files
+.settings/
+.project
+.cproject
+
+# Ignore user-specific files
+*.launch
+*.cproject.user
+*.project.user
+*.DS_Store
