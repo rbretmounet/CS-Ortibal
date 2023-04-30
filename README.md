@@ -33,22 +33,18 @@ Please adhere to this project's `code of conduct`.
 
 ## Running Locally
 ### Create a personal access token
-Go to
+A personal access token is need for EGit authorization.
+To start go to
 ```bash
 https://github.com/settings/tokens
 ```
-Select 
-```bash
-Generate new token-> Generate new token(classic)
-```
-Under the "Select Scopes" check the boxes
-```bash
-repo
-gist
-```
-After you will be given a randomly generated token **MAKE SURE TO SAVE THE KEY.**
+Once the webpage has loaded select`Generate new token-> Generate new token(classic)`
+
+Under the "Select Scopes" check the boxes `repo` and `gist` and click the `Generate token` button located at the bottom. You will be given a randomly generated token **MAKE SURE TO SAVE THE KEY.**
 ### Install EGit
-Setup EGit in STM32CubeIDE
+EGit is a marketplace plugin that allows git integration into the STM32CubeIDE.
+
+To setup EGit in STM32CubeIDE
 
 Navigate to 
 ```bash
@@ -72,7 +68,7 @@ https://github.com/rbretmounet/CS-Ortibal.git
 Enter in your github username under `user` and your github token under `password`. Click next until the project is imported.
 ### Setting up the project properties
 The project properties must be configured so a `.bin` file is generated when the project is built. 
-In order to so you must right click `orbital_r1` and select `properties` at the bottom of the list. A new window should open and you must navigate to `C/C++ Builds->Settings->MCU Post build outputs`. Tick the boxe that says `Convert to binary file (-O binary).
+In order to do so you must right click `orbital_r1` and select `properties` at the bottom of the list. A new window should open and you must navigate to `C/C++ Builds->Settings->MCU Post build outputs`. Tick the boxe that says `Convert to binary file (-O binary).
 
 
 ## Developing on the board
