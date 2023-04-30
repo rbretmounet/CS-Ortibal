@@ -1,13 +1,12 @@
 var index =
 [
-    [ "Introduction", "index.html#autotoc_md1", null ],
-    [ "API Documentation", "index.html#autotoc_md2", [
-      [ "My Module", "index.html#autotoc_md3", [
-        [ "<tt>myFunction(int arg1, int arg2)</tt>", "index.html#autotoc_md4", null ]
-      ] ]
-    ] ],
-    [ "Changelog", "index.html#autotoc_md5", [
-      [ "Version 1.0", "index.html#autotoc_md6", null ],
-      [ "Version 1.1", "index.html#autotoc_md7", null ]
-    ] ]
+    [ "Introduction", "index.html#introduction", null ],
+    [ "Getting Started", "index.html#getting_started", null ],
+    [ "Code Structure", "index.html#code_structure", null ],
+    [ "Code Examples", "index.html#code_examples", null ],
+    [ "API Documentation", "index.html#api_documentation", null ],
+    [ "Code Conventions", "index.html#code_conventions", null ],
+    [ "Contributing Guidelines", "index.html#contributing_guidelines", null ],
+    [ "Changelog", "index.html#changelog", null ],
+    [ "License", "index.html#license", null ]
 ];
