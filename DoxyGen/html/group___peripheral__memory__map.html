@@ -9,10 +9,16 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -47,6 +53,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group___peripheral__memory__map.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -103,392 +125,269 @@ Macros</h2></td></tr>
 <tr class="separator:gac4c4f61082e4b168f29d9cf97dc3ca5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaed7efc100877000845c236ccdc9e144a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaed7efc100877000845c236ccdc9e144a">PERIPH_BB_BASE</a>&#160;&#160;&#160;(0x42000000UL)</td></tr>
 <tr class="separator:gaed7efc100877000845c236ccdc9e144a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05e8f3d2e5868754a7cd88614955aecc"><td class="memItemLeft" align="right" valign="top"><a id="ga05e8f3d2e5868754a7cd88614955aecc" name="ga05e8f3d2e5868754a7cd88614955aecc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SRAM_BASE</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga7d0fbfb8894012dbbb96754b95e562cd">SRAM1_BASE</a></td></tr>
+<tr class="memitem:ga05e8f3d2e5868754a7cd88614955aecc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga05e8f3d2e5868754a7cd88614955aecc">SRAM_BASE</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga7d0fbfb8894012dbbb96754b95e562cd">SRAM1_BASE</a></td></tr>
 <tr class="separator:ga05e8f3d2e5868754a7cd88614955aecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3548b6e2f017f39d399358f3ac98454"><td class="memItemLeft" align="right" valign="top"><a id="gad3548b6e2f017f39d399358f3ac98454" name="gad3548b6e2f017f39d399358f3ac98454"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SRAM_BB_BASE</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#gac4c4f61082e4b168f29d9cf97dc3ca5c">SRAM1_BB_BASE</a></td></tr>
+<tr class="memitem:gad3548b6e2f017f39d399358f3ac98454"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gad3548b6e2f017f39d399358f3ac98454">SRAM_BB_BASE</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#gac4c4f61082e4b168f29d9cf97dc3ca5c">SRAM1_BB_BASE</a></td></tr>
 <tr class="separator:gad3548b6e2f017f39d399358f3ac98454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5739aeef90bd57ec2e7ddf66b479139b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga5739aeef90bd57ec2e7ddf66b479139b">SRAM1_SIZE_MAX</a>&#160;&#160;&#160;(0x00018000UL)</td></tr>
 <tr class="separator:ga5739aeef90bd57ec2e7ddf66b479139b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad89e757d25db6160b1aedeb58fcdac09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gad89e757d25db6160b1aedeb58fcdac09">SRAM2_SIZE</a>&#160;&#160;&#160;(0x00008000UL)</td></tr>
 <tr class="separator:gad89e757d25db6160b1aedeb58fcdac09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2329f89a17061e62bf5d160cc0962e5c"><td class="memItemLeft" align="right" valign="top"><a id="ga2329f89a17061e62bf5d160cc0962e5c" name="ga2329f89a17061e62bf5d160cc0962e5c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FLASH_SIZE_DATA_REGISTER</b>&#160;&#160;&#160;((uint32_t)0x1FFF75E0)</td></tr>
+<tr class="memitem:ga2329f89a17061e62bf5d160cc0962e5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga2329f89a17061e62bf5d160cc0962e5c">FLASH_SIZE_DATA_REGISTER</a>&#160;&#160;&#160;((uint32_t)0x1FFF75E0)</td></tr>
 <tr class="separator:ga2329f89a17061e62bf5d160cc0962e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae69620948dea1b76e0ab7843ab719db7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gae69620948dea1b76e0ab7843ab719db7">FLASH_SIZE</a></td></tr>
 <tr class="separator:gae69620948dea1b76e0ab7843ab719db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45666d911f39addd4c8c0a0ac3388cfb"><td class="memItemLeft" align="right" valign="top"><a id="ga45666d911f39addd4c8c0a0ac3388cfb" name="ga45666d911f39addd4c8c0a0ac3388cfb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>APB1PERIPH_BASE</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a></td></tr>
+<tr class="memitem:ga45666d911f39addd4c8c0a0ac3388cfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a></td></tr>
 <tr class="separator:ga45666d911f39addd4c8c0a0ac3388cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25b99d6065f1c8f751e78f43ade652cb"><td class="memItemLeft" align="right" valign="top"><a id="ga25b99d6065f1c8f751e78f43ade652cb" name="ga25b99d6065f1c8f751e78f43ade652cb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>APB2PERIPH_BASE</b>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a> + 0x00010000UL)</td></tr>
+<tr class="memitem:ga25b99d6065f1c8f751e78f43ade652cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a> + 0x00010000UL)</td></tr>
 <tr class="separator:ga25b99d6065f1c8f751e78f43ade652cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga811a9a4ca17f0a50354a9169541d56c4"><td class="memItemLeft" align="right" valign="top"><a id="ga811a9a4ca17f0a50354a9169541d56c4" name="ga811a9a4ca17f0a50354a9169541d56c4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AHB1PERIPH_BASE</b>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a> + 0x00020000UL)</td></tr>
+<tr class="memitem:ga811a9a4ca17f0a50354a9169541d56c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a> + 0x00020000UL)</td></tr>
 <tr class="separator:ga811a9a4ca17f0a50354a9169541d56c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeedaa71d22a1948492365e2cd26cfd46"><td class="memItemLeft" align="right" valign="top"><a id="gaeedaa71d22a1948492365e2cd26cfd46" name="gaeedaa71d22a1948492365e2cd26cfd46"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AHB2PERIPH_BASE</b>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a> + 0x08000000UL)</td></tr>
+<tr class="memitem:gaeedaa71d22a1948492365e2cd26cfd46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a> + 0x08000000UL)</td></tr>
 <tr class="separator:gaeedaa71d22a1948492365e2cd26cfd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34a32a0989512d378cc0defeac3724c4"><td class="memItemLeft" align="right" valign="top"><a id="ga34a32a0989512d378cc0defeac3724c4" name="ga34a32a0989512d378cc0defeac3724c4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FMC_BANK1</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga68a39e11ba4a19785d20a98954c7fc9e">FMC_BASE</a></td></tr>
+<tr class="memitem:ga34a32a0989512d378cc0defeac3724c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga34a32a0989512d378cc0defeac3724c4">FMC_BANK1</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga68a39e11ba4a19785d20a98954c7fc9e">FMC_BASE</a></td></tr>
 <tr class="separator:ga34a32a0989512d378cc0defeac3724c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d0a486f41f900e6b3893a8292f265e1"><td class="memItemLeft" align="right" valign="top"><a id="ga3d0a486f41f900e6b3893a8292f265e1" name="ga3d0a486f41f900e6b3893a8292f265e1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FMC_BANK1_1</b>&#160;&#160;&#160;FMC_BANK1</td></tr>
+<tr class="memitem:ga3d0a486f41f900e6b3893a8292f265e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga3d0a486f41f900e6b3893a8292f265e1">FMC_BANK1_1</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga34a32a0989512d378cc0defeac3724c4">FMC_BANK1</a></td></tr>
 <tr class="separator:ga3d0a486f41f900e6b3893a8292f265e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga73081370ebdffd5bcd6feecf7e8a3127"><td class="memItemLeft" align="right" valign="top"><a id="ga73081370ebdffd5bcd6feecf7e8a3127" name="ga73081370ebdffd5bcd6feecf7e8a3127"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FMC_BANK1_2</b>&#160;&#160;&#160;(FMC_BANK1 + 0x04000000UL)</td></tr>
+<tr class="memitem:ga73081370ebdffd5bcd6feecf7e8a3127"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga73081370ebdffd5bcd6feecf7e8a3127">FMC_BANK1_2</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga34a32a0989512d378cc0defeac3724c4">FMC_BANK1</a> + 0x04000000UL)</td></tr>
 <tr class="separator:ga73081370ebdffd5bcd6feecf7e8a3127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafc0bd182385fb6310ec4432e7744fe39"><td class="memItemLeft" align="right" valign="top"><a id="gafc0bd182385fb6310ec4432e7744fe39" name="gafc0bd182385fb6310ec4432e7744fe39"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FMC_BANK1_3</b>&#160;&#160;&#160;(FMC_BANK1 + 0x08000000UL)</td></tr>
+<tr class="memitem:gafc0bd182385fb6310ec4432e7744fe39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gafc0bd182385fb6310ec4432e7744fe39">FMC_BANK1_3</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga34a32a0989512d378cc0defeac3724c4">FMC_BANK1</a> + 0x08000000UL)</td></tr>
 <tr class="separator:gafc0bd182385fb6310ec4432e7744fe39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa412a2d48de98390c8e616b8560bacfa"><td class="memItemLeft" align="right" valign="top"><a id="gaa412a2d48de98390c8e616b8560bacfa" name="gaa412a2d48de98390c8e616b8560bacfa"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FMC_BANK1_4</b>&#160;&#160;&#160;(FMC_BANK1 + 0x0C000000UL)</td></tr>
+<tr class="memitem:gaa412a2d48de98390c8e616b8560bacfa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaa412a2d48de98390c8e616b8560bacfa">FMC_BANK1_4</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga34a32a0989512d378cc0defeac3724c4">FMC_BANK1</a> + 0x0C000000UL)</td></tr>
 <tr class="separator:gaa412a2d48de98390c8e616b8560bacfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0ade3350b211c3cb0839dd0955f52691"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga0ade3350b211c3cb0839dd0955f52691">FMC_BANK3</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga68a39e11ba4a19785d20a98954c7fc9e">FMC_BASE</a>  + 0x20000000UL)</td></tr>
 <tr class="separator:ga0ade3350b211c3cb0839dd0955f52691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga00d0fe6ad532ab32f0f81cafca8d3aa5"><td class="memItemLeft" align="right" valign="top"><a id="ga00d0fe6ad532ab32f0f81cafca8d3aa5" name="ga00d0fe6ad532ab32f0f81cafca8d3aa5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM2_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x0000UL)</td></tr>
+<tr class="memitem:ga00d0fe6ad532ab32f0f81cafca8d3aa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga00d0fe6ad532ab32f0f81cafca8d3aa5">TIM2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x0000UL)</td></tr>
 <tr class="separator:ga00d0fe6ad532ab32f0f81cafca8d3aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0c34a518f87e1e505cd2332e989564a"><td class="memItemLeft" align="right" valign="top"><a id="gaf0c34a518f87e1e505cd2332e989564a" name="gaf0c34a518f87e1e505cd2332e989564a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM3_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x0400UL)</td></tr>
+<tr class="memitem:gaf0c34a518f87e1e505cd2332e989564a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaf0c34a518f87e1e505cd2332e989564a">TIM3_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x0400UL)</td></tr>
 <tr class="separator:gaf0c34a518f87e1e505cd2332e989564a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56e2d44b0002f316527b8913866a370d"><td class="memItemLeft" align="right" valign="top"><a id="ga56e2d44b0002f316527b8913866a370d" name="ga56e2d44b0002f316527b8913866a370d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM4_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x0800UL)</td></tr>
+<tr class="memitem:ga56e2d44b0002f316527b8913866a370d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga56e2d44b0002f316527b8913866a370d">TIM4_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x0800UL)</td></tr>
 <tr class="separator:ga56e2d44b0002f316527b8913866a370d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3e1671477190d065ba7c944558336d7e"><td class="memItemLeft" align="right" valign="top"><a id="ga3e1671477190d065ba7c944558336d7e" name="ga3e1671477190d065ba7c944558336d7e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM5_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x0C00UL)</td></tr>
+<tr class="memitem:ga3e1671477190d065ba7c944558336d7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga3e1671477190d065ba7c944558336d7e">TIM5_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x0C00UL)</td></tr>
 <tr class="separator:ga3e1671477190d065ba7c944558336d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8268ec947929f192559f28c6bf7d1eac"><td class="memItemLeft" align="right" valign="top"><a id="ga8268ec947929f192559f28c6bf7d1eac" name="ga8268ec947929f192559f28c6bf7d1eac"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM6_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x1000UL)</td></tr>
+<tr class="memitem:ga8268ec947929f192559f28c6bf7d1eac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga8268ec947929f192559f28c6bf7d1eac">TIM6_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x1000UL)</td></tr>
 <tr class="separator:ga8268ec947929f192559f28c6bf7d1eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ebf54364c6a2be6eb19ded6b18b6387"><td class="memItemLeft" align="right" valign="top"><a id="ga0ebf54364c6a2be6eb19ded6b18b6387" name="ga0ebf54364c6a2be6eb19ded6b18b6387"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM7_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x1400UL)</td></tr>
+<tr class="memitem:ga0ebf54364c6a2be6eb19ded6b18b6387"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga0ebf54364c6a2be6eb19ded6b18b6387">TIM7_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x1400UL)</td></tr>
 <tr class="separator:ga0ebf54364c6a2be6eb19ded6b18b6387"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga017749aad23300240ef5ac4c3d5ca750"><td class="memItemLeft" align="right" valign="top"><a id="ga017749aad23300240ef5ac4c3d5ca750" name="ga017749aad23300240ef5ac4c3d5ca750"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LCD_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x2400UL)</td></tr>
+<tr class="memitem:ga017749aad23300240ef5ac4c3d5ca750"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga017749aad23300240ef5ac4c3d5ca750">LCD_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x2400UL)</td></tr>
 <tr class="separator:ga017749aad23300240ef5ac4c3d5ca750"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4265e665d56225412e57a61d87417022"><td class="memItemLeft" align="right" valign="top"><a id="ga4265e665d56225412e57a61d87417022" name="ga4265e665d56225412e57a61d87417022"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RTC_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x2800UL)</td></tr>
+<tr class="memitem:ga4265e665d56225412e57a61d87417022"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga4265e665d56225412e57a61d87417022">RTC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x2800UL)</td></tr>
 <tr class="separator:ga4265e665d56225412e57a61d87417022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9a5bf4728ab93dea5b569f5b972cbe62"><td class="memItemLeft" align="right" valign="top"><a id="ga9a5bf4728ab93dea5b569f5b972cbe62" name="ga9a5bf4728ab93dea5b569f5b972cbe62"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>WWDG_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x2C00UL)</td></tr>
+<tr class="memitem:ga9a5bf4728ab93dea5b569f5b972cbe62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga9a5bf4728ab93dea5b569f5b972cbe62">WWDG_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x2C00UL)</td></tr>
 <tr class="separator:ga9a5bf4728ab93dea5b569f5b972cbe62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8543ee4997296af5536b007cd4748f55"><td class="memItemLeft" align="right" valign="top"><a id="ga8543ee4997296af5536b007cd4748f55" name="ga8543ee4997296af5536b007cd4748f55"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IWDG_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x3000UL)</td></tr>
+<tr class="memitem:ga8543ee4997296af5536b007cd4748f55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga8543ee4997296af5536b007cd4748f55">IWDG_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x3000UL)</td></tr>
 <tr class="separator:ga8543ee4997296af5536b007cd4748f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3e357b4c25106ed375fb1affab6bb86"><td class="memItemLeft" align="right" valign="top"><a id="gac3e357b4c25106ed375fb1affab6bb86" name="gac3e357b4c25106ed375fb1affab6bb86"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPI2_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x3800UL)</td></tr>
+<tr class="memitem:gac3e357b4c25106ed375fb1affab6bb86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gac3e357b4c25106ed375fb1affab6bb86">SPI2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x3800UL)</td></tr>
 <tr class="separator:gac3e357b4c25106ed375fb1affab6bb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae634fe8faa6922690e90fbec2fc86162"><td class="memItemLeft" align="right" valign="top"><a id="gae634fe8faa6922690e90fbec2fc86162" name="gae634fe8faa6922690e90fbec2fc86162"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPI3_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x3C00UL)</td></tr>
+<tr class="memitem:gae634fe8faa6922690e90fbec2fc86162"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gae634fe8faa6922690e90fbec2fc86162">SPI3_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x3C00UL)</td></tr>
 <tr class="separator:gae634fe8faa6922690e90fbec2fc86162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gade83162a04bca0b15b39018a8e8ec090"><td class="memItemLeft" align="right" valign="top"><a id="gade83162a04bca0b15b39018a8e8ec090" name="gade83162a04bca0b15b39018a8e8ec090"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USART2_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x4400UL)</td></tr>
+<tr class="memitem:gade83162a04bca0b15b39018a8e8ec090"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gade83162a04bca0b15b39018a8e8ec090">USART2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x4400UL)</td></tr>
 <tr class="separator:gade83162a04bca0b15b39018a8e8ec090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe0d6539ac0026d598274ee7f45b0251"><td class="memItemLeft" align="right" valign="top"><a id="gabe0d6539ac0026d598274ee7f45b0251" name="gabe0d6539ac0026d598274ee7f45b0251"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USART3_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x4800UL)</td></tr>
+<tr class="memitem:gabe0d6539ac0026d598274ee7f45b0251"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gabe0d6539ac0026d598274ee7f45b0251">USART3_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x4800UL)</td></tr>
 <tr class="separator:gabe0d6539ac0026d598274ee7f45b0251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94d92270bf587ccdc3a37a5bb5d20467"><td class="memItemLeft" align="right" valign="top"><a id="ga94d92270bf587ccdc3a37a5bb5d20467" name="ga94d92270bf587ccdc3a37a5bb5d20467"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>UART4_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x4C00UL)</td></tr>
+<tr class="memitem:ga94d92270bf587ccdc3a37a5bb5d20467"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga94d92270bf587ccdc3a37a5bb5d20467">UART4_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x4C00UL)</td></tr>
 <tr class="separator:ga94d92270bf587ccdc3a37a5bb5d20467"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa155689c0e206e6994951dc3cf31052a"><td class="memItemLeft" align="right" valign="top"><a id="gaa155689c0e206e6994951dc3cf31052a" name="gaa155689c0e206e6994951dc3cf31052a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>UART5_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x5000UL)</td></tr>
+<tr class="memitem:gaa155689c0e206e6994951dc3cf31052a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaa155689c0e206e6994951dc3cf31052a">UART5_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x5000UL)</td></tr>
 <tr class="separator:gaa155689c0e206e6994951dc3cf31052a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd72dbffb1738ca87c838545c4eb85a3"><td class="memItemLeft" align="right" valign="top"><a id="gacd72dbffb1738ca87c838545c4eb85a3" name="gacd72dbffb1738ca87c838545c4eb85a3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>I2C1_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x5400UL)</td></tr>
+<tr class="memitem:gacd72dbffb1738ca87c838545c4eb85a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gacd72dbffb1738ca87c838545c4eb85a3">I2C1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x5400UL)</td></tr>
 <tr class="separator:gacd72dbffb1738ca87c838545c4eb85a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04bda70f25c795fb79f163b633ad4a5d"><td class="memItemLeft" align="right" valign="top"><a id="ga04bda70f25c795fb79f163b633ad4a5d" name="ga04bda70f25c795fb79f163b633ad4a5d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>I2C2_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x5800UL)</td></tr>
+<tr class="memitem:ga04bda70f25c795fb79f163b633ad4a5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga04bda70f25c795fb79f163b633ad4a5d">I2C2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x5800UL)</td></tr>
 <tr class="separator:ga04bda70f25c795fb79f163b633ad4a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e8b9198748235a1729e1e8f8f24983b"><td class="memItemLeft" align="right" valign="top"><a id="ga4e8b9198748235a1729e1e8f8f24983b" name="ga4e8b9198748235a1729e1e8f8f24983b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>I2C3_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x5C00UL)</td></tr>
+<tr class="memitem:ga4e8b9198748235a1729e1e8f8f24983b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga4e8b9198748235a1729e1e8f8f24983b">I2C3_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x5C00UL)</td></tr>
 <tr class="separator:ga4e8b9198748235a1729e1e8f8f24983b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad8e45ea6c032d9fce1b0516fff9d8eaa"><td class="memItemLeft" align="right" valign="top"><a id="gad8e45ea6c032d9fce1b0516fff9d8eaa" name="gad8e45ea6c032d9fce1b0516fff9d8eaa"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CAN1_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x6400UL)</td></tr>
+<tr class="memitem:gad8e45ea6c032d9fce1b0516fff9d8eaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gad8e45ea6c032d9fce1b0516fff9d8eaa">CAN1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x6400UL)</td></tr>
 <tr class="separator:gad8e45ea6c032d9fce1b0516fff9d8eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac691ec23dace8b7a649a25acb110217a"><td class="memItemLeft" align="right" valign="top"><a id="gac691ec23dace8b7a649a25acb110217a" name="gac691ec23dace8b7a649a25acb110217a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PWR_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x7000UL)</td></tr>
+<tr class="memitem:gac691ec23dace8b7a649a25acb110217a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gac691ec23dace8b7a649a25acb110217a">PWR_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7000UL)</td></tr>
 <tr class="separator:gac691ec23dace8b7a649a25acb110217a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad18d0b914c7f68cecbee1a2d23a67d38"><td class="memItemLeft" align="right" valign="top"><a id="gad18d0b914c7f68cecbee1a2d23a67d38" name="gad18d0b914c7f68cecbee1a2d23a67d38"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DAC_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x7400UL)</td></tr>
+<tr class="memitem:gad18d0b914c7f68cecbee1a2d23a67d38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gad18d0b914c7f68cecbee1a2d23a67d38">DAC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7400UL)</td></tr>
 <tr class="separator:gad18d0b914c7f68cecbee1a2d23a67d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3383b83a296ce0a5386a0d94195e8a99"><td class="memItemLeft" align="right" valign="top"><a id="ga3383b83a296ce0a5386a0d94195e8a99" name="ga3383b83a296ce0a5386a0d94195e8a99"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DAC1_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x7400UL)</td></tr>
+<tr class="memitem:ga3383b83a296ce0a5386a0d94195e8a99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga3383b83a296ce0a5386a0d94195e8a99">DAC1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7400UL)</td></tr>
 <tr class="separator:ga3383b83a296ce0a5386a0d94195e8a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e9722d15c7ed794f0eca9682f64c03c"><td class="memItemLeft" align="right" valign="top"><a id="ga6e9722d15c7ed794f0eca9682f64c03c" name="ga6e9722d15c7ed794f0eca9682f64c03c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPAMP_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x7800UL)</td></tr>
+<tr class="memitem:ga6e9722d15c7ed794f0eca9682f64c03c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga6e9722d15c7ed794f0eca9682f64c03c">OPAMP_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7800UL)</td></tr>
 <tr class="separator:ga6e9722d15c7ed794f0eca9682f64c03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5eb46aa20e371ed2e07b16a6b12c163d"><td class="memItemLeft" align="right" valign="top"><a id="ga5eb46aa20e371ed2e07b16a6b12c163d" name="ga5eb46aa20e371ed2e07b16a6b12c163d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPAMP1_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x7800UL)</td></tr>
+<tr class="memitem:ga5eb46aa20e371ed2e07b16a6b12c163d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga5eb46aa20e371ed2e07b16a6b12c163d">OPAMP1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7800UL)</td></tr>
 <tr class="separator:ga5eb46aa20e371ed2e07b16a6b12c163d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf0535307a717feba8341e57647d2385"><td class="memItemLeft" align="right" valign="top"><a id="gabf0535307a717feba8341e57647d2385" name="gabf0535307a717feba8341e57647d2385"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPAMP2_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x7810UL)</td></tr>
+<tr class="memitem:gabf0535307a717feba8341e57647d2385"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gabf0535307a717feba8341e57647d2385">OPAMP2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7810UL)</td></tr>
 <tr class="separator:gabf0535307a717feba8341e57647d2385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga012ceb003fbb615eedb39a8d7f31c9c6"><td class="memItemLeft" align="right" valign="top"><a id="ga012ceb003fbb615eedb39a8d7f31c9c6" name="ga012ceb003fbb615eedb39a8d7f31c9c6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LPTIM1_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x7C00UL)</td></tr>
+<tr class="memitem:ga012ceb003fbb615eedb39a8d7f31c9c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga012ceb003fbb615eedb39a8d7f31c9c6">LPTIM1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7C00UL)</td></tr>
 <tr class="separator:ga012ceb003fbb615eedb39a8d7f31c9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42584c807077cea9525819eaf29c7e34"><td class="memItemLeft" align="right" valign="top"><a id="ga42584c807077cea9525819eaf29c7e34" name="ga42584c807077cea9525819eaf29c7e34"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LPUART1_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x8000UL)</td></tr>
+<tr class="memitem:ga42584c807077cea9525819eaf29c7e34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga42584c807077cea9525819eaf29c7e34">LPUART1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x8000UL)</td></tr>
 <tr class="separator:ga42584c807077cea9525819eaf29c7e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga21f79975bb4c5edda5a1f1311b8e658c"><td class="memItemLeft" align="right" valign="top"><a id="ga21f79975bb4c5edda5a1f1311b8e658c" name="ga21f79975bb4c5edda5a1f1311b8e658c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SWPMI1_BASE</b>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x8800UL)</td></tr>
+<tr class="memitem:ga21f79975bb4c5edda5a1f1311b8e658c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga21f79975bb4c5edda5a1f1311b8e658c">SWPMI1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x8800UL)</td></tr>
 <tr class="separator:ga21f79975bb4c5edda5a1f1311b8e658c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga74dc5e8a0008c0e16598591753b71b17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga74dc5e8a0008c0e16598591753b71b17">LPTIM2_BASE</a>&#160;&#160;&#160;(APB1PERIPH_BASE + 0x9400UL)</td></tr>
+<tr class="memitem:ga74dc5e8a0008c0e16598591753b71b17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga74dc5e8a0008c0e16598591753b71b17">LPTIM2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x9400UL)</td></tr>
 <tr class="separator:ga74dc5e8a0008c0e16598591753b71b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga62246020bf3b34b6a4d8d0e84ec79d3d"><td class="memItemLeft" align="right" valign="top"><a id="ga62246020bf3b34b6a4d8d0e84ec79d3d" name="ga62246020bf3b34b6a4d8d0e84ec79d3d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYSCFG_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x0000UL)</td></tr>
+<tr class="memitem:ga62246020bf3b34b6a4d8d0e84ec79d3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga62246020bf3b34b6a4d8d0e84ec79d3d">SYSCFG_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x0000UL)</td></tr>
 <tr class="separator:ga62246020bf3b34b6a4d8d0e84ec79d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga206fcc501d1ab876346acc1a922f8dbe"><td class="memItemLeft" align="right" valign="top"><a id="ga206fcc501d1ab876346acc1a922f8dbe" name="ga206fcc501d1ab876346acc1a922f8dbe"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VREFBUF_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x0030UL)</td></tr>
+<tr class="memitem:ga206fcc501d1ab876346acc1a922f8dbe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga206fcc501d1ab876346acc1a922f8dbe">VREFBUF_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x0030UL)</td></tr>
 <tr class="separator:ga206fcc501d1ab876346acc1a922f8dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac21d535b541bcfb0c778a9584ebb132e"><td class="memItemLeft" align="right" valign="top"><a id="gac21d535b541bcfb0c778a9584ebb132e" name="gac21d535b541bcfb0c778a9584ebb132e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMP1_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x0200UL)</td></tr>
+<tr class="memitem:gac21d535b541bcfb0c778a9584ebb132e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gac21d535b541bcfb0c778a9584ebb132e">COMP1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x0200UL)</td></tr>
 <tr class="separator:gac21d535b541bcfb0c778a9584ebb132e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacb8799f3d5301795f51e3b87d345cd50"><td class="memItemLeft" align="right" valign="top"><a id="gacb8799f3d5301795f51e3b87d345cd50" name="gacb8799f3d5301795f51e3b87d345cd50"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMP2_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x0204UL)</td></tr>
+<tr class="memitem:gacb8799f3d5301795f51e3b87d345cd50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gacb8799f3d5301795f51e3b87d345cd50">COMP2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x0204UL)</td></tr>
 <tr class="separator:gacb8799f3d5301795f51e3b87d345cd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga87371508b3bcdcd98cd1ec629be29061"><td class="memItemLeft" align="right" valign="top"><a id="ga87371508b3bcdcd98cd1ec629be29061" name="ga87371508b3bcdcd98cd1ec629be29061"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>EXTI_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x0400UL)</td></tr>
+<tr class="memitem:ga87371508b3bcdcd98cd1ec629be29061"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga87371508b3bcdcd98cd1ec629be29061">EXTI_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x0400UL)</td></tr>
 <tr class="separator:ga87371508b3bcdcd98cd1ec629be29061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga73cfb3af559849de4e1d7756dea474a0"><td class="memItemLeft" align="right" valign="top"><a id="ga73cfb3af559849de4e1d7756dea474a0" name="ga73cfb3af559849de4e1d7756dea474a0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FIREWALL_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x1C00UL)</td></tr>
+<tr class="memitem:ga73cfb3af559849de4e1d7756dea474a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga73cfb3af559849de4e1d7756dea474a0">FIREWALL_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x1C00UL)</td></tr>
 <tr class="separator:ga73cfb3af559849de4e1d7756dea474a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8129623b8d7bc74a5f707729439590c4"><td class="memItemLeft" align="right" valign="top"><a id="ga8129623b8d7bc74a5f707729439590c4" name="ga8129623b8d7bc74a5f707729439590c4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SDMMC1_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x2800UL)</td></tr>
+<tr class="memitem:ga8129623b8d7bc74a5f707729439590c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga8129623b8d7bc74a5f707729439590c4">SDMMC1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x2800UL)</td></tr>
 <tr class="separator:ga8129623b8d7bc74a5f707729439590c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8aa324ca5011b8173ab16585ed7324a"><td class="memItemLeft" align="right" valign="top"><a id="gaf8aa324ca5011b8173ab16585ed7324a" name="gaf8aa324ca5011b8173ab16585ed7324a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM1_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x2C00UL)</td></tr>
+<tr class="memitem:gaf8aa324ca5011b8173ab16585ed7324a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaf8aa324ca5011b8173ab16585ed7324a">TIM1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x2C00UL)</td></tr>
 <tr class="separator:gaf8aa324ca5011b8173ab16585ed7324a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga50cd8b47929f18b05efbd0f41253bf8d"><td class="memItemLeft" align="right" valign="top"><a id="ga50cd8b47929f18b05efbd0f41253bf8d" name="ga50cd8b47929f18b05efbd0f41253bf8d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPI1_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x3000UL)</td></tr>
+<tr class="memitem:ga50cd8b47929f18b05efbd0f41253bf8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga50cd8b47929f18b05efbd0f41253bf8d">SPI1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x3000UL)</td></tr>
 <tr class="separator:ga50cd8b47929f18b05efbd0f41253bf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b72f698b7a048a6f9fcfe2efe5bc1db"><td class="memItemLeft" align="right" valign="top"><a id="ga5b72f698b7a048a6f9fcfe2efe5bc1db" name="ga5b72f698b7a048a6f9fcfe2efe5bc1db"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM8_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x3400UL)</td></tr>
+<tr class="memitem:ga5b72f698b7a048a6f9fcfe2efe5bc1db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga5b72f698b7a048a6f9fcfe2efe5bc1db">TIM8_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x3400UL)</td></tr>
 <tr class="separator:ga5b72f698b7a048a6f9fcfe2efe5bc1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86162ab3f740db9026c1320d46938b4d"><td class="memItemLeft" align="right" valign="top"><a id="ga86162ab3f740db9026c1320d46938b4d" name="ga86162ab3f740db9026c1320d46938b4d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USART1_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x3800UL)</td></tr>
+<tr class="memitem:ga86162ab3f740db9026c1320d46938b4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga86162ab3f740db9026c1320d46938b4d">USART1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x3800UL)</td></tr>
 <tr class="separator:ga86162ab3f740db9026c1320d46938b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ab42ce1846930569d742d339b554078"><td class="memItemLeft" align="right" valign="top"><a id="ga7ab42ce1846930569d742d339b554078" name="ga7ab42ce1846930569d742d339b554078"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM15_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x4000UL)</td></tr>
+<tr class="memitem:ga7ab42ce1846930569d742d339b554078"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga7ab42ce1846930569d742d339b554078">TIM15_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x4000UL)</td></tr>
 <tr class="separator:ga7ab42ce1846930569d742d339b554078"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16c97093a531d763b0794c3e6d09e1bf"><td class="memItemLeft" align="right" valign="top"><a id="ga16c97093a531d763b0794c3e6d09e1bf" name="ga16c97093a531d763b0794c3e6d09e1bf"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM16_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x4400UL)</td></tr>
+<tr class="memitem:ga16c97093a531d763b0794c3e6d09e1bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga16c97093a531d763b0794c3e6d09e1bf">TIM16_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x4400UL)</td></tr>
 <tr class="separator:ga16c97093a531d763b0794c3e6d09e1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffbedbe30e8c4cffdea326d6c1800574"><td class="memItemLeft" align="right" valign="top"><a id="gaffbedbe30e8c4cffdea326d6c1800574" name="gaffbedbe30e8c4cffdea326d6c1800574"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM17_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x4800UL)</td></tr>
+<tr class="memitem:gaffbedbe30e8c4cffdea326d6c1800574"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaffbedbe30e8c4cffdea326d6c1800574">TIM17_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x4800UL)</td></tr>
 <tr class="separator:gaffbedbe30e8c4cffdea326d6c1800574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24c1053b754946b512f9c31123e09d21"><td class="memItemLeft" align="right" valign="top"><a id="ga24c1053b754946b512f9c31123e09d21" name="ga24c1053b754946b512f9c31123e09d21"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAI1_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x5400UL)</td></tr>
+<tr class="memitem:ga24c1053b754946b512f9c31123e09d21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga24c1053b754946b512f9c31123e09d21">SAI1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x5400UL)</td></tr>
 <tr class="separator:ga24c1053b754946b512f9c31123e09d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31f72e5e5d7aea23bc8a5191bc32e900"><td class="memItemLeft" align="right" valign="top"><a id="ga31f72e5e5d7aea23bc8a5191bc32e900" name="ga31f72e5e5d7aea23bc8a5191bc32e900"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAI1_Block_A_BASE</b>&#160;&#160;&#160;(SAI1_BASE + 0x0004UL)</td></tr>
+<tr class="memitem:ga31f72e5e5d7aea23bc8a5191bc32e900"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga31f72e5e5d7aea23bc8a5191bc32e900">SAI1_Block_A_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga24c1053b754946b512f9c31123e09d21">SAI1_BASE</a> + 0x0004UL)</td></tr>
 <tr class="separator:ga31f72e5e5d7aea23bc8a5191bc32e900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacdb59b321830def8c7a57c154178bc48"><td class="memItemLeft" align="right" valign="top"><a id="gacdb59b321830def8c7a57c154178bc48" name="gacdb59b321830def8c7a57c154178bc48"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAI1_Block_B_BASE</b>&#160;&#160;&#160;(SAI1_BASE + 0x0024UL)</td></tr>
+<tr class="memitem:gacdb59b321830def8c7a57c154178bc48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gacdb59b321830def8c7a57c154178bc48">SAI1_Block_B_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga24c1053b754946b512f9c31123e09d21">SAI1_BASE</a> + 0x0024UL)</td></tr>
 <tr class="separator:gacdb59b321830def8c7a57c154178bc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4b4d5c95ea5f835f9ac37fab90a2d700"><td class="memItemLeft" align="right" valign="top"><a id="ga4b4d5c95ea5f835f9ac37fab90a2d700" name="ga4b4d5c95ea5f835f9ac37fab90a2d700"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAI2_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x5800UL)</td></tr>
+<tr class="memitem:ga4b4d5c95ea5f835f9ac37fab90a2d700"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga4b4d5c95ea5f835f9ac37fab90a2d700">SAI2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x5800UL)</td></tr>
 <tr class="separator:ga4b4d5c95ea5f835f9ac37fab90a2d700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2992b5770984ddee4c1b7e325d238f3"><td class="memItemLeft" align="right" valign="top"><a id="gad2992b5770984ddee4c1b7e325d238f3" name="gad2992b5770984ddee4c1b7e325d238f3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAI2_Block_A_BASE</b>&#160;&#160;&#160;(SAI2_BASE + 0x0004UL)</td></tr>
+<tr class="memitem:gad2992b5770984ddee4c1b7e325d238f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gad2992b5770984ddee4c1b7e325d238f3">SAI2_Block_A_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga4b4d5c95ea5f835f9ac37fab90a2d700">SAI2_BASE</a> + 0x0004UL)</td></tr>
 <tr class="separator:gad2992b5770984ddee4c1b7e325d238f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga034a6ac8f61e4d15cd9f2f7eca140569"><td class="memItemLeft" align="right" valign="top"><a id="ga034a6ac8f61e4d15cd9f2f7eca140569" name="ga034a6ac8f61e4d15cd9f2f7eca140569"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAI2_Block_B_BASE</b>&#160;&#160;&#160;(SAI2_BASE + 0x0024UL)</td></tr>
+<tr class="memitem:ga034a6ac8f61e4d15cd9f2f7eca140569"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga034a6ac8f61e4d15cd9f2f7eca140569">SAI2_Block_B_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga4b4d5c95ea5f835f9ac37fab90a2d700">SAI2_BASE</a> + 0x0024UL)</td></tr>
 <tr class="separator:ga034a6ac8f61e4d15cd9f2f7eca140569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa028c1a574f5d338ed1999644406fd33"><td class="memItemLeft" align="right" valign="top"><a id="gaa028c1a574f5d338ed1999644406fd33" name="gaa028c1a574f5d338ed1999644406fd33"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_BASE</b>&#160;&#160;&#160;(APB2PERIPH_BASE + 0x6000UL)</td></tr>
+<tr class="memitem:gaa028c1a574f5d338ed1999644406fd33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x6000UL)</td></tr>
 <tr class="separator:gaa028c1a574f5d338ed1999644406fd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e9c37169b0f4fe6c3d51638300620f6"><td class="memItemLeft" align="right" valign="top"><a id="ga1e9c37169b0f4fe6c3d51638300620f6" name="ga1e9c37169b0f4fe6c3d51638300620f6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Channel0_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x0000UL)</td></tr>
+<tr class="memitem:ga1e9c37169b0f4fe6c3d51638300620f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga1e9c37169b0f4fe6c3d51638300620f6">DFSDM1_Channel0_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0000UL)</td></tr>
 <tr class="separator:ga1e9c37169b0f4fe6c3d51638300620f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c13a6a4cb7dcea7532f919146e1aa9c"><td class="memItemLeft" align="right" valign="top"><a id="ga4c13a6a4cb7dcea7532f919146e1aa9c" name="ga4c13a6a4cb7dcea7532f919146e1aa9c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Channel1_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x0020UL)</td></tr>
+<tr class="memitem:ga4c13a6a4cb7dcea7532f919146e1aa9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga4c13a6a4cb7dcea7532f919146e1aa9c">DFSDM1_Channel1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0020UL)</td></tr>
 <tr class="separator:ga4c13a6a4cb7dcea7532f919146e1aa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ae70d4b083fbab35f7dc1349939660b"><td class="memItemLeft" align="right" valign="top"><a id="ga3ae70d4b083fbab35f7dc1349939660b" name="ga3ae70d4b083fbab35f7dc1349939660b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Channel2_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x0040UL)</td></tr>
+<tr class="memitem:ga3ae70d4b083fbab35f7dc1349939660b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga3ae70d4b083fbab35f7dc1349939660b">DFSDM1_Channel2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0040UL)</td></tr>
 <tr class="separator:ga3ae70d4b083fbab35f7dc1349939660b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5d767f6c9e8b8013e46df8598b3c31c"><td class="memItemLeft" align="right" valign="top"><a id="gae5d767f6c9e8b8013e46df8598b3c31c" name="gae5d767f6c9e8b8013e46df8598b3c31c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Channel3_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x0060UL)</td></tr>
+<tr class="memitem:gae5d767f6c9e8b8013e46df8598b3c31c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gae5d767f6c9e8b8013e46df8598b3c31c">DFSDM1_Channel3_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0060UL)</td></tr>
 <tr class="separator:gae5d767f6c9e8b8013e46df8598b3c31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga556230d084781086b56b9af73279ae09"><td class="memItemLeft" align="right" valign="top"><a id="ga556230d084781086b56b9af73279ae09" name="ga556230d084781086b56b9af73279ae09"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Channel4_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x0080UL)</td></tr>
+<tr class="memitem:ga556230d084781086b56b9af73279ae09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga556230d084781086b56b9af73279ae09">DFSDM1_Channel4_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0080UL)</td></tr>
 <tr class="separator:ga556230d084781086b56b9af73279ae09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe2e6b7024e7050217ca0097f3602848"><td class="memItemLeft" align="right" valign="top"><a id="gabe2e6b7024e7050217ca0097f3602848" name="gabe2e6b7024e7050217ca0097f3602848"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Channel5_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x00A0UL)</td></tr>
+<tr class="memitem:gabe2e6b7024e7050217ca0097f3602848"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gabe2e6b7024e7050217ca0097f3602848">DFSDM1_Channel5_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x00A0UL)</td></tr>
 <tr class="separator:gabe2e6b7024e7050217ca0097f3602848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa4a38e4b3a57eb13d257e86255ad52ba"><td class="memItemLeft" align="right" valign="top"><a id="gaa4a38e4b3a57eb13d257e86255ad52ba" name="gaa4a38e4b3a57eb13d257e86255ad52ba"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Channel6_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x00C0UL)</td></tr>
+<tr class="memitem:gaa4a38e4b3a57eb13d257e86255ad52ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaa4a38e4b3a57eb13d257e86255ad52ba">DFSDM1_Channel6_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x00C0UL)</td></tr>
 <tr class="separator:gaa4a38e4b3a57eb13d257e86255ad52ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga979ce002b012b0bb589bce038e9f041b"><td class="memItemLeft" align="right" valign="top"><a id="ga979ce002b012b0bb589bce038e9f041b" name="ga979ce002b012b0bb589bce038e9f041b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Channel7_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x00E0UL)</td></tr>
+<tr class="memitem:ga979ce002b012b0bb589bce038e9f041b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga979ce002b012b0bb589bce038e9f041b">DFSDM1_Channel7_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x00E0UL)</td></tr>
 <tr class="separator:ga979ce002b012b0bb589bce038e9f041b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3aa0e5ef2db4d23b862599ccf5ee1b60"><td class="memItemLeft" align="right" valign="top"><a id="ga3aa0e5ef2db4d23b862599ccf5ee1b60" name="ga3aa0e5ef2db4d23b862599ccf5ee1b60"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Filter0_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x0100UL)</td></tr>
+<tr class="memitem:ga3aa0e5ef2db4d23b862599ccf5ee1b60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga3aa0e5ef2db4d23b862599ccf5ee1b60">DFSDM1_Filter0_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0100UL)</td></tr>
 <tr class="separator:ga3aa0e5ef2db4d23b862599ccf5ee1b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60a1ca4c6ea6b82a0a9125cdd8823536"><td class="memItemLeft" align="right" valign="top"><a id="ga60a1ca4c6ea6b82a0a9125cdd8823536" name="ga60a1ca4c6ea6b82a0a9125cdd8823536"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Filter1_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x0180UL)</td></tr>
+<tr class="memitem:ga60a1ca4c6ea6b82a0a9125cdd8823536"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga60a1ca4c6ea6b82a0a9125cdd8823536">DFSDM1_Filter1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0180UL)</td></tr>
 <tr class="separator:ga60a1ca4c6ea6b82a0a9125cdd8823536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga50b9942303ccb5a8df66b8149c018b9e"><td class="memItemLeft" align="right" valign="top"><a id="ga50b9942303ccb5a8df66b8149c018b9e" name="ga50b9942303ccb5a8df66b8149c018b9e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_Filter2_BASE</b>&#160;&#160;&#160;(DFSDM1_BASE + 0x0200UL)</td></tr>
+<tr class="memitem:ga50b9942303ccb5a8df66b8149c018b9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga50b9942303ccb5a8df66b8149c018b9e">DFSDM1_Filter2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0200UL)</td></tr>
 <tr class="separator:ga50b9942303ccb5a8df66b8149c018b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23687e822a7c9719d64130e282ada955"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga23687e822a7c9719d64130e282ada955">DFSDM1_Filter3_BASE</a>&#160;&#160;&#160;(DFSDM1_BASE + 0x0280UL)</td></tr>
+<tr class="memitem:ga23687e822a7c9719d64130e282ada955"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga23687e822a7c9719d64130e282ada955">DFSDM1_Filter3_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0280UL)</td></tr>
 <tr class="separator:ga23687e822a7c9719d64130e282ada955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2d8a917a0e4ea99a22ac6ebf279bc72"><td class="memItemLeft" align="right" valign="top"><a id="gab2d8a917a0e4ea99a22ac6ebf279bc72" name="gab2d8a917a0e4ea99a22ac6ebf279bc72"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_BASE</b>&#160;&#160;&#160;(AHB1PERIPH_BASE)</td></tr>
+<tr class="memitem:gab2d8a917a0e4ea99a22ac6ebf279bc72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a>)</td></tr>
 <tr class="separator:gab2d8a917a0e4ea99a22ac6ebf279bc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab72a9ae145053ee13d1d491fb5c1df64"><td class="memItemLeft" align="right" valign="top"><a id="gab72a9ae145053ee13d1d491fb5c1df64" name="gab72a9ae145053ee13d1d491fb5c1df64"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA2_BASE</b>&#160;&#160;&#160;(AHB1PERIPH_BASE + 0x0400UL)</td></tr>
+<tr class="memitem:gab72a9ae145053ee13d1d491fb5c1df64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a> + 0x0400UL)</td></tr>
 <tr class="separator:gab72a9ae145053ee13d1d491fb5c1df64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0e681b03f364532055d88f63fec0d99d"><td class="memItemLeft" align="right" valign="top"><a id="ga0e681b03f364532055d88f63fec0d99d" name="ga0e681b03f364532055d88f63fec0d99d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RCC_BASE</b>&#160;&#160;&#160;(AHB1PERIPH_BASE + 0x1000UL)</td></tr>
+<tr class="memitem:ga0e681b03f364532055d88f63fec0d99d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga0e681b03f364532055d88f63fec0d99d">RCC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a> + 0x1000UL)</td></tr>
 <tr class="separator:ga0e681b03f364532055d88f63fec0d99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e21f4845015730c5731763169ec0e9b"><td class="memItemLeft" align="right" valign="top"><a id="ga8e21f4845015730c5731763169ec0e9b" name="ga8e21f4845015730c5731763169ec0e9b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FLASH_R_BASE</b>&#160;&#160;&#160;(AHB1PERIPH_BASE + 0x2000UL)</td></tr>
+<tr class="memitem:ga8e21f4845015730c5731763169ec0e9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga8e21f4845015730c5731763169ec0e9b">FLASH_R_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a> + 0x2000UL)</td></tr>
 <tr class="separator:ga8e21f4845015730c5731763169ec0e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga656a447589e785594cbf2f45c835ad7e"><td class="memItemLeft" align="right" valign="top"><a id="ga656a447589e785594cbf2f45c835ad7e" name="ga656a447589e785594cbf2f45c835ad7e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CRC_BASE</b>&#160;&#160;&#160;(AHB1PERIPH_BASE + 0x3000UL)</td></tr>
+<tr class="memitem:ga656a447589e785594cbf2f45c835ad7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga656a447589e785594cbf2f45c835ad7e">CRC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a> + 0x3000UL)</td></tr>
 <tr class="separator:ga656a447589e785594cbf2f45c835ad7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2bba7a31caeacaacd433abb71781e0af"><td class="memItemLeft" align="right" valign="top"><a id="ga2bba7a31caeacaacd433abb71781e0af" name="ga2bba7a31caeacaacd433abb71781e0af"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TSC_BASE</b>&#160;&#160;&#160;(AHB1PERIPH_BASE + 0x4000UL)</td></tr>
+<tr class="memitem:ga2bba7a31caeacaacd433abb71781e0af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga2bba7a31caeacaacd433abb71781e0af">TSC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a> + 0x4000UL)</td></tr>
 <tr class="separator:ga2bba7a31caeacaacd433abb71781e0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga888dbc1608243badeb3554ffedc7364c"><td class="memItemLeft" align="right" valign="top"><a id="ga888dbc1608243badeb3554ffedc7364c" name="ga888dbc1608243badeb3554ffedc7364c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_Channel1_BASE</b>&#160;&#160;&#160;(DMA1_BASE + 0x0008UL)</td></tr>
+<tr class="memitem:ga888dbc1608243badeb3554ffedc7364c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga888dbc1608243badeb3554ffedc7364c">DMA1_Channel1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x0008UL)</td></tr>
 <tr class="separator:ga888dbc1608243badeb3554ffedc7364c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga38a70090eef3687e83fa6ac0c6d22267"><td class="memItemLeft" align="right" valign="top"><a id="ga38a70090eef3687e83fa6ac0c6d22267" name="ga38a70090eef3687e83fa6ac0c6d22267"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_Channel2_BASE</b>&#160;&#160;&#160;(DMA1_BASE + 0x001CUL)</td></tr>
+<tr class="memitem:ga38a70090eef3687e83fa6ac0c6d22267"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga38a70090eef3687e83fa6ac0c6d22267">DMA1_Channel2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x001CUL)</td></tr>
 <tr class="separator:ga38a70090eef3687e83fa6ac0c6d22267"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga70b3d9f36ca9ce95b4e421c11154fe5d"><td class="memItemLeft" align="right" valign="top"><a id="ga70b3d9f36ca9ce95b4e421c11154fe5d" name="ga70b3d9f36ca9ce95b4e421c11154fe5d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_Channel3_BASE</b>&#160;&#160;&#160;(DMA1_BASE + 0x0030UL)</td></tr>
+<tr class="memitem:ga70b3d9f36ca9ce95b4e421c11154fe5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga70b3d9f36ca9ce95b4e421c11154fe5d">DMA1_Channel3_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x0030UL)</td></tr>
 <tr class="separator:ga70b3d9f36ca9ce95b4e421c11154fe5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1adc93cd0baf0897202c71110e045692"><td class="memItemLeft" align="right" valign="top"><a id="ga1adc93cd0baf0897202c71110e045692" name="ga1adc93cd0baf0897202c71110e045692"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_Channel4_BASE</b>&#160;&#160;&#160;(DMA1_BASE + 0x0044UL)</td></tr>
+<tr class="memitem:ga1adc93cd0baf0897202c71110e045692"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga1adc93cd0baf0897202c71110e045692">DMA1_Channel4_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x0044UL)</td></tr>
 <tr class="separator:ga1adc93cd0baf0897202c71110e045692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac041a71cd6c1973964f847a68aa14478"><td class="memItemLeft" align="right" valign="top"><a id="gac041a71cd6c1973964f847a68aa14478" name="gac041a71cd6c1973964f847a68aa14478"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_Channel5_BASE</b>&#160;&#160;&#160;(DMA1_BASE + 0x0058UL)</td></tr>
+<tr class="memitem:gac041a71cd6c1973964f847a68aa14478"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gac041a71cd6c1973964f847a68aa14478">DMA1_Channel5_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x0058UL)</td></tr>
 <tr class="separator:gac041a71cd6c1973964f847a68aa14478"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga896c2c7585dd8bc3969cf8561f689d2d"><td class="memItemLeft" align="right" valign="top"><a id="ga896c2c7585dd8bc3969cf8561f689d2d" name="ga896c2c7585dd8bc3969cf8561f689d2d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_Channel6_BASE</b>&#160;&#160;&#160;(DMA1_BASE + 0x006CUL)</td></tr>
+<tr class="memitem:ga896c2c7585dd8bc3969cf8561f689d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga896c2c7585dd8bc3969cf8561f689d2d">DMA1_Channel6_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x006CUL)</td></tr>
 <tr class="separator:ga896c2c7585dd8bc3969cf8561f689d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeee0d1f77d0db1db533016a09351166c"><td class="memItemLeft" align="right" valign="top"><a id="gaeee0d1f77d0db1db533016a09351166c" name="gaeee0d1f77d0db1db533016a09351166c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_Channel7_BASE</b>&#160;&#160;&#160;(DMA1_BASE + 0x0080UL)</td></tr>
+<tr class="memitem:gaeee0d1f77d0db1db533016a09351166c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaeee0d1f77d0db1db533016a09351166c">DMA1_Channel7_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x0080UL)</td></tr>
 <tr class="separator:gaeee0d1f77d0db1db533016a09351166c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0adeabd8f0e3c66b76f66bafe9a5f51f"><td class="memItemLeft" align="right" valign="top"><a id="ga0adeabd8f0e3c66b76f66bafe9a5f51f" name="ga0adeabd8f0e3c66b76f66bafe9a5f51f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_CSELR_BASE</b>&#160;&#160;&#160;(DMA1_BASE + 0x00A8UL)</td></tr>
+<tr class="memitem:ga0adeabd8f0e3c66b76f66bafe9a5f51f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga0adeabd8f0e3c66b76f66bafe9a5f51f">DMA1_CSELR_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x00A8UL)</td></tr>
 <tr class="separator:ga0adeabd8f0e3c66b76f66bafe9a5f51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3bd6c4201d12f5d474518c1b02f8e3b"><td class="memItemLeft" align="right" valign="top"><a id="gad3bd6c4201d12f5d474518c1b02f8e3b" name="gad3bd6c4201d12f5d474518c1b02f8e3b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA2_Channel1_BASE</b>&#160;&#160;&#160;(DMA2_BASE + 0x0008UL)</td></tr>
+<tr class="memitem:gad3bd6c4201d12f5d474518c1b02f8e3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gad3bd6c4201d12f5d474518c1b02f8e3b">DMA2_Channel1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x0008UL)</td></tr>
 <tr class="separator:gad3bd6c4201d12f5d474518c1b02f8e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22f39f23c879c699b88e04a629f69d1c"><td class="memItemLeft" align="right" valign="top"><a id="ga22f39f23c879c699b88e04a629f69d1c" name="ga22f39f23c879c699b88e04a629f69d1c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA2_Channel2_BASE</b>&#160;&#160;&#160;(DMA2_BASE + 0x001CUL)</td></tr>
+<tr class="memitem:ga22f39f23c879c699b88e04a629f69d1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga22f39f23c879c699b88e04a629f69d1c">DMA2_Channel2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x001CUL)</td></tr>
 <tr class="separator:ga22f39f23c879c699b88e04a629f69d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f2369b8bc155fb55a28891987605c2c"><td class="memItemLeft" align="right" valign="top"><a id="ga6f2369b8bc155fb55a28891987605c2c" name="ga6f2369b8bc155fb55a28891987605c2c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA2_Channel3_BASE</b>&#160;&#160;&#160;(DMA2_BASE + 0x0030UL)</td></tr>
+<tr class="memitem:ga6f2369b8bc155fb55a28891987605c2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga6f2369b8bc155fb55a28891987605c2c">DMA2_Channel3_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x0030UL)</td></tr>
 <tr class="separator:ga6f2369b8bc155fb55a28891987605c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga01b063266473f290a55047654fbbfbee"><td class="memItemLeft" align="right" valign="top"><a id="ga01b063266473f290a55047654fbbfbee" name="ga01b063266473f290a55047654fbbfbee"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA2_Channel4_BASE</b>&#160;&#160;&#160;(DMA2_BASE + 0x0044UL)</td></tr>
+<tr class="memitem:ga01b063266473f290a55047654fbbfbee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga01b063266473f290a55047654fbbfbee">DMA2_Channel4_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x0044UL)</td></tr>
 <tr class="separator:ga01b063266473f290a55047654fbbfbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1eea983a5d68bf36f4d19fbb07955ca1"><td class="memItemLeft" align="right" valign="top"><a id="ga1eea983a5d68bf36f4d19fbb07955ca1" name="ga1eea983a5d68bf36f4d19fbb07955ca1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA2_Channel5_BASE</b>&#160;&#160;&#160;(DMA2_BASE + 0x0058UL)</td></tr>
+<tr class="memitem:ga1eea983a5d68bf36f4d19fbb07955ca1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga1eea983a5d68bf36f4d19fbb07955ca1">DMA2_Channel5_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x0058UL)</td></tr>
 <tr class="separator:ga1eea983a5d68bf36f4d19fbb07955ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8888e635a33f196f414145b0e2b858d"><td class="memItemLeft" align="right" valign="top"><a id="gae8888e635a33f196f414145b0e2b858d" name="gae8888e635a33f196f414145b0e2b858d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA2_Channel6_BASE</b>&#160;&#160;&#160;(DMA2_BASE + 0x006CUL)</td></tr>
+<tr class="memitem:gae8888e635a33f196f414145b0e2b858d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gae8888e635a33f196f414145b0e2b858d">DMA2_Channel6_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x006CUL)</td></tr>
 <tr class="separator:gae8888e635a33f196f414145b0e2b858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e48711c9b40cf50ac47b1e17c787807"><td class="memItemLeft" align="right" valign="top"><a id="ga1e48711c9b40cf50ac47b1e17c787807" name="ga1e48711c9b40cf50ac47b1e17c787807"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA2_Channel7_BASE</b>&#160;&#160;&#160;(DMA2_BASE + 0x0080UL)</td></tr>
+<tr class="memitem:ga1e48711c9b40cf50ac47b1e17c787807"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga1e48711c9b40cf50ac47b1e17c787807">DMA2_Channel7_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x0080UL)</td></tr>
 <tr class="separator:ga1e48711c9b40cf50ac47b1e17c787807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0436bdf91154fe659a7cb1ec107850b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga0436bdf91154fe659a7cb1ec107850b5">DMA2_CSELR_BASE</a>&#160;&#160;&#160;(DMA2_BASE + 0x00A8UL)</td></tr>
+<tr class="memitem:ga0436bdf91154fe659a7cb1ec107850b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga0436bdf91154fe659a7cb1ec107850b5">DMA2_CSELR_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x00A8UL)</td></tr>
 <tr class="separator:ga0436bdf91154fe659a7cb1ec107850b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7723846cc5db8e43a44d78cf21f6efa"><td class="memItemLeft" align="right" valign="top"><a id="gad7723846cc5db8e43a44d78cf21f6efa" name="gad7723846cc5db8e43a44d78cf21f6efa"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIOA_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x0000UL)</td></tr>
+<tr class="memitem:gad7723846cc5db8e43a44d78cf21f6efa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gad7723846cc5db8e43a44d78cf21f6efa">GPIOA_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x0000UL)</td></tr>
 <tr class="separator:gad7723846cc5db8e43a44d78cf21f6efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac944a89eb789000ece920c0f89cb6a68"><td class="memItemLeft" align="right" valign="top"><a id="gac944a89eb789000ece920c0f89cb6a68" name="gac944a89eb789000ece920c0f89cb6a68"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIOB_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x0400UL)</td></tr>
+<tr class="memitem:gac944a89eb789000ece920c0f89cb6a68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gac944a89eb789000ece920c0f89cb6a68">GPIOB_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x0400UL)</td></tr>
 <tr class="separator:gac944a89eb789000ece920c0f89cb6a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26f267dc35338eef219544c51f1e6b3f"><td class="memItemLeft" align="right" valign="top"><a id="ga26f267dc35338eef219544c51f1e6b3f" name="ga26f267dc35338eef219544c51f1e6b3f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIOC_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x0800UL)</td></tr>
+<tr class="memitem:ga26f267dc35338eef219544c51f1e6b3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga26f267dc35338eef219544c51f1e6b3f">GPIOC_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x0800UL)</td></tr>
 <tr class="separator:ga26f267dc35338eef219544c51f1e6b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a93ab27129f04064089616910c296ec"><td class="memItemLeft" align="right" valign="top"><a id="ga1a93ab27129f04064089616910c296ec" name="ga1a93ab27129f04064089616910c296ec"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIOD_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x0C00UL)</td></tr>
+<tr class="memitem:ga1a93ab27129f04064089616910c296ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga1a93ab27129f04064089616910c296ec">GPIOD_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x0C00UL)</td></tr>
 <tr class="separator:ga1a93ab27129f04064089616910c296ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab487b1983d936c4fee3e9e88b95aad9d"><td class="memItemLeft" align="right" valign="top"><a id="gab487b1983d936c4fee3e9e88b95aad9d" name="gab487b1983d936c4fee3e9e88b95aad9d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIOE_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x1000UL)</td></tr>
+<tr class="memitem:gab487b1983d936c4fee3e9e88b95aad9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gab487b1983d936c4fee3e9e88b95aad9d">GPIOE_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x1000UL)</td></tr>
 <tr class="separator:gab487b1983d936c4fee3e9e88b95aad9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f9a3f4223a1a784af464a114978d26e"><td class="memItemLeft" align="right" valign="top"><a id="ga7f9a3f4223a1a784af464a114978d26e" name="ga7f9a3f4223a1a784af464a114978d26e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIOF_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x1400UL)</td></tr>
+<tr class="memitem:ga7f9a3f4223a1a784af464a114978d26e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga7f9a3f4223a1a784af464a114978d26e">GPIOF_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x1400UL)</td></tr>
 <tr class="separator:ga7f9a3f4223a1a784af464a114978d26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d8ca4020f2e8c00bde974e8e7c13cfe"><td class="memItemLeft" align="right" valign="top"><a id="ga5d8ca4020f2e8c00bde974e8e7c13cfe" name="ga5d8ca4020f2e8c00bde974e8e7c13cfe"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIOG_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x1800UL)</td></tr>
+<tr class="memitem:ga5d8ca4020f2e8c00bde974e8e7c13cfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga5d8ca4020f2e8c00bde974e8e7c13cfe">GPIOG_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x1800UL)</td></tr>
 <tr class="separator:ga5d8ca4020f2e8c00bde974e8e7c13cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee4716389f3a1c727495375b76645608"><td class="memItemLeft" align="right" valign="top"><a id="gaee4716389f3a1c727495375b76645608" name="gaee4716389f3a1c727495375b76645608"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIOH_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x1C00UL)</td></tr>
+<tr class="memitem:gaee4716389f3a1c727495375b76645608"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaee4716389f3a1c727495375b76645608">GPIOH_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x1C00UL)</td></tr>
 <tr class="separator:gaee4716389f3a1c727495375b76645608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24db90605579f589d8617074c89f5205"><td class="memItemLeft" align="right" valign="top"><a id="ga24db90605579f589d8617074c89f5205" name="ga24db90605579f589d8617074c89f5205"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USBOTG_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x08000000UL)</td></tr>
+<tr class="memitem:ga24db90605579f589d8617074c89f5205"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga24db90605579f589d8617074c89f5205">USBOTG_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08000000UL)</td></tr>
 <tr class="separator:ga24db90605579f589d8617074c89f5205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga695c9a2f892363a1c942405c8d351b91"><td class="memItemLeft" align="right" valign="top"><a id="ga695c9a2f892363a1c942405c8d351b91" name="ga695c9a2f892363a1c942405c8d351b91"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC1_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x08040000UL)</td></tr>
+<tr class="memitem:ga695c9a2f892363a1c942405c8d351b91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga695c9a2f892363a1c942405c8d351b91">ADC1_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08040000UL)</td></tr>
 <tr class="separator:ga695c9a2f892363a1c942405c8d351b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6544abc57f9759f610eee09a02442ae6"><td class="memItemLeft" align="right" valign="top"><a id="ga6544abc57f9759f610eee09a02442ae6" name="ga6544abc57f9759f610eee09a02442ae6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC2_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x08040100UL)</td></tr>
+<tr class="memitem:ga6544abc57f9759f610eee09a02442ae6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga6544abc57f9759f610eee09a02442ae6">ADC2_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08040100UL)</td></tr>
 <tr class="separator:ga6544abc57f9759f610eee09a02442ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca766f86c8e0b00a8e2b0224dcbb4c82"><td class="memItemLeft" align="right" valign="top"><a id="gaca766f86c8e0b00a8e2b0224dcbb4c82" name="gaca766f86c8e0b00a8e2b0224dcbb4c82"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC3_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x08040200UL)</td></tr>
+<tr class="memitem:gaca766f86c8e0b00a8e2b0224dcbb4c82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaca766f86c8e0b00a8e2b0224dcbb4c82">ADC3_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08040200UL)</td></tr>
 <tr class="separator:gaca766f86c8e0b00a8e2b0224dcbb4c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58b9980508ab28022e3be7edc4eda72e"><td class="memItemLeft" align="right" valign="top"><a id="ga58b9980508ab28022e3be7edc4eda72e" name="ga58b9980508ab28022e3be7edc4eda72e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC123_COMMON_BASE</b>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x08040300UL)</td></tr>
+<tr class="memitem:ga58b9980508ab28022e3be7edc4eda72e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga58b9980508ab28022e3be7edc4eda72e">ADC123_COMMON_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08040300UL)</td></tr>
 <tr class="separator:ga58b9980508ab28022e3be7edc4eda72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab92662976cfe62457141e5b4f83d541c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gab92662976cfe62457141e5b4f83d541c">RNG_BASE</a>&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x08060800UL)</td></tr>
+<tr class="memitem:gab92662976cfe62457141e5b4f83d541c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gab92662976cfe62457141e5b4f83d541c">RNG_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08060800UL)</td></tr>
 <tr class="separator:gab92662976cfe62457141e5b4f83d541c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d581e6f64ed2e5d97c11c58285a21b6"><td class="memItemLeft" align="right" valign="top"><a id="ga1d581e6f64ed2e5d97c11c58285a21b6" name="ga1d581e6f64ed2e5d97c11c58285a21b6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FMC_Bank1_R_BASE</b>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga7a599164cd92798542bc6288793d1ed5">FMC_R_BASE</a> + 0x0000UL)</td></tr>
+<tr class="memitem:ga1d581e6f64ed2e5d97c11c58285a21b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga1d581e6f64ed2e5d97c11c58285a21b6">FMC_Bank1_R_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga7a599164cd92798542bc6288793d1ed5">FMC_R_BASE</a> + 0x0000UL)</td></tr>
 <tr class="separator:ga1d581e6f64ed2e5d97c11c58285a21b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad82d3a6bac014fa645fb67a63fae4bc0"><td class="memItemLeft" align="right" valign="top"><a id="gad82d3a6bac014fa645fb67a63fae4bc0" name="gad82d3a6bac014fa645fb67a63fae4bc0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FMC_Bank1E_R_BASE</b>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga7a599164cd92798542bc6288793d1ed5">FMC_R_BASE</a> + 0x0104UL)</td></tr>
+<tr class="memitem:gad82d3a6bac014fa645fb67a63fae4bc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gad82d3a6bac014fa645fb67a63fae4bc0">FMC_Bank1E_R_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga7a599164cd92798542bc6288793d1ed5">FMC_R_BASE</a> + 0x0104UL)</td></tr>
 <tr class="separator:gad82d3a6bac014fa645fb67a63fae4bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf570671195a13f4bb2a1b8f2bd5305c9"><td class="memItemLeft" align="right" valign="top"><a id="gaf570671195a13f4bb2a1b8f2bd5305c9" name="gaf570671195a13f4bb2a1b8f2bd5305c9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FMC_Bank3_R_BASE</b>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga7a599164cd92798542bc6288793d1ed5">FMC_R_BASE</a> + 0x0080UL)</td></tr>
+<tr class="memitem:gaf570671195a13f4bb2a1b8f2bd5305c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaf570671195a13f4bb2a1b8f2bd5305c9">FMC_Bank3_R_BASE</a>&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga7a599164cd92798542bc6288793d1ed5">FMC_R_BASE</a> + 0x0080UL)</td></tr>
 <tr class="separator:gaf570671195a13f4bb2a1b8f2bd5305c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4adaf4fd82ccc3a538f1f27a70cdbbef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga4adaf4fd82ccc3a538f1f27a70cdbbef">DBGMCU_BASE</a>&#160;&#160;&#160;(0xE0042000UL)</td></tr>
 <tr class="separator:ga4adaf4fd82ccc3a538f1f27a70cdbbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa86d4c80849a74938924e73937b904e7"><td class="memItemLeft" align="right" valign="top"><a id="gaa86d4c80849a74938924e73937b904e7" name="gaa86d4c80849a74938924e73937b904e7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_FS_PERIPH_BASE</b>&#160;&#160;&#160;(0x50000000UL)</td></tr>
+<tr class="memitem:gaa86d4c80849a74938924e73937b904e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaa86d4c80849a74938924e73937b904e7">USB_OTG_FS_PERIPH_BASE</a>&#160;&#160;&#160;(0x50000000UL)</td></tr>
 <tr class="separator:gaa86d4c80849a74938924e73937b904e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga044aa4388e72d9d47a03f387fb8926fb"><td class="memItemLeft" align="right" valign="top"><a id="ga044aa4388e72d9d47a03f387fb8926fb" name="ga044aa4388e72d9d47a03f387fb8926fb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_GLOBAL_BASE</b>&#160;&#160;&#160;(0x00000000UL)</td></tr>
+<tr class="memitem:ga044aa4388e72d9d47a03f387fb8926fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga044aa4388e72d9d47a03f387fb8926fb">USB_OTG_GLOBAL_BASE</a>&#160;&#160;&#160;(0x00000000UL)</td></tr>
 <tr class="separator:ga044aa4388e72d9d47a03f387fb8926fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d74a337597a77b1fca978202b519a18"><td class="memItemLeft" align="right" valign="top"><a id="ga4d74a337597a77b1fca978202b519a18" name="ga4d74a337597a77b1fca978202b519a18"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_DEVICE_BASE</b>&#160;&#160;&#160;(0x00000800UL)</td></tr>
+<tr class="memitem:ga4d74a337597a77b1fca978202b519a18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga4d74a337597a77b1fca978202b519a18">USB_OTG_DEVICE_BASE</a>&#160;&#160;&#160;(0x00000800UL)</td></tr>
 <tr class="separator:ga4d74a337597a77b1fca978202b519a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad8f69041452615aeb3948600e3882246"><td class="memItemLeft" align="right" valign="top"><a id="gad8f69041452615aeb3948600e3882246" name="gad8f69041452615aeb3948600e3882246"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_IN_ENDPOINT_BASE</b>&#160;&#160;&#160;(0x00000900UL)</td></tr>
+<tr class="memitem:gad8f69041452615aeb3948600e3882246"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gad8f69041452615aeb3948600e3882246">USB_OTG_IN_ENDPOINT_BASE</a>&#160;&#160;&#160;(0x00000900UL)</td></tr>
 <tr class="separator:gad8f69041452615aeb3948600e3882246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0e972b8f028ecf44a652029efbd4642"><td class="memItemLeft" align="right" valign="top"><a id="gaf0e972b8f028ecf44a652029efbd4642" name="gaf0e972b8f028ecf44a652029efbd4642"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_OUT_ENDPOINT_BASE</b>&#160;&#160;&#160;(0x00000B00UL)</td></tr>
+<tr class="memitem:gaf0e972b8f028ecf44a652029efbd4642"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaf0e972b8f028ecf44a652029efbd4642">USB_OTG_OUT_ENDPOINT_BASE</a>&#160;&#160;&#160;(0x00000B00UL)</td></tr>
 <tr class="separator:gaf0e972b8f028ecf44a652029efbd4642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6fdb7429ad88e2d69440d6ecc4f4199e"><td class="memItemLeft" align="right" valign="top"><a id="ga6fdb7429ad88e2d69440d6ecc4f4199e" name="ga6fdb7429ad88e2d69440d6ecc4f4199e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_EP_REG_SIZE</b>&#160;&#160;&#160;(0x00000020UL)</td></tr>
+<tr class="memitem:ga6fdb7429ad88e2d69440d6ecc4f4199e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga6fdb7429ad88e2d69440d6ecc4f4199e">USB_OTG_EP_REG_SIZE</a>&#160;&#160;&#160;(0x00000020UL)</td></tr>
 <tr class="separator:ga6fdb7429ad88e2d69440d6ecc4f4199e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3bb2dd6c82eefd8587b6146ba36ae071"><td class="memItemLeft" align="right" valign="top"><a id="ga3bb2dd6c82eefd8587b6146ba36ae071" name="ga3bb2dd6c82eefd8587b6146ba36ae071"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_HOST_BASE</b>&#160;&#160;&#160;(0x00000400UL)</td></tr>
+<tr class="memitem:ga3bb2dd6c82eefd8587b6146ba36ae071"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga3bb2dd6c82eefd8587b6146ba36ae071">USB_OTG_HOST_BASE</a>&#160;&#160;&#160;(0x00000400UL)</td></tr>
 <tr class="separator:ga3bb2dd6c82eefd8587b6146ba36ae071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42f433cb79ca69f09972e690fda6737a"><td class="memItemLeft" align="right" valign="top"><a id="ga42f433cb79ca69f09972e690fda6737a" name="ga42f433cb79ca69f09972e690fda6737a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_HOST_PORT_BASE</b>&#160;&#160;&#160;(0x00000440UL)</td></tr>
+<tr class="memitem:ga42f433cb79ca69f09972e690fda6737a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga42f433cb79ca69f09972e690fda6737a">USB_OTG_HOST_PORT_BASE</a>&#160;&#160;&#160;(0x00000440UL)</td></tr>
 <tr class="separator:ga42f433cb79ca69f09972e690fda6737a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga942c8c5241b80fbcf638fea0fa18bebd"><td class="memItemLeft" align="right" valign="top"><a id="ga942c8c5241b80fbcf638fea0fa18bebd" name="ga942c8c5241b80fbcf638fea0fa18bebd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_HOST_CHANNEL_BASE</b>&#160;&#160;&#160;(0x00000500UL)</td></tr>
+<tr class="memitem:ga942c8c5241b80fbcf638fea0fa18bebd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga942c8c5241b80fbcf638fea0fa18bebd">USB_OTG_HOST_CHANNEL_BASE</a>&#160;&#160;&#160;(0x00000500UL)</td></tr>
 <tr class="separator:ga942c8c5241b80fbcf638fea0fa18bebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga266cb1dbb50faf447f9c15d2ee93a522"><td class="memItemLeft" align="right" valign="top"><a id="ga266cb1dbb50faf447f9c15d2ee93a522" name="ga266cb1dbb50faf447f9c15d2ee93a522"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_HOST_CHANNEL_SIZE</b>&#160;&#160;&#160;(0x00000020UL)</td></tr>
+<tr class="memitem:ga266cb1dbb50faf447f9c15d2ee93a522"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga266cb1dbb50faf447f9c15d2ee93a522">USB_OTG_HOST_CHANNEL_SIZE</a>&#160;&#160;&#160;(0x00000020UL)</td></tr>
 <tr class="separator:ga266cb1dbb50faf447f9c15d2ee93a522"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa9766975aca084c257730879568bc7cf"><td class="memItemLeft" align="right" valign="top"><a id="gaa9766975aca084c257730879568bc7cf" name="gaa9766975aca084c257730879568bc7cf"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_PCGCCTL_BASE</b>&#160;&#160;&#160;(0x00000E00UL)</td></tr>
+<tr class="memitem:gaa9766975aca084c257730879568bc7cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gaa9766975aca084c257730879568bc7cf">USB_OTG_PCGCCTL_BASE</a>&#160;&#160;&#160;(0x00000E00UL)</td></tr>
 <tr class="separator:gaa9766975aca084c257730879568bc7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gace340350802904868673f0e839c4fa04"><td class="memItemLeft" align="right" valign="top"><a id="gace340350802904868673f0e839c4fa04" name="gace340350802904868673f0e839c4fa04"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_FIFO_BASE</b>&#160;&#160;&#160;(0x00001000UL)</td></tr>
+<tr class="memitem:gace340350802904868673f0e839c4fa04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#gace340350802904868673f0e839c4fa04">USB_OTG_FIFO_BASE</a>&#160;&#160;&#160;(0x00001000UL)</td></tr>
 <tr class="separator:gace340350802904868673f0e839c4fa04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8781c4b2406c740d9fe540737a6a0188"><td class="memItemLeft" align="right" valign="top"><a id="ga8781c4b2406c740d9fe540737a6a0188" name="ga8781c4b2406c740d9fe540737a6a0188"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>USB_OTG_FIFO_SIZE</b>&#160;&#160;&#160;(0x00001000UL)</td></tr>
+<tr class="memitem:ga8781c4b2406c740d9fe540737a6a0188"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga8781c4b2406c740d9fe540737a6a0188">USB_OTG_FIFO_SIZE</a>&#160;&#160;&#160;(0x00001000UL)</td></tr>
 <tr class="separator:ga8781c4b2406c740d9fe540737a6a0188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga88fc8a2912bd1ac72c6eddb456f0b096"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peripheral__memory__map.html#ga88fc8a2912bd1ac72c6eddb456f0b096">PACKAGE_BASE</a>&#160;&#160;&#160;(0x1FFF7500UL)</td></tr>
 <tr class="separator:ga88fc8a2912bd1ac72c6eddb456f0b096"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -499,6 +398,202 @@ Macros</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga58b9980508ab28022e3be7edc4eda72e" name="ga58b9980508ab28022e3be7edc4eda72e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58b9980508ab28022e3be7edc4eda72e">&#9670;&#160;</a></span>ADC123_COMMON_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC123_COMMON_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08040300UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga695c9a2f892363a1c942405c8d351b91" name="ga695c9a2f892363a1c942405c8d351b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga695c9a2f892363a1c942405c8d351b91">&#9670;&#160;</a></span>ADC1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08040000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6544abc57f9759f610eee09a02442ae6" name="ga6544abc57f9759f610eee09a02442ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6544abc57f9759f610eee09a02442ae6">&#9670;&#160;</a></span>ADC2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08040100UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaca766f86c8e0b00a8e2b0224dcbb4c82" name="gaca766f86c8e0b00a8e2b0224dcbb4c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca766f86c8e0b00a8e2b0224dcbb4c82">&#9670;&#160;</a></span>ADC3_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC3_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08040200UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga811a9a4ca17f0a50354a9169541d56c4" name="ga811a9a4ca17f0a50354a9169541d56c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga811a9a4ca17f0a50354a9169541d56c4">&#9670;&#160;</a></span>AHB1PERIPH_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AHB1PERIPH_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a> + 0x00020000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeedaa71d22a1948492365e2cd26cfd46" name="gaeedaa71d22a1948492365e2cd26cfd46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeedaa71d22a1948492365e2cd26cfd46">&#9670;&#160;</a></span>AHB2PERIPH_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AHB2PERIPH_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a> + 0x08000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga45666d911f39addd4c8c0a0ac3388cfb" name="ga45666d911f39addd4c8c0a0ac3388cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45666d911f39addd4c8c0a0ac3388cfb">&#9670;&#160;</a></span>APB1PERIPH_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APB1PERIPH_BASE&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga25b99d6065f1c8f751e78f43ade652cb" name="ga25b99d6065f1c8f751e78f43ade652cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25b99d6065f1c8f751e78f43ade652cb">&#9670;&#160;</a></span>APB2PERIPH_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APB2PERIPH_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga9171f49478fa86d932f89e78e73b88b0">PERIPH_BASE</a> + 0x00010000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad8e45ea6c032d9fce1b0516fff9d8eaa" name="gad8e45ea6c032d9fce1b0516fff9d8eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8e45ea6c032d9fce1b0516fff9d8eaa">&#9670;&#160;</a></span>CAN1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x6400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac21d535b541bcfb0c778a9584ebb132e" name="gac21d535b541bcfb0c778a9584ebb132e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac21d535b541bcfb0c778a9584ebb132e">&#9670;&#160;</a></span>COMP1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COMP1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x0200UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacb8799f3d5301795f51e3b87d345cd50" name="gacb8799f3d5301795f51e3b87d345cd50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb8799f3d5301795f51e3b87d345cd50">&#9670;&#160;</a></span>COMP2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COMP2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x0204UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga656a447589e785594cbf2f45c835ad7e" name="ga656a447589e785594cbf2f45c835ad7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga656a447589e785594cbf2f45c835ad7e">&#9670;&#160;</a></span>CRC_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRC_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a> + 0x3000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3383b83a296ce0a5386a0d94195e8a99" name="ga3383b83a296ce0a5386a0d94195e8a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3383b83a296ce0a5386a0d94195e8a99">&#9670;&#160;</a></span>DAC1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DAC1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad18d0b914c7f68cecbee1a2d23a67d38" name="gad18d0b914c7f68cecbee1a2d23a67d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad18d0b914c7f68cecbee1a2d23a67d38">&#9670;&#160;</a></span>DAC_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DAC_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga4adaf4fd82ccc3a538f1f27a70cdbbef" name="ga4adaf4fd82ccc3a538f1f27a70cdbbef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4adaf4fd82ccc3a538f1f27a70cdbbef">&#9670;&#160;</a></span>DBGMCU_BASE</h2>
 
@@ -514,6 +609,174 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="gaa028c1a574f5d338ed1999644406fd33" name="gaa028c1a574f5d338ed1999644406fd33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa028c1a574f5d338ed1999644406fd33">&#9670;&#160;</a></span>DFSDM1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x6000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1e9c37169b0f4fe6c3d51638300620f6" name="ga1e9c37169b0f4fe6c3d51638300620f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e9c37169b0f4fe6c3d51638300620f6">&#9670;&#160;</a></span>DFSDM1_Channel0_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Channel0_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4c13a6a4cb7dcea7532f919146e1aa9c" name="ga4c13a6a4cb7dcea7532f919146e1aa9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c13a6a4cb7dcea7532f919146e1aa9c">&#9670;&#160;</a></span>DFSDM1_Channel1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Channel1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0020UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3ae70d4b083fbab35f7dc1349939660b" name="ga3ae70d4b083fbab35f7dc1349939660b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ae70d4b083fbab35f7dc1349939660b">&#9670;&#160;</a></span>DFSDM1_Channel2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Channel2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0040UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae5d767f6c9e8b8013e46df8598b3c31c" name="gae5d767f6c9e8b8013e46df8598b3c31c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5d767f6c9e8b8013e46df8598b3c31c">&#9670;&#160;</a></span>DFSDM1_Channel3_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Channel3_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0060UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga556230d084781086b56b9af73279ae09" name="ga556230d084781086b56b9af73279ae09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga556230d084781086b56b9af73279ae09">&#9670;&#160;</a></span>DFSDM1_Channel4_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Channel4_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0080UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabe2e6b7024e7050217ca0097f3602848" name="gabe2e6b7024e7050217ca0097f3602848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe2e6b7024e7050217ca0097f3602848">&#9670;&#160;</a></span>DFSDM1_Channel5_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Channel5_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x00A0UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa4a38e4b3a57eb13d257e86255ad52ba" name="gaa4a38e4b3a57eb13d257e86255ad52ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4a38e4b3a57eb13d257e86255ad52ba">&#9670;&#160;</a></span>DFSDM1_Channel6_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Channel6_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x00C0UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga979ce002b012b0bb589bce038e9f041b" name="ga979ce002b012b0bb589bce038e9f041b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga979ce002b012b0bb589bce038e9f041b">&#9670;&#160;</a></span>DFSDM1_Channel7_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Channel7_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x00E0UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3aa0e5ef2db4d23b862599ccf5ee1b60" name="ga3aa0e5ef2db4d23b862599ccf5ee1b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3aa0e5ef2db4d23b862599ccf5ee1b60">&#9670;&#160;</a></span>DFSDM1_Filter0_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Filter0_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0100UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga60a1ca4c6ea6b82a0a9125cdd8823536" name="ga60a1ca4c6ea6b82a0a9125cdd8823536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga60a1ca4c6ea6b82a0a9125cdd8823536">&#9670;&#160;</a></span>DFSDM1_Filter1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Filter1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0180UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga50b9942303ccb5a8df66b8149c018b9e" name="ga50b9942303ccb5a8df66b8149c018b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50b9942303ccb5a8df66b8149c018b9e">&#9670;&#160;</a></span>DFSDM1_Filter2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_Filter2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0200UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga23687e822a7c9719d64130e282ada955" name="ga23687e822a7c9719d64130e282ada955"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga23687e822a7c9719d64130e282ada955">&#9670;&#160;</a></span>DFSDM1_Filter3_BASE</h2>
 
@@ -521,11 +784,249 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DFSDM1_Filter3_BASE&#160;&#160;&#160;(DFSDM1_BASE + 0x0280UL)</td>
+          <td class="memname">#define DFSDM1_Filter3_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaa028c1a574f5d338ed1999644406fd33">DFSDM1_BASE</a> + 0x0280UL)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>AHB1 peripherals </p>
+
+</div>
+</div>
+<a id="gab2d8a917a0e4ea99a22ac6ebf279bc72" name="gab2d8a917a0e4ea99a22ac6ebf279bc72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2d8a917a0e4ea99a22ac6ebf279bc72">&#9670;&#160;</a></span>DMA1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga888dbc1608243badeb3554ffedc7364c" name="ga888dbc1608243badeb3554ffedc7364c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga888dbc1608243badeb3554ffedc7364c">&#9670;&#160;</a></span>DMA1_Channel1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA1_Channel1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x0008UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga38a70090eef3687e83fa6ac0c6d22267" name="ga38a70090eef3687e83fa6ac0c6d22267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38a70090eef3687e83fa6ac0c6d22267">&#9670;&#160;</a></span>DMA1_Channel2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA1_Channel2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x001CUL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga70b3d9f36ca9ce95b4e421c11154fe5d" name="ga70b3d9f36ca9ce95b4e421c11154fe5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70b3d9f36ca9ce95b4e421c11154fe5d">&#9670;&#160;</a></span>DMA1_Channel3_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA1_Channel3_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x0030UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1adc93cd0baf0897202c71110e045692" name="ga1adc93cd0baf0897202c71110e045692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1adc93cd0baf0897202c71110e045692">&#9670;&#160;</a></span>DMA1_Channel4_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA1_Channel4_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x0044UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac041a71cd6c1973964f847a68aa14478" name="gac041a71cd6c1973964f847a68aa14478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac041a71cd6c1973964f847a68aa14478">&#9670;&#160;</a></span>DMA1_Channel5_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA1_Channel5_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x0058UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga896c2c7585dd8bc3969cf8561f689d2d" name="ga896c2c7585dd8bc3969cf8561f689d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga896c2c7585dd8bc3969cf8561f689d2d">&#9670;&#160;</a></span>DMA1_Channel6_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA1_Channel6_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x006CUL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeee0d1f77d0db1db533016a09351166c" name="gaeee0d1f77d0db1db533016a09351166c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeee0d1f77d0db1db533016a09351166c">&#9670;&#160;</a></span>DMA1_Channel7_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA1_Channel7_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x0080UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0adeabd8f0e3c66b76f66bafe9a5f51f" name="ga0adeabd8f0e3c66b76f66bafe9a5f51f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0adeabd8f0e3c66b76f66bafe9a5f51f">&#9670;&#160;</a></span>DMA1_CSELR_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA1_CSELR_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab2d8a917a0e4ea99a22ac6ebf279bc72">DMA1_BASE</a> + 0x00A8UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab72a9ae145053ee13d1d491fb5c1df64" name="gab72a9ae145053ee13d1d491fb5c1df64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab72a9ae145053ee13d1d491fb5c1df64">&#9670;&#160;</a></span>DMA2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a> + 0x0400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad3bd6c4201d12f5d474518c1b02f8e3b" name="gad3bd6c4201d12f5d474518c1b02f8e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3bd6c4201d12f5d474518c1b02f8e3b">&#9670;&#160;</a></span>DMA2_Channel1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA2_Channel1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x0008UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga22f39f23c879c699b88e04a629f69d1c" name="ga22f39f23c879c699b88e04a629f69d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22f39f23c879c699b88e04a629f69d1c">&#9670;&#160;</a></span>DMA2_Channel2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA2_Channel2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x001CUL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6f2369b8bc155fb55a28891987605c2c" name="ga6f2369b8bc155fb55a28891987605c2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f2369b8bc155fb55a28891987605c2c">&#9670;&#160;</a></span>DMA2_Channel3_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA2_Channel3_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x0030UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga01b063266473f290a55047654fbbfbee" name="ga01b063266473f290a55047654fbbfbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01b063266473f290a55047654fbbfbee">&#9670;&#160;</a></span>DMA2_Channel4_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA2_Channel4_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x0044UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1eea983a5d68bf36f4d19fbb07955ca1" name="ga1eea983a5d68bf36f4d19fbb07955ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1eea983a5d68bf36f4d19fbb07955ca1">&#9670;&#160;</a></span>DMA2_Channel5_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA2_Channel5_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x0058UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae8888e635a33f196f414145b0e2b858d" name="gae8888e635a33f196f414145b0e2b858d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8888e635a33f196f414145b0e2b858d">&#9670;&#160;</a></span>DMA2_Channel6_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA2_Channel6_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x006CUL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1e48711c9b40cf50ac47b1e17c787807" name="ga1e48711c9b40cf50ac47b1e17c787807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e48711c9b40cf50ac47b1e17c787807">&#9670;&#160;</a></span>DMA2_Channel7_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA2_Channel7_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x0080UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -536,11 +1037,39 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DMA2_CSELR_BASE&#160;&#160;&#160;(DMA2_BASE + 0x00A8UL)</td>
+          <td class="memname">#define DMA2_CSELR_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gab72a9ae145053ee13d1d491fb5c1df64">DMA2_BASE</a> + 0x00A8UL)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>AHB2 peripherals </p>
+
+</div>
+</div>
+<a id="ga87371508b3bcdcd98cd1ec629be29061" name="ga87371508b3bcdcd98cd1ec629be29061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87371508b3bcdcd98cd1ec629be29061">&#9670;&#160;</a></span>EXTI_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXTI_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x0400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga73cfb3af559849de4e1d7756dea474a0" name="ga73cfb3af559849de4e1d7756dea474a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73cfb3af559849de4e1d7756dea474a0">&#9670;&#160;</a></span>FIREWALL_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FIREWALL_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x1C00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -587,7 +1116,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>FLASH(up to 1 MB) base address <br  />
+<p><a class="el" href="group___peripheral__declaration.html#ga844ea28ba1e0a5a0e497f16b61ea306b">FLASH(up to 1 MB)</a> base address <br  />
  </p>
 
 </div>
@@ -608,6 +1137,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ga8e21f4845015730c5731763169ec0e9b" name="ga8e21f4845015730c5731763169ec0e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e21f4845015730c5731763169ec0e9b">&#9670;&#160;</a></span>FLASH_R_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_R_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a> + 0x2000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gae69620948dea1b76e0ab7843ab719db7" name="gae69620948dea1b76e0ab7843ab719db7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae69620948dea1b76e0ab7843ab719db7">&#9670;&#160;</a></span>FLASH_SIZE</h2>
 
@@ -619,9 +1162,24 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                                  (((((*((uint32_t *)FLASH_SIZE_DATA_REGISTER)) &amp; (0x0000FFFFU))== 0x0000FFFFU)) ? (0x400U &lt;&lt; 10U) : \</div>
-<div class="line">                                  (((*((uint32_t *)FLASH_SIZE_DATA_REGISTER)) &amp; (0x0000FFFFU)) &lt;&lt; 10U))</div>
+<b>Value:</b><div class="fragment"><div class="line">                                  (((((*((uint32_t *)<a class="code hl_define" href="group___peripheral__memory__map.html#ga2329f89a17061e62bf5d160cc0962e5c">FLASH_SIZE_DATA_REGISTER</a>)) &amp; (0x0000FFFFU))== 0x0000FFFFU)) ? (0x400U &lt;&lt; 10U) : \</div>
+<div class="line">                                  (((*((uint32_t *)<a class="code hl_define" href="group___peripheral__memory__map.html#ga2329f89a17061e62bf5d160cc0962e5c">FLASH_SIZE_DATA_REGISTER</a>)) &amp; (0x0000FFFFU)) &lt;&lt; 10U))</div>
+<div class="ttc" id="agroup___peripheral__memory__map_html_ga2329f89a17061e62bf5d160cc0962e5c"><div class="ttname"><a href="group___peripheral__memory__map.html#ga2329f89a17061e62bf5d160cc0962e5c">FLASH_SIZE_DATA_REGISTER</a></div><div class="ttdeci">#define FLASH_SIZE_DATA_REGISTER</div><div class="ttdef"><b>Definition:</b> stm32l476xx.h:1148</div></div>
 </div><!-- fragment --><p>Peripheral memory map </p>
+
+</div>
+</div>
+<a id="ga2329f89a17061e62bf5d160cc0962e5c" name="ga2329f89a17061e62bf5d160cc0962e5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2329f89a17061e62bf5d160cc0962e5c">&#9670;&#160;</a></span>FLASH_SIZE_DATA_REGISTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLASH_SIZE_DATA_REGISTER&#160;&#160;&#160;((uint32_t)0x1FFF75E0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -641,6 +1199,104 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ga34a32a0989512d378cc0defeac3724c4" name="ga34a32a0989512d378cc0defeac3724c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34a32a0989512d378cc0defeac3724c4">&#9670;&#160;</a></span>FMC_BANK1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMC_BANK1&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga68a39e11ba4a19785d20a98954c7fc9e">FMC_BASE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3d0a486f41f900e6b3893a8292f265e1" name="ga3d0a486f41f900e6b3893a8292f265e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d0a486f41f900e6b3893a8292f265e1">&#9670;&#160;</a></span>FMC_BANK1_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMC_BANK1_1&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga34a32a0989512d378cc0defeac3724c4">FMC_BANK1</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga73081370ebdffd5bcd6feecf7e8a3127" name="ga73081370ebdffd5bcd6feecf7e8a3127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73081370ebdffd5bcd6feecf7e8a3127">&#9670;&#160;</a></span>FMC_BANK1_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMC_BANK1_2&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga34a32a0989512d378cc0defeac3724c4">FMC_BANK1</a> + 0x04000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafc0bd182385fb6310ec4432e7744fe39" name="gafc0bd182385fb6310ec4432e7744fe39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc0bd182385fb6310ec4432e7744fe39">&#9670;&#160;</a></span>FMC_BANK1_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMC_BANK1_3&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga34a32a0989512d378cc0defeac3724c4">FMC_BANK1</a> + 0x08000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa412a2d48de98390c8e616b8560bacfa" name="gaa412a2d48de98390c8e616b8560bacfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa412a2d48de98390c8e616b8560bacfa">&#9670;&#160;</a></span>FMC_BANK1_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMC_BANK1_4&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga34a32a0989512d378cc0defeac3724c4">FMC_BANK1</a> + 0x0C000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1d581e6f64ed2e5d97c11c58285a21b6" name="ga1d581e6f64ed2e5d97c11c58285a21b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d581e6f64ed2e5d97c11c58285a21b6">&#9670;&#160;</a></span>FMC_Bank1_R_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMC_Bank1_R_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga7a599164cd92798542bc6288793d1ed5">FMC_R_BASE</a> + 0x0000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad82d3a6bac014fa645fb67a63fae4bc0" name="gad82d3a6bac014fa645fb67a63fae4bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad82d3a6bac014fa645fb67a63fae4bc0">&#9670;&#160;</a></span>FMC_Bank1E_R_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMC_Bank1E_R_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga7a599164cd92798542bc6288793d1ed5">FMC_R_BASE</a> + 0x0104UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga0ade3350b211c3cb0839dd0955f52691" name="ga0ade3350b211c3cb0839dd0955f52691"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0ade3350b211c3cb0839dd0955f52691">&#9670;&#160;</a></span>FMC_BANK3</h2>
 
@@ -653,6 +1309,20 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>APB1 peripherals </p>
+
+</div>
+</div>
+<a id="gaf570671195a13f4bb2a1b8f2bd5305c9" name="gaf570671195a13f4bb2a1b8f2bd5305c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf570671195a13f4bb2a1b8f2bd5305c9">&#9670;&#160;</a></span>FMC_Bank3_R_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMC_Bank3_R_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga7a599164cd92798542bc6288793d1ed5">FMC_R_BASE</a> + 0x0080UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -686,6 +1356,202 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="gad7723846cc5db8e43a44d78cf21f6efa" name="gad7723846cc5db8e43a44d78cf21f6efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7723846cc5db8e43a44d78cf21f6efa">&#9670;&#160;</a></span>GPIOA_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIOA_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x0000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac944a89eb789000ece920c0f89cb6a68" name="gac944a89eb789000ece920c0f89cb6a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac944a89eb789000ece920c0f89cb6a68">&#9670;&#160;</a></span>GPIOB_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIOB_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x0400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga26f267dc35338eef219544c51f1e6b3f" name="ga26f267dc35338eef219544c51f1e6b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26f267dc35338eef219544c51f1e6b3f">&#9670;&#160;</a></span>GPIOC_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIOC_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x0800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1a93ab27129f04064089616910c296ec" name="ga1a93ab27129f04064089616910c296ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a93ab27129f04064089616910c296ec">&#9670;&#160;</a></span>GPIOD_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIOD_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x0C00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab487b1983d936c4fee3e9e88b95aad9d" name="gab487b1983d936c4fee3e9e88b95aad9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab487b1983d936c4fee3e9e88b95aad9d">&#9670;&#160;</a></span>GPIOE_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIOE_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x1000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7f9a3f4223a1a784af464a114978d26e" name="ga7f9a3f4223a1a784af464a114978d26e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f9a3f4223a1a784af464a114978d26e">&#9670;&#160;</a></span>GPIOF_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIOF_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x1400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5d8ca4020f2e8c00bde974e8e7c13cfe" name="ga5d8ca4020f2e8c00bde974e8e7c13cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d8ca4020f2e8c00bde974e8e7c13cfe">&#9670;&#160;</a></span>GPIOG_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIOG_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x1800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaee4716389f3a1c727495375b76645608" name="gaee4716389f3a1c727495375b76645608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaee4716389f3a1c727495375b76645608">&#9670;&#160;</a></span>GPIOH_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIOH_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x1C00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacd72dbffb1738ca87c838545c4eb85a3" name="gacd72dbffb1738ca87c838545c4eb85a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd72dbffb1738ca87c838545c4eb85a3">&#9670;&#160;</a></span>I2C1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x5400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga04bda70f25c795fb79f163b633ad4a5d" name="ga04bda70f25c795fb79f163b633ad4a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04bda70f25c795fb79f163b633ad4a5d">&#9670;&#160;</a></span>I2C2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x5800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4e8b9198748235a1729e1e8f8f24983b" name="ga4e8b9198748235a1729e1e8f8f24983b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e8b9198748235a1729e1e8f8f24983b">&#9670;&#160;</a></span>I2C3_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C3_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x5C00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8543ee4997296af5536b007cd4748f55" name="ga8543ee4997296af5536b007cd4748f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8543ee4997296af5536b007cd4748f55">&#9670;&#160;</a></span>IWDG_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IWDG_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x3000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga017749aad23300240ef5ac4c3d5ca750" name="ga017749aad23300240ef5ac4c3d5ca750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga017749aad23300240ef5ac4c3d5ca750">&#9670;&#160;</a></span>LCD_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x2400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga012ceb003fbb615eedb39a8d7f31c9c6" name="ga012ceb003fbb615eedb39a8d7f31c9c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga012ceb003fbb615eedb39a8d7f31c9c6">&#9670;&#160;</a></span>LPTIM1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPTIM1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7C00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga74dc5e8a0008c0e16598591753b71b17" name="ga74dc5e8a0008c0e16598591753b71b17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga74dc5e8a0008c0e16598591753b71b17">&#9670;&#160;</a></span>LPTIM2_BASE</h2>
 
@@ -693,11 +1559,67 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LPTIM2_BASE&#160;&#160;&#160;(APB1PERIPH_BASE + 0x9400UL)</td>
+          <td class="memname">#define LPTIM2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x9400UL)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>APB2 peripherals </p>
+
+</div>
+</div>
+<a id="ga42584c807077cea9525819eaf29c7e34" name="ga42584c807077cea9525819eaf29c7e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42584c807077cea9525819eaf29c7e34">&#9670;&#160;</a></span>LPUART1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPUART1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x8000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5eb46aa20e371ed2e07b16a6b12c163d" name="ga5eb46aa20e371ed2e07b16a6b12c163d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5eb46aa20e371ed2e07b16a6b12c163d">&#9670;&#160;</a></span>OPAMP1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPAMP1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabf0535307a717feba8341e57647d2385" name="gabf0535307a717feba8341e57647d2385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf0535307a717feba8341e57647d2385">&#9670;&#160;</a></span>OPAMP2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPAMP2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7810UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6e9722d15c7ed794f0eca9682f64c03c" name="ga6e9722d15c7ed794f0eca9682f64c03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e9722d15c7ed794f0eca9682f64c03c">&#9670;&#160;</a></span>OPAMP_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPAMP_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -747,6 +1669,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="gac691ec23dace8b7a649a25acb110217a" name="gac691ec23dace8b7a649a25acb110217a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac691ec23dace8b7a649a25acb110217a">&#9670;&#160;</a></span>PWR_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWR_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x7000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga4c3147bf44b5434facb53bb9aa88ca31" name="ga4c3147bf44b5434facb53bb9aa88ca31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4c3147bf44b5434facb53bb9aa88ca31">&#9670;&#160;</a></span>QSPI_BASE</h2>
 
@@ -777,6 +1713,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ga0e681b03f364532055d88f63fec0d99d" name="ga0e681b03f364532055d88f63fec0d99d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0e681b03f364532055d88f63fec0d99d">&#9670;&#160;</a></span>RCC_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RCC_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a> + 0x1000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gab92662976cfe62457141e5b4f83d541c" name="gab92662976cfe62457141e5b4f83d541c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab92662976cfe62457141e5b4f83d541c">&#9670;&#160;</a></span>RNG_BASE</h2>
 
@@ -784,11 +1734,165 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RNG_BASE&#160;&#160;&#160;(AHB2PERIPH_BASE + 0x08060800UL)</td>
+          <td class="memname">#define RNG_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08060800UL)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>FMC Banks registers base address </p>
+
+</div>
+</div>
+<a id="ga4265e665d56225412e57a61d87417022" name="ga4265e665d56225412e57a61d87417022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4265e665d56225412e57a61d87417022">&#9670;&#160;</a></span>RTC_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RTC_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x2800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga24c1053b754946b512f9c31123e09d21" name="ga24c1053b754946b512f9c31123e09d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24c1053b754946b512f9c31123e09d21">&#9670;&#160;</a></span>SAI1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAI1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x5400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga31f72e5e5d7aea23bc8a5191bc32e900" name="ga31f72e5e5d7aea23bc8a5191bc32e900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31f72e5e5d7aea23bc8a5191bc32e900">&#9670;&#160;</a></span>SAI1_Block_A_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAI1_Block_A_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga24c1053b754946b512f9c31123e09d21">SAI1_BASE</a> + 0x0004UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacdb59b321830def8c7a57c154178bc48" name="gacdb59b321830def8c7a57c154178bc48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacdb59b321830def8c7a57c154178bc48">&#9670;&#160;</a></span>SAI1_Block_B_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAI1_Block_B_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga24c1053b754946b512f9c31123e09d21">SAI1_BASE</a> + 0x0024UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4b4d5c95ea5f835f9ac37fab90a2d700" name="ga4b4d5c95ea5f835f9ac37fab90a2d700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b4d5c95ea5f835f9ac37fab90a2d700">&#9670;&#160;</a></span>SAI2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAI2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x5800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad2992b5770984ddee4c1b7e325d238f3" name="gad2992b5770984ddee4c1b7e325d238f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2992b5770984ddee4c1b7e325d238f3">&#9670;&#160;</a></span>SAI2_Block_A_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAI2_Block_A_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga4b4d5c95ea5f835f9ac37fab90a2d700">SAI2_BASE</a> + 0x0004UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga034a6ac8f61e4d15cd9f2f7eca140569" name="ga034a6ac8f61e4d15cd9f2f7eca140569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga034a6ac8f61e4d15cd9f2f7eca140569">&#9670;&#160;</a></span>SAI2_Block_B_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAI2_Block_B_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga4b4d5c95ea5f835f9ac37fab90a2d700">SAI2_BASE</a> + 0x0024UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8129623b8d7bc74a5f707729439590c4" name="ga8129623b8d7bc74a5f707729439590c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8129623b8d7bc74a5f707729439590c4">&#9670;&#160;</a></span>SDMMC1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDMMC1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x2800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga50cd8b47929f18b05efbd0f41253bf8d" name="ga50cd8b47929f18b05efbd0f41253bf8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50cd8b47929f18b05efbd0f41253bf8d">&#9670;&#160;</a></span>SPI1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x3000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac3e357b4c25106ed375fb1affab6bb86" name="gac3e357b4c25106ed375fb1affab6bb86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3e357b4c25106ed375fb1affab6bb86">&#9670;&#160;</a></span>SPI2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x3800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae634fe8faa6922690e90fbec2fc86162" name="gae634fe8faa6922690e90fbec2fc86162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae634fe8faa6922690e90fbec2fc86162">&#9670;&#160;</a></span>SPI3_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI3_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x3C00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -867,6 +1971,258 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ga05e8f3d2e5868754a7cd88614955aecc" name="ga05e8f3d2e5868754a7cd88614955aecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05e8f3d2e5868754a7cd88614955aecc">&#9670;&#160;</a></span>SRAM_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SRAM_BASE&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#ga7d0fbfb8894012dbbb96754b95e562cd">SRAM1_BASE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad3548b6e2f017f39d399358f3ac98454" name="gad3548b6e2f017f39d399358f3ac98454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3548b6e2f017f39d399358f3ac98454">&#9670;&#160;</a></span>SRAM_BB_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SRAM_BB_BASE&#160;&#160;&#160;<a class="el" href="group___peripheral__memory__map.html#gac4c4f61082e4b168f29d9cf97dc3ca5c">SRAM1_BB_BASE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga21f79975bb4c5edda5a1f1311b8e658c" name="ga21f79975bb4c5edda5a1f1311b8e658c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21f79975bb4c5edda5a1f1311b8e658c">&#9670;&#160;</a></span>SWPMI1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SWPMI1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x8800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga62246020bf3b34b6a4d8d0e84ec79d3d" name="ga62246020bf3b34b6a4d8d0e84ec79d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62246020bf3b34b6a4d8d0e84ec79d3d">&#9670;&#160;</a></span>SYSCFG_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSCFG_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x0000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7ab42ce1846930569d742d339b554078" name="ga7ab42ce1846930569d742d339b554078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ab42ce1846930569d742d339b554078">&#9670;&#160;</a></span>TIM15_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM15_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x4000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga16c97093a531d763b0794c3e6d09e1bf" name="ga16c97093a531d763b0794c3e6d09e1bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16c97093a531d763b0794c3e6d09e1bf">&#9670;&#160;</a></span>TIM16_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM16_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x4400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaffbedbe30e8c4cffdea326d6c1800574" name="gaffbedbe30e8c4cffdea326d6c1800574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaffbedbe30e8c4cffdea326d6c1800574">&#9670;&#160;</a></span>TIM17_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM17_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x4800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf8aa324ca5011b8173ab16585ed7324a" name="gaf8aa324ca5011b8173ab16585ed7324a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8aa324ca5011b8173ab16585ed7324a">&#9670;&#160;</a></span>TIM1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x2C00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga00d0fe6ad532ab32f0f81cafca8d3aa5" name="ga00d0fe6ad532ab32f0f81cafca8d3aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00d0fe6ad532ab32f0f81cafca8d3aa5">&#9670;&#160;</a></span>TIM2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x0000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf0c34a518f87e1e505cd2332e989564a" name="gaf0c34a518f87e1e505cd2332e989564a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0c34a518f87e1e505cd2332e989564a">&#9670;&#160;</a></span>TIM3_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM3_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x0400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga56e2d44b0002f316527b8913866a370d" name="ga56e2d44b0002f316527b8913866a370d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56e2d44b0002f316527b8913866a370d">&#9670;&#160;</a></span>TIM4_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM4_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x0800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3e1671477190d065ba7c944558336d7e" name="ga3e1671477190d065ba7c944558336d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e1671477190d065ba7c944558336d7e">&#9670;&#160;</a></span>TIM5_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM5_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x0C00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8268ec947929f192559f28c6bf7d1eac" name="ga8268ec947929f192559f28c6bf7d1eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8268ec947929f192559f28c6bf7d1eac">&#9670;&#160;</a></span>TIM6_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM6_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x1000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0ebf54364c6a2be6eb19ded6b18b6387" name="ga0ebf54364c6a2be6eb19ded6b18b6387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ebf54364c6a2be6eb19ded6b18b6387">&#9670;&#160;</a></span>TIM7_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM7_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x1400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5b72f698b7a048a6f9fcfe2efe5bc1db" name="ga5b72f698b7a048a6f9fcfe2efe5bc1db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b72f698b7a048a6f9fcfe2efe5bc1db">&#9670;&#160;</a></span>TIM8_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM8_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x3400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2bba7a31caeacaacd433abb71781e0af" name="ga2bba7a31caeacaacd433abb71781e0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2bba7a31caeacaacd433abb71781e0af">&#9670;&#160;</a></span>TSC_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TSC_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga811a9a4ca17f0a50354a9169541d56c4">AHB1PERIPH_BASE</a> + 0x4000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga94d92270bf587ccdc3a37a5bb5d20467" name="ga94d92270bf587ccdc3a37a5bb5d20467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94d92270bf587ccdc3a37a5bb5d20467">&#9670;&#160;</a></span>UART4_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART4_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x4C00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa155689c0e206e6994951dc3cf31052a" name="gaa155689c0e206e6994951dc3cf31052a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa155689c0e206e6994951dc3cf31052a">&#9670;&#160;</a></span>UART5_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART5_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x5000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga664eda42b83c919b153b07b23348be67" name="ga664eda42b83c919b153b07b23348be67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga664eda42b83c919b153b07b23348be67">&#9670;&#160;</a></span>UID_BASE</h2>
 
@@ -882,10 +2238,279 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ga86162ab3f740db9026c1320d46938b4d" name="ga86162ab3f740db9026c1320d46938b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86162ab3f740db9026c1320d46938b4d">&#9670;&#160;</a></span>USART1_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USART1_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x3800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gade83162a04bca0b15b39018a8e8ec090" name="gade83162a04bca0b15b39018a8e8ec090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade83162a04bca0b15b39018a8e8ec090">&#9670;&#160;</a></span>USART2_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USART2_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x4400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabe0d6539ac0026d598274ee7f45b0251" name="gabe0d6539ac0026d598274ee7f45b0251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe0d6539ac0026d598274ee7f45b0251">&#9670;&#160;</a></span>USART3_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USART3_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x4800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4d74a337597a77b1fca978202b519a18" name="ga4d74a337597a77b1fca978202b519a18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d74a337597a77b1fca978202b519a18">&#9670;&#160;</a></span>USB_OTG_DEVICE_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_DEVICE_BASE&#160;&#160;&#160;(0x00000800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6fdb7429ad88e2d69440d6ecc4f4199e" name="ga6fdb7429ad88e2d69440d6ecc4f4199e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fdb7429ad88e2d69440d6ecc4f4199e">&#9670;&#160;</a></span>USB_OTG_EP_REG_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_EP_REG_SIZE&#160;&#160;&#160;(0x00000020UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gace340350802904868673f0e839c4fa04" name="gace340350802904868673f0e839c4fa04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace340350802904868673f0e839c4fa04">&#9670;&#160;</a></span>USB_OTG_FIFO_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_FIFO_BASE&#160;&#160;&#160;(0x00001000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8781c4b2406c740d9fe540737a6a0188" name="ga8781c4b2406c740d9fe540737a6a0188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8781c4b2406c740d9fe540737a6a0188">&#9670;&#160;</a></span>USB_OTG_FIFO_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_FIFO_SIZE&#160;&#160;&#160;(0x00001000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa86d4c80849a74938924e73937b904e7" name="gaa86d4c80849a74938924e73937b904e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa86d4c80849a74938924e73937b904e7">&#9670;&#160;</a></span>USB_OTG_FS_PERIPH_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_FS_PERIPH_BASE&#160;&#160;&#160;(0x50000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga044aa4388e72d9d47a03f387fb8926fb" name="ga044aa4388e72d9d47a03f387fb8926fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga044aa4388e72d9d47a03f387fb8926fb">&#9670;&#160;</a></span>USB_OTG_GLOBAL_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_GLOBAL_BASE&#160;&#160;&#160;(0x00000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3bb2dd6c82eefd8587b6146ba36ae071" name="ga3bb2dd6c82eefd8587b6146ba36ae071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3bb2dd6c82eefd8587b6146ba36ae071">&#9670;&#160;</a></span>USB_OTG_HOST_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_HOST_BASE&#160;&#160;&#160;(0x00000400UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga942c8c5241b80fbcf638fea0fa18bebd" name="ga942c8c5241b80fbcf638fea0fa18bebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga942c8c5241b80fbcf638fea0fa18bebd">&#9670;&#160;</a></span>USB_OTG_HOST_CHANNEL_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_HOST_CHANNEL_BASE&#160;&#160;&#160;(0x00000500UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga266cb1dbb50faf447f9c15d2ee93a522" name="ga266cb1dbb50faf447f9c15d2ee93a522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga266cb1dbb50faf447f9c15d2ee93a522">&#9670;&#160;</a></span>USB_OTG_HOST_CHANNEL_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_HOST_CHANNEL_SIZE&#160;&#160;&#160;(0x00000020UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga42f433cb79ca69f09972e690fda6737a" name="ga42f433cb79ca69f09972e690fda6737a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42f433cb79ca69f09972e690fda6737a">&#9670;&#160;</a></span>USB_OTG_HOST_PORT_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_HOST_PORT_BASE&#160;&#160;&#160;(0x00000440UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad8f69041452615aeb3948600e3882246" name="gad8f69041452615aeb3948600e3882246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8f69041452615aeb3948600e3882246">&#9670;&#160;</a></span>USB_OTG_IN_ENDPOINT_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_IN_ENDPOINT_BASE&#160;&#160;&#160;(0x00000900UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf0e972b8f028ecf44a652029efbd4642" name="gaf0e972b8f028ecf44a652029efbd4642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0e972b8f028ecf44a652029efbd4642">&#9670;&#160;</a></span>USB_OTG_OUT_ENDPOINT_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_OUT_ENDPOINT_BASE&#160;&#160;&#160;(0x00000B00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa9766975aca084c257730879568bc7cf" name="gaa9766975aca084c257730879568bc7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9766975aca084c257730879568bc7cf">&#9670;&#160;</a></span>USB_OTG_PCGCCTL_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_OTG_PCGCCTL_BASE&#160;&#160;&#160;(0x00000E00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga24db90605579f589d8617074c89f5205" name="ga24db90605579f589d8617074c89f5205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24db90605579f589d8617074c89f5205">&#9670;&#160;</a></span>USBOTG_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USBOTG_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#gaeedaa71d22a1948492365e2cd26cfd46">AHB2PERIPH_BASE</a> + 0x08000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga206fcc501d1ab876346acc1a922f8dbe" name="ga206fcc501d1ab876346acc1a922f8dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga206fcc501d1ab876346acc1a922f8dbe">&#9670;&#160;</a></span>VREFBUF_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VREFBUF_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga25b99d6065f1c8f751e78f43ade652cb">APB2PERIPH_BASE</a> + 0x0030UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9a5bf4728ab93dea5b569f5b972cbe62" name="ga9a5bf4728ab93dea5b569f5b972cbe62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9a5bf4728ab93dea5b569f5b972cbe62">&#9670;&#160;</a></span>WWDG_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WWDG_BASE&#160;&#160;&#160;(<a class="el" href="group___peripheral__memory__map.html#ga45666d911f39addd4c8c0a0ac3388cfb">APB1PERIPH_BASE</a> + 0x2C00UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

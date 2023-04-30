@@ -9,10 +9,16 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -47,6 +53,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('globals_defs_o.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -72,115 +94,169 @@ $(function() {
 &#160;
 
 <h3><a id="index_o" name="index_o"></a>- o -</h3><ul>
+<li>OP1_I2C2&#160;:&#160;<a class="el" href="main_8c.html#a70a195713f094d38a2f0673802b81a7d">main.c</a></li>
+<li>OPAMP&#160;:&#160;<a class="el" href="group___peripheral__declaration.html#gaaa993d5a85ac85c8abbd13e31d504bb6">stm32l476xx.h</a></li>
+<li>OPAMP1&#160;:&#160;<a class="el" href="group___peripheral__declaration.html#gaf0025add8d004b4f4bf6eaeedd55c488">stm32l476xx.h</a></li>
+<li>OPAMP12_COMMON&#160;:&#160;<a class="el" href="group___peripheral__declaration.html#ga4b1ee26305e87c88f198841409da1214">stm32l476xx.h</a></li>
+<li>OPAMP1_BASE&#160;:&#160;<a class="el" href="group___peripheral__memory__map.html#ga5eb46aa20e371ed2e07b16a6b12c163d">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_CALON&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga881edbd6128ecfd2d2d847efa0a4f474">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_CALON_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab92e7f86f5e42bcc666a65a4de962ab3">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_CALON_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gafcd6bce1498db53652cd9e14365631dd">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_CALOUT&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2e6b10a105915d63752a8b3a63431b55">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_CALOUT_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga799a85e4c65cd1c83a371583e19ff5af">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_CALOUT_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga26fe89b0a8e951d86048f77bbce8fbd3">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_CALSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8bb40e20f70ede081630648396036a1c">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_CALSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6875a32091a2423091132cecb4033300">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_CALSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga139d4533657f05bf9c9e3fd6de380656">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_OPAEN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gacd85605b59f2ee6480eb2827aaef113c">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_OPAEN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga328414fe6c71a3165eda6150246776d2">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_OPAEN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga0da24ad32237ab12098531b0837a271c">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_OPALPM&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga14957d15dd5e94d6b25b76d33648aa59">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_OPALPM_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6389025343878e6afceb54420dd2d567">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_OPALPM_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3ab2101563ca27033b684dd17623d416">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_OPAMODE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae788656b37f651432c5bcef6bee7ac62">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_OPAMODE_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5db163e9159eee63ff22c65f2b3c8122">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_OPAMODE_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaae2b36dc8b6de131b84834851e196c96">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_OPAMODE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga260dc269ea3d948dbb77914341a94cc2">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_OPAMODE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga7db35be52d67f04c5fa6a1a832625ae5">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_OPARANGE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2033f5185fa86838448591b767fe2905">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_OPARANGE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga59d012fc3998782688ad57c89040fafc">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_OPARANGE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2bea9a71dc78101698cf1df59bcda075">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_PGAGAIN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga62c2680694266755ad0385ba97b373a7">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_PGAGAIN_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae55a237bd750afb8c20f34830fde796e">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_PGAGAIN_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4f4298e902251bd492922d21b34e647e">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_PGAGAIN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga0c1a92fe0af3e9f5c203019c0c1e36d9">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_PGAGAIN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4785f40b7329adfe05aaaa7c5941722e">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_USERTRIM&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac5f5e943c33c5ba322326443eef14e60">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_USERTRIM_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab28c9db62603b3e6c9f4a27d3ab345cd">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_USERTRIM_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8e5131d98e569863a0c69dad00288314">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_VMSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac959fd04fc7c379ba199deb057de149a">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_VMSEL_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaae85543e740bfa45a368fb0f1b19bb84">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_VMSEL_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab519fb03bd18cb416f6236f7ef46ab6e">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_VMSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3dcb65d95398dda89e0f22d4df4777e0">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_VMSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae76309f17791f58f98211ea3cbed609a">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_VPSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gabc8b31cce17c2748b8e4fe9a28961772">stm32l476xx.h</a></li>
 <li>OPAMP1_CSR_VPSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga46af5e984dd50b8329c899c7613aa6af">stm32l476xx.h</a></li>
+<li>OPAMP1_CSR_VPSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab3b33c8d1522452e1af6b9f0ecf7c8fe">stm32l476xx.h</a></li>
 <li>OPAMP1_LPOTR_TRIMLPOFFSETN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga675d86cb0a8d96bcfdc764eb3477d7b8">stm32l476xx.h</a></li>
 <li>OPAMP1_LPOTR_TRIMLPOFFSETN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9feea1690d227c4d99bd26059bf9f3f6">stm32l476xx.h</a></li>
+<li>OPAMP1_LPOTR_TRIMLPOFFSETN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaeb3258dca47c587a271f4fd4f14623da">stm32l476xx.h</a></li>
 <li>OPAMP1_LPOTR_TRIMLPOFFSETP&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8b1b9c0d64c2a227fb97a5fec2258164">stm32l476xx.h</a></li>
 <li>OPAMP1_LPOTR_TRIMLPOFFSETP_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa639befa5c64622bb55fe5a7a43f7f1d">stm32l476xx.h</a></li>
+<li>OPAMP1_LPOTR_TRIMLPOFFSETP_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3acfe3dd4f17418525c4fc438971421b">stm32l476xx.h</a></li>
 <li>OPAMP1_OTR_TRIMOFFSETN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae8f8d0998d2220a73ee802943dcfaa9c">stm32l476xx.h</a></li>
 <li>OPAMP1_OTR_TRIMOFFSETN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab1ee6afd2becb687feb39cf27510a784">stm32l476xx.h</a></li>
+<li>OPAMP1_OTR_TRIMOFFSETN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaeb900f84ac4ebc8d596d81226541ba24">stm32l476xx.h</a></li>
 <li>OPAMP1_OTR_TRIMOFFSETP&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae0c77514dae780fb3473a9c000a91f55">stm32l476xx.h</a></li>
 <li>OPAMP1_OTR_TRIMOFFSETP_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga359afd4ec85dd0439573ef8888e0a5eb">stm32l476xx.h</a></li>
+<li>OPAMP1_OTR_TRIMOFFSETP_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae1eedb0471b1e7795eefba502f3c450a">stm32l476xx.h</a></li>
+<li>OPAMP2&#160;:&#160;<a class="el" href="group___peripheral__declaration.html#gabc11c296d6d15ca861b6378bc056848e">stm32l476xx.h</a></li>
+<li>OPAMP2_BASE&#160;:&#160;<a class="el" href="group___peripheral__memory__map.html#gabf0535307a717feba8341e57647d2385">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_CALON&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4759e9791164fc2981f9c7ea01f26130">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_CALON_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae3e47bb9b3b238748e012b72f56eed47">stm32l476xx.h</a></li>
+<li>OPAMP2_CSR_CALON_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab55bab0ad842e467ec64f6fd533ad02e">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_CALOUT&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2b918288dea1ddce23ebe682f8f5dda7">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_CALOUT_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9d9cec22aaafc3a8922b53b90970bc5b">stm32l476xx.h</a></li>
+<li>OPAMP2_CSR_CALOUT_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac550c8ee0c6e1ee735eec230c0e0c2ed">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_CALSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa298f782dc28b6efb7154619bed7928f">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_CALSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga572569d99f2fb9dab693ceb50e08b5a0">stm32l476xx.h</a></li>
+<li>OPAMP2_CSR_CALSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9a2f01e8c0bb8f74ec2e05db2e43795f">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_OPAEN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga989826bfe4bd293f5ee6e9816fb19ce6">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_OPAEN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga60b6654f0c0541272970cda438b44c08">stm32l476xx.h</a></li>
+<li>OPAMP2_CSR_OPAEN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga05b1557a3d7bcb51a5d1264084f928f4">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_OPALPM&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab9655c1723d266efe45afd2d4104edee">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_OPALPM_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga0f27931eaa9192671edae5606cfa42a9">stm32l476xx.h</a></li>
+<li>OPAMP2_CSR_OPALPM_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaed757c5e1fe823a88b4f11b0cf5a8bc5">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_OPAMODE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9a14681f8b51e020ec028b9fd8799cec">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_OPAMODE_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8558ced1ded8967308e18f95fceb2348">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_OPAMODE_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gad4aaee5846c725d65cda56f7cc1ff320">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_OPAMODE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga78edb2456481540f8d87f495010df932">stm32l476xx.h</a></li>
+<li>OPAMP2_CSR_OPAMODE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3a148b2417dc72f4a7f8c780f7ce16d0">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_PGAGAIN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga43352f64323d276cf241016401694d25">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_PGAGAIN_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga000ff3b227857cd7792d4942ff67e8bd">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_PGAGAIN_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaebe5b2940ee5c72cb6cd5661831d5647">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_PGAGAIN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3c84f6eae3947d76bf774307b339662f">stm32l476xx.h</a></li>
+<li>OPAMP2_CSR_PGAGAIN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa0a72489c9a00717cbf83046b8d1096d">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_USERTRIM&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga1c3c842e7589141e6fb1d9d047595341">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_USERTRIM_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaddb953ae136cbd3d5404a452d713d5be">stm32l476xx.h</a></li>
+<li>OPAMP2_CSR_USERTRIM_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaaac6690c0debf84cdf58bd8733a8192f">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_VMSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga992aee87662e9ce16f20d8b8e1e4aa41">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_VMSEL_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga342d1c6cab886eda343ea75523c12260">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_VMSEL_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2ce54682cf57c873d8d16049024925d2">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_VMSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga10b20a570f5e07676fd2034616e5e494">stm32l476xx.h</a></li>
+<li>OPAMP2_CSR_VMSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf7fa393373361be0273f98b45d0c2f4e">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_VPSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga77246620071c627adfd6b8b57f37b1b6">stm32l476xx.h</a></li>
 <li>OPAMP2_CSR_VPSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga33f6d503ad7dc06aad619d1075428ae5">stm32l476xx.h</a></li>
+<li>OPAMP2_CSR_VPSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gabdd379eac6c1b93d7d4ac03eb1b7de87">stm32l476xx.h</a></li>
 <li>OPAMP2_LPOTR_TRIMLPOFFSETN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5ca6ee5e9aad37b23598141b8181895e">stm32l476xx.h</a></li>
 <li>OPAMP2_LPOTR_TRIMLPOFFSETN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9d4ef8d544386719bb25679b1ef7a484">stm32l476xx.h</a></li>
+<li>OPAMP2_LPOTR_TRIMLPOFFSETN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaae88ccd1b6531e0449dd3ef6355b11c6">stm32l476xx.h</a></li>
 <li>OPAMP2_LPOTR_TRIMLPOFFSETP&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab2149494af32d1cb3eb70b44de56130c">stm32l476xx.h</a></li>
 <li>OPAMP2_LPOTR_TRIMLPOFFSETP_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8e2be8e9cb74da2ac40f8721674a3360">stm32l476xx.h</a></li>
+<li>OPAMP2_LPOTR_TRIMLPOFFSETP_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga47910cdbfd4a5725ea4ff5934b43bd1c">stm32l476xx.h</a></li>
 <li>OPAMP2_OTR_TRIMOFFSETN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2d28d7a551f1d768fed19ee8f5c5ef8a">stm32l476xx.h</a></li>
 <li>OPAMP2_OTR_TRIMOFFSETN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga158824342911959b698a3488b95a1a0a">stm32l476xx.h</a></li>
+<li>OPAMP2_OTR_TRIMOFFSETN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga0e5af41cbd33bd6cd76c535297fc8e4a">stm32l476xx.h</a></li>
 <li>OPAMP2_OTR_TRIMOFFSETP&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga73bd03c39731a0847da6a983cda5bd05">stm32l476xx.h</a></li>
 <li>OPAMP2_OTR_TRIMOFFSETP_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga62651728968a537c2c1d2fecedf800fb">stm32l476xx.h</a></li>
+<li>OPAMP2_OTR_TRIMOFFSETP_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac32ec4c6f4f12c02fbd58dff0cd34993">stm32l476xx.h</a></li>
+<li>OPAMP_BASE&#160;:&#160;<a class="el" href="group___peripheral__memory__map.html#ga6e9722d15c7ed794f0eca9682f64c03c">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_CALON&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gad7956ed2599bdd9e6527507e543dd687">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_CALON_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga585abc89695eadf5e9ead9daf6f6e505">stm32l476xx.h</a></li>
+<li>OPAMP_CSR_CALON_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga22572bc87e0835ac1c9c21d678cecd23">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_CALOUT&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab43dfcde7f913ed8ad5e35b80c520e37">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_CALOUT_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gacd0d384b28dddc30c24a83de506bc7e7">stm32l476xx.h</a></li>
+<li>OPAMP_CSR_CALOUT_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gacf3a793c3a25128015320fe3211b0a20">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_CALSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac544abc19652bb44e316ffbbbb9e0a40">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_CALSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga63d1aeb331c459803aa9d4e036946d7a">stm32l476xx.h</a></li>
+<li>OPAMP_CSR_CALSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaccb557962b393c58a14137c8bb6f6f5e">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_OPALPM&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab6d33d2ae8024a1a502bb78b95541e7d">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_OPALPM_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6329d12755634c84a3c320992866b692">stm32l476xx.h</a></li>
+<li>OPAMP_CSR_OPALPM_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gabc44451d715c1c75a02468bad6429a5c">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_OPAMODE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gace4143795b876dea67e4192fa697c8eb">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_OPAMODE_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa72fbae5aa1316f31bb3561bfee66a39">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_OPAMODE_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga43f43ef81f58ce9712cfb33753cba5db">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_OPAMODE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga434bc9b735428da3ea876a899977e706">stm32l476xx.h</a></li>
+<li>OPAMP_CSR_OPAMODE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga05e248c17bf2194fb967b11f2f0c7388">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_OPAMPxEN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga544aac1da6f16f4eb187e6851b7711f6">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_OPAMPxEN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gad1add886109d22824bba50d8c8625fe6">stm32l476xx.h</a></li>
+<li>OPAMP_CSR_OPAMPxEN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa63f3b43b0acf0c24d3c4a1671b1cc2c">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_PGGAIN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga74ac9ae3fa7fe42f154d0daa42789b29">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_PGGAIN_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf0d5b9c273620fd0b3c441d522c415e7">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_PGGAIN_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa0fde506981f9a5a0d6a195e25b68d99">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_PGGAIN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gadbf5c45c8d658cc0f0a8f4838ca4fac2">stm32l476xx.h</a></li>
+<li>OPAMP_CSR_PGGAIN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf2a9dddeba6b0eb9e58b6de1f7a8384b">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_USERTRIM&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3bcad44dbf70db471e1cdc52aa3875be">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_USERTRIM_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga7a137cd44ef80f8a325c81a1ca3c0e07">stm32l476xx.h</a></li>
+<li>OPAMP_CSR_USERTRIM_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6089250803220b54bca714acbb7aefc1">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_VMSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae8d844900337686f187b0d8053dff917">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_VMSEL_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2a48fd6fc77e092ad4573e86fbeb8e1e">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_VMSEL_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga46f1f7f5183b41b90fb25cfe3e920460">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_VMSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gada380b084108367ad911b476c581f68d">stm32l476xx.h</a></li>
+<li>OPAMP_CSR_VMSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga480b38580315aa0940cfc29e8491127f">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_VPSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga1adc457f5800c654905ebe4463082910">stm32l476xx.h</a></li>
 <li>OPAMP_CSR_VPSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gad1cc44b01594db558befcb0e66705480">stm32l476xx.h</a></li>
+<li>OPAMP_CSR_VPSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4252d962ff051d1b1b9564c84f5622ee">stm32l476xx.h</a></li>
 <li>OPAMP_LPOTR_TRIMLPOFFSETN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9f0c334ecf44311827d064478bd696b5">stm32l476xx.h</a></li>
 <li>OPAMP_LPOTR_TRIMLPOFFSETN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae23c3ec9c19dd7999df2612b1b2cbba2">stm32l476xx.h</a></li>
+<li>OPAMP_LPOTR_TRIMLPOFFSETN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gabe5172714779f9eaf95a244c5b843c06">stm32l476xx.h</a></li>
 <li>OPAMP_LPOTR_TRIMLPOFFSETP&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaacbe54c45d2ce7c1cf7452bb92b49850">stm32l476xx.h</a></li>
 <li>OPAMP_LPOTR_TRIMLPOFFSETP_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae1b0c2fe21b79f39290e1c6883e2ee0f">stm32l476xx.h</a></li>
+<li>OPAMP_LPOTR_TRIMLPOFFSETP_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga10191ef87117035b347f51f56248b166">stm32l476xx.h</a></li>
 <li>OPAMP_OTR_TRIMOFFSETN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8079cde9e7a527d9591c4dbb683efeb5">stm32l476xx.h</a></li>
 <li>OPAMP_OTR_TRIMOFFSETN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gafe1ec1a4d9c84acf7cce79800144e474">stm32l476xx.h</a></li>
+<li>OPAMP_OTR_TRIMOFFSETN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga56dea05ff46186f4a7dae1684f3a9ef8">stm32l476xx.h</a></li>
 <li>OPAMP_OTR_TRIMOFFSETP&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5c19df17a3c495840a7496397ae6f620">stm32l476xx.h</a></li>
 <li>OPAMP_OTR_TRIMOFFSETP_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6ce7b29d792d02895287ba75f26c3b6f">stm32l476xx.h</a></li>
+<li>OPAMP_OTR_TRIMOFFSETP_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9843e46c3d5faf3ca1528cc893a3459c">stm32l476xx.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,10 +9,16 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -47,6 +53,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__stm32l476xx.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -95,66 +117,304 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga16b30b9f4d374c506d31c9d4c6cce8a1"><td class="memItemLeft" align="right" valign="top"><a id="ga16b30b9f4d374c506d31c9d4c6cce8a1" name="ga16b30b9f4d374c506d31c9d4c6cce8a1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM6_IRQn</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a5f581e9aedfaccd9b1db9ec793804b45">TIM6_DAC_IRQn</a></td></tr>
+<tr class="memitem:ga16b30b9f4d374c506d31c9d4c6cce8a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga16b30b9f4d374c506d31c9d4c6cce8a1">TIM6_IRQn</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a5f581e9aedfaccd9b1db9ec793804b45">TIM6_DAC_IRQn</a></td></tr>
 <tr class="separator:ga16b30b9f4d374c506d31c9d4c6cce8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7d642ec0ffe7089d01841fe5992321c"><td class="memItemLeft" align="right" valign="top"><a id="gaa7d642ec0ffe7089d01841fe5992321c" name="gaa7d642ec0ffe7089d01841fe5992321c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC1_IRQn</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a19cf421347f52d547d370887640c158a">ADC1_2_IRQn</a></td></tr>
+<tr class="memitem:gaa7d642ec0ffe7089d01841fe5992321c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#gaa7d642ec0ffe7089d01841fe5992321c">ADC1_IRQn</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a19cf421347f52d547d370887640c158a">ADC1_2_IRQn</a></td></tr>
 <tr class="separator:gaa7d642ec0ffe7089d01841fe5992321c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga728f2b4aeccc89d3e8d696b90e5b23c1"><td class="memItemLeft" align="right" valign="top"><a id="ga728f2b4aeccc89d3e8d696b90e5b23c1" name="ga728f2b4aeccc89d3e8d696b90e5b23c1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM1_TRG_COM_IRQn</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a5e8877dfe9231e48010f08246bb2b05c">TIM1_TRG_COM_TIM17_IRQn</a></td></tr>
+<tr class="memitem:ga728f2b4aeccc89d3e8d696b90e5b23c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga728f2b4aeccc89d3e8d696b90e5b23c1">TIM1_TRG_COM_IRQn</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a5e8877dfe9231e48010f08246bb2b05c">TIM1_TRG_COM_TIM17_IRQn</a></td></tr>
 <tr class="separator:ga728f2b4aeccc89d3e8d696b90e5b23c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0375158772f88d55a04127d549ee84a9"><td class="memItemLeft" align="right" valign="top"><a id="ga0375158772f88d55a04127d549ee84a9" name="ga0375158772f88d55a04127d549ee84a9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM8_IRQn</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8af20a30306a1b6d4fc8a2da095a2ca7e9">TIM8_UP_IRQn</a></td></tr>
+<tr class="memitem:ga0375158772f88d55a04127d549ee84a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga0375158772f88d55a04127d549ee84a9">TIM8_IRQn</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8af20a30306a1b6d4fc8a2da095a2ca7e9">TIM8_UP_IRQn</a></td></tr>
 <tr class="separator:ga0375158772f88d55a04127d549ee84a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga70479d84b2227bd03eca17d75ced09c1"><td class="memItemLeft" align="right" valign="top"><a id="ga70479d84b2227bd03eca17d75ced09c1" name="ga70479d84b2227bd03eca17d75ced09c1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HASH_RNG_IRQn</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a90c4647e57cff99fac635c532802c4b5">RNG_IRQn</a></td></tr>
+<tr class="memitem:ga70479d84b2227bd03eca17d75ced09c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga70479d84b2227bd03eca17d75ced09c1">HASH_RNG_IRQn</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a90c4647e57cff99fac635c532802c4b5">RNG_IRQn</a></td></tr>
 <tr class="separator:ga70479d84b2227bd03eca17d75ced09c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga35425c849b9b09250a64a110736cfaf1"><td class="memItemLeft" align="right" valign="top"><a id="ga35425c849b9b09250a64a110736cfaf1" name="ga35425c849b9b09250a64a110736cfaf1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM0_IRQn</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a62d53531a01f8711dcdf721b9f3b2689">DFSDM1_FLT0_IRQn</a></td></tr>
+<tr class="memitem:ga35425c849b9b09250a64a110736cfaf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga35425c849b9b09250a64a110736cfaf1">DFSDM0_IRQn</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a62d53531a01f8711dcdf721b9f3b2689">DFSDM1_FLT0_IRQn</a></td></tr>
 <tr class="separator:ga35425c849b9b09250a64a110736cfaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a9a711c4e42e687c3bc3eb07180b0e7"><td class="memItemLeft" align="right" valign="top"><a id="ga8a9a711c4e42e687c3bc3eb07180b0e7" name="ga8a9a711c4e42e687c3bc3eb07180b0e7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_IRQn</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8aff51805df3d6b855d17a4d27a9bc2755">DFSDM1_FLT1_IRQn</a></td></tr>
+<tr class="memitem:ga8a9a711c4e42e687c3bc3eb07180b0e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga8a9a711c4e42e687c3bc3eb07180b0e7">DFSDM1_IRQn</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8aff51805df3d6b855d17a4d27a9bc2755">DFSDM1_FLT1_IRQn</a></td></tr>
 <tr class="separator:ga8a9a711c4e42e687c3bc3eb07180b0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31cd5ef8f51338b318d7f68c4f814744"><td class="memItemLeft" align="right" valign="top"><a id="ga31cd5ef8f51338b318d7f68c4f814744" name="ga31cd5ef8f51338b318d7f68c4f814744"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM2_IRQn</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8ab0c5dd0a58ec98e00df6bc3219b6f42f">DFSDM1_FLT2_IRQn</a></td></tr>
+<tr class="memitem:ga31cd5ef8f51338b318d7f68c4f814744"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga31cd5ef8f51338b318d7f68c4f814744">DFSDM2_IRQn</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8ab0c5dd0a58ec98e00df6bc3219b6f42f">DFSDM1_FLT2_IRQn</a></td></tr>
 <tr class="separator:ga31cd5ef8f51338b318d7f68c4f814744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga244250d393221e9b95fb4bd0b011c0b1"><td class="memItemLeft" align="right" valign="top"><a id="ga244250d393221e9b95fb4bd0b011c0b1" name="ga244250d393221e9b95fb4bd0b011c0b1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM3_IRQn</b>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a73d61bf8bbd27b267b6f5f704e40bf7c">DFSDM1_FLT3_IRQn</a></td></tr>
+<tr class="memitem:ga244250d393221e9b95fb4bd0b011c0b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga244250d393221e9b95fb4bd0b011c0b1">DFSDM3_IRQn</a>&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a73d61bf8bbd27b267b6f5f704e40bf7c">DFSDM1_FLT3_IRQn</a></td></tr>
 <tr class="separator:ga244250d393221e9b95fb4bd0b011c0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae30e35a563a952a284f3f54d7f164ccd"><td class="memItemLeft" align="right" valign="top"><a id="gae30e35a563a952a284f3f54d7f164ccd" name="gae30e35a563a952a284f3f54d7f164ccd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM6_IRQHandler</b>&#160;&#160;&#160;TIM6_DAC_IRQHandler</td></tr>
+<tr class="memitem:gae30e35a563a952a284f3f54d7f164ccd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#gae30e35a563a952a284f3f54d7f164ccd">TIM6_IRQHandler</a>&#160;&#160;&#160;TIM6_DAC_IRQHandler</td></tr>
 <tr class="separator:gae30e35a563a952a284f3f54d7f164ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacfad9f182b248bceb2ebedd9ae366546"><td class="memItemLeft" align="right" valign="top"><a id="gacfad9f182b248bceb2ebedd9ae366546" name="gacfad9f182b248bceb2ebedd9ae366546"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC1_IRQHandler</b>&#160;&#160;&#160;ADC1_2_IRQHandler</td></tr>
+<tr class="memitem:gacfad9f182b248bceb2ebedd9ae366546"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#gacfad9f182b248bceb2ebedd9ae366546">ADC1_IRQHandler</a>&#160;&#160;&#160;ADC1_2_IRQHandler</td></tr>
 <tr class="separator:gacfad9f182b248bceb2ebedd9ae366546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga029af7575a43b2c3c6b50c62571ed21c"><td class="memItemLeft" align="right" valign="top"><a id="ga029af7575a43b2c3c6b50c62571ed21c" name="ga029af7575a43b2c3c6b50c62571ed21c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM1_TRG_COM_IRQHandler</b>&#160;&#160;&#160;TIM1_TRG_COM_TIM17_IRQHandler</td></tr>
+<tr class="memitem:ga029af7575a43b2c3c6b50c62571ed21c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga029af7575a43b2c3c6b50c62571ed21c">TIM1_TRG_COM_IRQHandler</a>&#160;&#160;&#160;TIM1_TRG_COM_TIM17_IRQHandler</td></tr>
 <tr class="separator:ga029af7575a43b2c3c6b50c62571ed21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab002a5f6f3339776446adbe59ef2dd03"><td class="memItemLeft" align="right" valign="top"><a id="gab002a5f6f3339776446adbe59ef2dd03" name="gab002a5f6f3339776446adbe59ef2dd03"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TIM8_IRQHandler</b>&#160;&#160;&#160;TIM8_UP_IRQHandler</td></tr>
+<tr class="memitem:gab002a5f6f3339776446adbe59ef2dd03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#gab002a5f6f3339776446adbe59ef2dd03">TIM8_IRQHandler</a>&#160;&#160;&#160;TIM8_UP_IRQHandler</td></tr>
 <tr class="separator:gab002a5f6f3339776446adbe59ef2dd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02197754de1bce261e192d5e5221f20e"><td class="memItemLeft" align="right" valign="top"><a id="ga02197754de1bce261e192d5e5221f20e" name="ga02197754de1bce261e192d5e5221f20e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HASH_RNG_IRQHandler</b>&#160;&#160;&#160;RNG_IRQHandler</td></tr>
+<tr class="memitem:ga02197754de1bce261e192d5e5221f20e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga02197754de1bce261e192d5e5221f20e">HASH_RNG_IRQHandler</a>&#160;&#160;&#160;RNG_IRQHandler</td></tr>
 <tr class="separator:ga02197754de1bce261e192d5e5221f20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe6dc8ff6cc8d2e90e3fdc078e680819"><td class="memItemLeft" align="right" valign="top"><a id="gabe6dc8ff6cc8d2e90e3fdc078e680819" name="gabe6dc8ff6cc8d2e90e3fdc078e680819"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM0_IRQHandler</b>&#160;&#160;&#160;DFSDM1_FLT0_IRQHandler</td></tr>
+<tr class="memitem:gabe6dc8ff6cc8d2e90e3fdc078e680819"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#gabe6dc8ff6cc8d2e90e3fdc078e680819">DFSDM0_IRQHandler</a>&#160;&#160;&#160;DFSDM1_FLT0_IRQHandler</td></tr>
 <tr class="separator:gabe6dc8ff6cc8d2e90e3fdc078e680819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad34e00f1413b4970a5785f1469563b54"><td class="memItemLeft" align="right" valign="top"><a id="gad34e00f1413b4970a5785f1469563b54" name="gad34e00f1413b4970a5785f1469563b54"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM1_IRQHandler</b>&#160;&#160;&#160;DFSDM1_FLT1_IRQHandler</td></tr>
+<tr class="memitem:gad34e00f1413b4970a5785f1469563b54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#gad34e00f1413b4970a5785f1469563b54">DFSDM1_IRQHandler</a>&#160;&#160;&#160;DFSDM1_FLT1_IRQHandler</td></tr>
 <tr class="separator:gad34e00f1413b4970a5785f1469563b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae385a217080690866cc94b92670b7fe5"><td class="memItemLeft" align="right" valign="top"><a id="gae385a217080690866cc94b92670b7fe5" name="gae385a217080690866cc94b92670b7fe5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM2_IRQHandler</b>&#160;&#160;&#160;DFSDM1_FLT2_IRQHandler</td></tr>
+<tr class="memitem:gae385a217080690866cc94b92670b7fe5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#gae385a217080690866cc94b92670b7fe5">DFSDM2_IRQHandler</a>&#160;&#160;&#160;DFSDM1_FLT2_IRQHandler</td></tr>
 <tr class="separator:gae385a217080690866cc94b92670b7fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22ff61367389899fc56fc9d1e4beeecf"><td class="memItemLeft" align="right" valign="top"><a id="ga22ff61367389899fc56fc9d1e4beeecf" name="ga22ff61367389899fc56fc9d1e4beeecf"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DFSDM3_IRQHandler</b>&#160;&#160;&#160;DFSDM1_FLT3_IRQHandler</td></tr>
+<tr class="memitem:ga22ff61367389899fc56fc9d1e4beeecf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32l476xx.html#ga22ff61367389899fc56fc9d1e4beeecf">DFSDM3_IRQHandler</a>&#160;&#160;&#160;DFSDM1_FLT3_IRQHandler</td></tr>
 <tr class="separator:ga22ff61367389899fc56fc9d1e4beeecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gacfad9f182b248bceb2ebedd9ae366546" name="gacfad9f182b248bceb2ebedd9ae366546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacfad9f182b248bceb2ebedd9ae366546">&#9670;&#160;</a></span>ADC1_IRQHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC1_IRQHandler&#160;&#160;&#160;ADC1_2_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa7d642ec0ffe7089d01841fe5992321c" name="gaa7d642ec0ffe7089d01841fe5992321c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7d642ec0ffe7089d01841fe5992321c">&#9670;&#160;</a></span>ADC1_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC1_IRQn&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a19cf421347f52d547d370887640c158a">ADC1_2_IRQn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabe6dc8ff6cc8d2e90e3fdc078e680819" name="gabe6dc8ff6cc8d2e90e3fdc078e680819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe6dc8ff6cc8d2e90e3fdc078e680819">&#9670;&#160;</a></span>DFSDM0_IRQHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM0_IRQHandler&#160;&#160;&#160;DFSDM1_FLT0_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga35425c849b9b09250a64a110736cfaf1" name="ga35425c849b9b09250a64a110736cfaf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35425c849b9b09250a64a110736cfaf1">&#9670;&#160;</a></span>DFSDM0_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM0_IRQn&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a62d53531a01f8711dcdf721b9f3b2689">DFSDM1_FLT0_IRQn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad34e00f1413b4970a5785f1469563b54" name="gad34e00f1413b4970a5785f1469563b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad34e00f1413b4970a5785f1469563b54">&#9670;&#160;</a></span>DFSDM1_IRQHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_IRQHandler&#160;&#160;&#160;DFSDM1_FLT1_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8a9a711c4e42e687c3bc3eb07180b0e7" name="ga8a9a711c4e42e687c3bc3eb07180b0e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a9a711c4e42e687c3bc3eb07180b0e7">&#9670;&#160;</a></span>DFSDM1_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM1_IRQn&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8aff51805df3d6b855d17a4d27a9bc2755">DFSDM1_FLT1_IRQn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae385a217080690866cc94b92670b7fe5" name="gae385a217080690866cc94b92670b7fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae385a217080690866cc94b92670b7fe5">&#9670;&#160;</a></span>DFSDM2_IRQHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM2_IRQHandler&#160;&#160;&#160;DFSDM1_FLT2_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga31cd5ef8f51338b318d7f68c4f814744" name="ga31cd5ef8f51338b318d7f68c4f814744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31cd5ef8f51338b318d7f68c4f814744">&#9670;&#160;</a></span>DFSDM2_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM2_IRQn&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8ab0c5dd0a58ec98e00df6bc3219b6f42f">DFSDM1_FLT2_IRQn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga22ff61367389899fc56fc9d1e4beeecf" name="ga22ff61367389899fc56fc9d1e4beeecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22ff61367389899fc56fc9d1e4beeecf">&#9670;&#160;</a></span>DFSDM3_IRQHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM3_IRQHandler&#160;&#160;&#160;DFSDM1_FLT3_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga244250d393221e9b95fb4bd0b011c0b1" name="ga244250d393221e9b95fb4bd0b011c0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga244250d393221e9b95fb4bd0b011c0b1">&#9670;&#160;</a></span>DFSDM3_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFSDM3_IRQn&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a73d61bf8bbd27b267b6f5f704e40bf7c">DFSDM1_FLT3_IRQn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga02197754de1bce261e192d5e5221f20e" name="ga02197754de1bce261e192d5e5221f20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga02197754de1bce261e192d5e5221f20e">&#9670;&#160;</a></span>HASH_RNG_IRQHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASH_RNG_IRQHandler&#160;&#160;&#160;RNG_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga70479d84b2227bd03eca17d75ced09c1" name="ga70479d84b2227bd03eca17d75ced09c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70479d84b2227bd03eca17d75ced09c1">&#9670;&#160;</a></span>HASH_RNG_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASH_RNG_IRQn&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a90c4647e57cff99fac635c532802c4b5">RNG_IRQn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga029af7575a43b2c3c6b50c62571ed21c" name="ga029af7575a43b2c3c6b50c62571ed21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga029af7575a43b2c3c6b50c62571ed21c">&#9670;&#160;</a></span>TIM1_TRG_COM_IRQHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM1_TRG_COM_IRQHandler&#160;&#160;&#160;TIM1_TRG_COM_TIM17_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga728f2b4aeccc89d3e8d696b90e5b23c1" name="ga728f2b4aeccc89d3e8d696b90e5b23c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga728f2b4aeccc89d3e8d696b90e5b23c1">&#9670;&#160;</a></span>TIM1_TRG_COM_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM1_TRG_COM_IRQn&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a5e8877dfe9231e48010f08246bb2b05c">TIM1_TRG_COM_TIM17_IRQn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae30e35a563a952a284f3f54d7f164ccd" name="gae30e35a563a952a284f3f54d7f164ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae30e35a563a952a284f3f54d7f164ccd">&#9670;&#160;</a></span>TIM6_IRQHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM6_IRQHandler&#160;&#160;&#160;TIM6_DAC_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga16b30b9f4d374c506d31c9d4c6cce8a1" name="ga16b30b9f4d374c506d31c9d4c6cce8a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16b30b9f4d374c506d31c9d4c6cce8a1">&#9670;&#160;</a></span>TIM6_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM6_IRQn&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a5f581e9aedfaccd9b1db9ec793804b45">TIM6_DAC_IRQn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab002a5f6f3339776446adbe59ef2dd03" name="gab002a5f6f3339776446adbe59ef2dd03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab002a5f6f3339776446adbe59ef2dd03">&#9670;&#160;</a></span>TIM8_IRQHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM8_IRQHandler&#160;&#160;&#160;TIM8_UP_IRQHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0375158772f88d55a04127d549ee84a9" name="ga0375158772f88d55a04127d549ee84a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0375158772f88d55a04127d549ee84a9">&#9670;&#160;</a></span>TIM8_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM8_IRQn&#160;&#160;&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8af20a30306a1b6d4fc8a2da095a2ca7e9">TIM8_UP_IRQn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

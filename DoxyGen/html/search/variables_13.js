@@ -35,5 +35,6 @@ var searchData=
   ['swier2_32',['SWIER2',['../struct_e_x_t_i___type_def.html#ac537696dafad0997c5ebc4f4d21abd16',1,'EXTI_TypeDef']]],
   ['swpr_33',['SWPR',['../struct_s_y_s_c_f_g___type_def.html#a901a0c6a812dd3fe7c264491e9f404ef',1,'SYSCFG_TypeDef']]],
   ['swtrigr_34',['SWTRIGR',['../struct_d_a_c___type_def.html#a4ccb66068a1ebee1179574dda20206b6',1,'DAC_TypeDef']]],
-  ['systemcoreclock_35',['SystemCoreClock',['../group___s_t_m32_l4xx___system___exported___variables.html#gaa3cd3e43291e81e795d642b79b6088e6',1,'SystemCoreClock():&#160;system_stm32l4xx.c'],['../group___s_t_m32_l4xx___system___private___variables.html#gaa3cd3e43291e81e795d642b79b6088e6',1,'SystemCoreClock():&#160;system_stm32l4xx.c']]]
+  ['systemcoreclock_35',['SystemCoreClock',['../group___s_t_m32_l4xx___system___exported___variables.html#gaa3cd3e43291e81e795d642b79b6088e6',1,'SystemCoreClock():&#160;system_stm32l4xx.c'],['../group___s_t_m32_l4xx___system___private___variables.html#gaa3cd3e43291e81e795d642b79b6088e6',1,'SystemCoreClock():&#160;system_stm32l4xx.c']]],
+  ['systick_5ftime_36',['systick_time',['../main_8c.html#ac2b775c2183636f06b466258996e0b2a',1,'main.c']]]
 ];

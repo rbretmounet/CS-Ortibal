@@ -9,10 +9,16 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -47,6 +53,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -72,6 +94,8 @@ $(function() {
 &#160;
 
 <h3><a id="index__5F" name="index__5F"></a>- _ -</h3><ul>
+<li>__ALIGNED&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#aa65ef8f7a5e8b7a6ea6c1d48b4c78e55">cmsis_gcc.h</a></li>
+<li>__ASM&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a1378040bcf22428955c6e3ce9c2053cd">cmsis_gcc.h</a></li>
 <li>__BKPT&#160;:&#160;<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga15ea6bd3c507d3e81c3b3a1258e46397">cmsis_gcc.h</a></li>
 <li>__CM4_CMSIS_VERSION&#160;:&#160;<a class="el" href="core__cm4_8h.html#acb6f5d2c3271c95d0a02fd06723af25d">core_cm4.h</a></li>
 <li>__CM4_CMSIS_VERSION_MAIN&#160;:&#160;<a class="el" href="core__cm4_8h.html#a90ffc8179476f80347379bfe29639edc">core_cm4.h</a></li>
@@ -80,30 +104,64 @@ $(function() {
 <li>__CM_CMSIS_VERSION&#160;:&#160;<a class="el" href="cmsis__version_8h.html#a39f3d64ff95fb58feccc7639e537ff89">cmsis_version.h</a></li>
 <li>__CM_CMSIS_VERSION_MAIN&#160;:&#160;<a class="el" href="cmsis__version_8h.html#a85987c5fcc1e012d7ac01369ee6ca2b5">cmsis_version.h</a></li>
 <li>__CM_CMSIS_VERSION_SUB&#160;:&#160;<a class="el" href="cmsis__version_8h.html#a22083cbe7f0606cfd538ec12b2e41608">cmsis_version.h</a></li>
+<li>__CMSIS_GCC_OUT_REG&#160;:&#160;<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gabc17e391c13c71702366c67cba39c276">cmsis_gcc.h</a></li>
+<li>__CMSIS_GCC_RW_REG&#160;:&#160;<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga03179f79efee45c226dddfb8d824ad83">cmsis_gcc.h</a></li>
+<li>__CMSIS_GCC_USE_REG&#160;:&#160;<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga9d94dee7402367961d2cf0accc00fd97">cmsis_gcc.h</a></li>
+<li>__CMSIS_VERSION_H&#160;:&#160;<a class="el" href="cmsis__version_8h.html#a0e68288d1a62fe81c634a5a5844bb0f2">cmsis_version.h</a></li>
+<li>__COMPILER_BARRIER&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a6516fb12ab0dd45c734f8cef7d921af6">cmsis_gcc.h</a></li>
 <li>__CORE_CM4_H_DEPENDANT&#160;:&#160;<a class="el" href="core__cm4_8h.html#a65104fb6a96df4ec7f7e72781b561060">core_cm4.h</a></li>
+<li>__CORE_CM4_H_GENERIC&#160;:&#160;<a class="el" href="core__cm4_8h.html#a041c3808b4c105d23b90b54646e2eeb6">core_cm4.h</a></li>
 <li>__CORTEX_M&#160;:&#160;<a class="el" href="core__cm4_8h.html#a63ea62503c88acab19fcf3d5743009e3">core_cm4.h</a></li>
 <li>__FPU_PRESENT&#160;:&#160;<a class="el" href="group___configuration__section__for___c_m_s_i_s.html#gac1ba8a48ca926bddc88be9bfd7d42641">stm32l476xx.h</a></li>
+<li>__has_builtin&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a447121dcab4275b7839a56082b7a1ab8">cmsis_gcc.h</a></li>
 <li>__I&#160;:&#160;<a class="el" href="core__cm4_8h.html#af63697ed9952cc71e1225efe205f6cd3">core_cm4.h</a></li>
+<li>__IM&#160;:&#160;<a class="el" href="core__cm4_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">core_cm4.h</a></li>
+<li>__INITIAL_SP&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a1002e751427b1189f92787d4e4eef965">cmsis_gcc.h</a></li>
+<li>__INLINE&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#ade2d8d7118f8ff49547f60aa0c3382bb">cmsis_gcc.h</a></li>
 <li>__IO&#160;:&#160;<a class="el" href="core__cm4_8h.html#aec43007d9998a0a0e01faede4133d6be">core_cm4.h</a></li>
+<li>__IOM&#160;:&#160;<a class="el" href="core__cm4_8h.html#ab6caba5853a60a17e8e04499b52bf691">core_cm4.h</a></li>
 <li>__MPU_PRESENT&#160;:&#160;<a class="el" href="group___configuration__section__for___c_m_s_i_s.html#ga4127d1b31aaf336fab3d7329d117f448">stm32l476xx.h</a></li>
+<li>__NO_RETURN&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a153a4a31b276a9758959580538720a51">cmsis_gcc.h</a></li>
 <li>__NOP&#160;:&#160;<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#ga0b13f3617dd4af2cd2eb3a311073f717">cmsis_gcc.h</a></li>
 <li>__NVIC_PRIO_BITS&#160;:&#160;<a class="el" href="group___configuration__section__for___c_m_s_i_s.html#gae3fe3587d5100c787e02102ce3944460">stm32l476xx.h</a></li>
 <li>__O&#160;:&#160;<a class="el" href="core__cm4_8h.html#a7e25d9380f9ef903923964322e71f2f6">core_cm4.h</a></li>
+<li>__OM&#160;:&#160;<a class="el" href="core__cm4_8h.html#a0ea2009ed8fd9ef35b48708280fdb758">core_cm4.h</a></li>
+<li>__PACKED&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#abe8996d3d985ee1529475443cc635bf1">cmsis_gcc.h</a></li>
+<li>__PACKED_STRUCT&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a4dbb70fab85207c27b581ecb6532b314">cmsis_gcc.h</a></li>
+<li>__PACKED_UNION&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a6fba34d08b0a526830b4231d2ea0b89a">cmsis_gcc.h</a></li>
+<li>__PROGRAM_START&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a72db8b026c5e100254080fefabd9fd88">cmsis_gcc.h</a></li>
+<li>__RESTRICT&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a378ac21329d33f561f90265eef89f564">cmsis_gcc.h</a></li>
 <li>__SEV&#160;:&#160;<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gafa58e60fcd2176ad58f96947466ea1fa">cmsis_gcc.h</a></li>
+<li>__STACK_LIMIT&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a84b0bad4aa39632d3faea46aa1e102a8">cmsis_gcc.h</a></li>
+<li>__STATIC_FORCEINLINE&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#ab904513442afdf77d4f8c74f23cbb040">cmsis_gcc.h</a></li>
+<li>__STATIC_INLINE&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#aba87361bfad2ae52cfe2f40c1a1dbf9c">cmsis_gcc.h</a></li>
+<li>__STM32L4_CMSIS_VERSION&#160;:&#160;<a class="el" href="group___library__configuration__section.html#ga2db0eff678684f33447be14b855aee80">stm32l4xx.h</a></li>
 <li>__STM32L4_CMSIS_VERSION_MAIN&#160;:&#160;<a class="el" href="group___library__configuration__section.html#gad4521baecdabba9531048aef710a6bb9">stm32l4xx.h</a></li>
 <li>__STM32L4_CMSIS_VERSION_RC&#160;:&#160;<a class="el" href="group___library__configuration__section.html#gae44471dbb98e99cacc665d7a80e18259">stm32l4xx.h</a></li>
 <li>__STM32L4_CMSIS_VERSION_SUB1&#160;:&#160;<a class="el" href="group___library__configuration__section.html#ga4d6d1f6776490687bde768379e5ab36b">stm32l4xx.h</a></li>
 <li>__STM32L4_CMSIS_VERSION_SUB2&#160;:&#160;<a class="el" href="group___library__configuration__section.html#ga2e2763e5989b86d6786a8615b0dfbcb9">stm32l4xx.h</a></li>
+<li>__UNALIGNED_UINT16_READ&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#ab71b66e5ce403158d3dee62a59f9175f">cmsis_gcc.h</a></li>
+<li>__UNALIGNED_UINT16_WRITE&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a5103fb373cae9837cc4a384be55dc87f">cmsis_gcc.h</a></li>
+<li>__UNALIGNED_UINT32&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#ac8a13aacd0453758fdfd01a57a2a6a3d">cmsis_gcc.h</a></li>
+<li>__UNALIGNED_UINT32_READ&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a3b931f0b051b8c1a6377a3dcc7559b5e">cmsis_gcc.h</a></li>
+<li>__UNALIGNED_UINT32_WRITE&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a203f593d140ed88b81bc189edc861110">cmsis_gcc.h</a></li>
+<li>__USED&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a3e40e4c553fc11588f7a4c2a19e789e0">cmsis_gcc.h</a></li>
+<li>__VECTOR_TABLE&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#ab94ebeb20055f1848d7b707d3c7cfc5d">cmsis_gcc.h</a></li>
+<li>__VECTOR_TABLE_ATTRIBUTE&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#a4f65c96effa79fbd610fea43ee7d745b">cmsis_gcc.h</a></li>
 <li>__Vendor_SysTickConfig&#160;:&#160;<a class="el" href="group___configuration__section__for___c_m_s_i_s.html#gab58771b4ec03f9bdddc84770f7c95c68">stm32l476xx.h</a></li>
+<li>__WEAK&#160;:&#160;<a class="el" href="cmsis__gcc_8h.html#ac607bf387b29162be6a9b77fc7999539">cmsis_gcc.h</a></li>
 <li>__WFE&#160;:&#160;<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaf0330712223f4cfb6091e4ab84775f73">cmsis_gcc.h</a></li>
 <li>__WFI&#160;:&#160;<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gab28e2b328c4cf23c917ab18a23194f8e">cmsis_gcc.h</a></li>
 <li>_FLD2VAL&#160;:&#160;<a class="el" href="group___c_m_s_i_s__core__bitfield.html#ga139b6e261c981f014f386927ca4a8444">core_cm4.h</a></li>
 <li>_VAL2FLD&#160;:&#160;<a class="el" href="group___c_m_s_i_s__core__bitfield.html#ga286e3b913dbd236c7f48ea70c8821f4e">core_cm4.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

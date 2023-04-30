@@ -9,10 +9,16 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -46,6 +52,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('struct_i_t_m___type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,7 +90,6 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">ITM_Type Member List</div></div>
 </div><!--header-->
@@ -90,12 +112,12 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#gad34dbe6b1072c77d36281049c8b169f6">PID6</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#ga2bcec6803f28f30d5baf5e20e3517d3d">PID7</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#ga9e10e79a6a287ebb2439153e27a4e15d">PORT</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>RESERVED0</b> (defined in <a class="el" href="struct_i_t_m___type.html">ITM_Type</a>)</td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>RESERVED1</b> (defined in <a class="el" href="struct_i_t_m___type.html">ITM_Type</a>)</td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>RESERVED2</b> (defined in <a class="el" href="struct_i_t_m___type.html">ITM_Type</a>)</td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>RESERVED3</b> (defined in <a class="el" href="struct_i_t_m___type.html">ITM_Type</a>)</td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>RESERVED4</b> (defined in <a class="el" href="struct_i_t_m___type.html">ITM_Type</a>)</td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>RESERVED5</b> (defined in <a class="el" href="struct_i_t_m___type.html">ITM_Type</a>)</td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#ga33cc4a572650927fe5491d2f940ec696">RESERVED0</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#gace50062fa5e817a6cbebb15878481a5b">RESERVED1</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#ga80ab0d763321f43fc0f684b67561f2ae">RESERVED2</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#gaf7d0d909db4aad32129367f8bee61965">RESERVED3</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#gacfd92d3219fe899a08829af4fb6ba0cd">RESERVED4</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#ga9dcc6e6bceebd87b354c9d5346aa66a3">RESERVED5</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#ga04b9fbc83759cb818dfa161d39628426">TCR</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#gacd03c6858f7b678dab6a6121462e7807">TER</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#gae907229ba50538bf370fbdfd54c099a2">TPR</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
@@ -103,9 +125,12 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#ga5834885903a557674f078f3b71fa8bc8">u32</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="group___c_m_s_i_s__core___debug_functions.html#gae773bf9f9dac64e6c28b14aa39f74275">u8</a></td><td class="entry"><a class="el" href="struct_i_t_m___type.html">ITM_Type</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

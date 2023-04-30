@@ -9,10 +9,16 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -47,6 +53,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('globals_l.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,187 +91,263 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented file members with links to the documentation:</div>
+<div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
+<li>LCD&#160;:&#160;<a class="el" href="group___peripheral__declaration.html#gabf2d80992dcfabfd1668184c3dff2733">stm32l476xx.h</a></li>
+<li>LCD_BASE&#160;:&#160;<a class="el" href="group___peripheral__memory__map.html#ga017749aad23300240ef5ac4c3d5ca750">stm32l476xx.h</a></li>
 <li>LCD_CLR_SOFC&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga867e710879aff8343966538f96fa9c90">stm32l476xx.h</a></li>
 <li>LCD_CLR_SOFC_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae5b1d95f030caac584aefb221303e2b4">stm32l476xx.h</a></li>
+<li>LCD_CLR_SOFC_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaac2c46167a32e78790cf48b1beedce1a">stm32l476xx.h</a></li>
 <li>LCD_CLR_UDDC&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4f8ca2fa7b8e712cad529fe1e1ea1f7f">stm32l476xx.h</a></li>
 <li>LCD_CLR_UDDC_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae4d414792d400eb27fd4c30b4fb9f394">stm32l476xx.h</a></li>
+<li>LCD_CLR_UDDC_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gace60bfa025c8419885643e886a53621b">stm32l476xx.h</a></li>
 <li>LCD_CR_BIAS&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4397609bc1c4864c0700e598c75896c5">stm32l476xx.h</a></li>
 <li>LCD_CR_BIAS_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga321ef6b637dc7d77bd7a50eadf5f7f4c">stm32l476xx.h</a></li>
 <li>LCD_CR_BIAS_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaef2acc23783afb145f10a09c0c805d75">stm32l476xx.h</a></li>
 <li>LCD_CR_BIAS_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac1d0aadb3b0b74e6dac13148b634e42d">stm32l476xx.h</a></li>
+<li>LCD_CR_BIAS_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga719b32c4f7119337e5f3c48c68f294db">stm32l476xx.h</a></li>
 <li>LCD_CR_BUFEN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaaaeff7f8027fada7917c43baf2ca9b9b">stm32l476xx.h</a></li>
 <li>LCD_CR_BUFEN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga68fb73bc882d8e8436dddc060c8797cf">stm32l476xx.h</a></li>
+<li>LCD_CR_BUFEN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3a0a78492fc98cc9d947f43b84b1ae91">stm32l476xx.h</a></li>
 <li>LCD_CR_DUTY&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gacc5175fd82ae61247dbd79db4397a794">stm32l476xx.h</a></li>
 <li>LCD_CR_DUTY_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga11d4d20862251ad5031f83abeff1822d">stm32l476xx.h</a></li>
 <li>LCD_CR_DUTY_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga464f4f54856bd3d4127e75c1074a91ba">stm32l476xx.h</a></li>
 <li>LCD_CR_DUTY_2&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf838a811aba1e1d7c85beef3ca1075da">stm32l476xx.h</a></li>
 <li>LCD_CR_DUTY_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga69ed1b16780d0f80ba8510be8ad41f35">stm32l476xx.h</a></li>
+<li>LCD_CR_DUTY_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga53fc6e1a630764aac07ba8ef3acf8c58">stm32l476xx.h</a></li>
 <li>LCD_CR_LCDEN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga61abf5d141101dd94334064b4f2d78ed">stm32l476xx.h</a></li>
 <li>LCD_CR_LCDEN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5af2ae391a32e6106f7a73d24e83dd52">stm32l476xx.h</a></li>
+<li>LCD_CR_LCDEN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac863cf1793d11a47addffad9920c86cd">stm32l476xx.h</a></li>
 <li>LCD_CR_MUX_SEG&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa000a53825d3b8de33bf5c1175df17d0">stm32l476xx.h</a></li>
 <li>LCD_CR_MUX_SEG_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga00aac8c1e10e42e322c38aeb0d58f11e">stm32l476xx.h</a></li>
+<li>LCD_CR_MUX_SEG_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac3f77c35af87286d48e9b26380b5d799">stm32l476xx.h</a></li>
 <li>LCD_CR_VSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac92ad348089092948b8730a2cc08eee1">stm32l476xx.h</a></li>
 <li>LCD_CR_VSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3f07b7c0ec40b9869908612871824725">stm32l476xx.h</a></li>
+<li>LCD_CR_VSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf1fc34df7e7661a72623295818aa276c">stm32l476xx.h</a></li>
 <li>LCD_FCR_BLINK&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga64173ee59436883ede2d4b7b9d5b7fe9">stm32l476xx.h</a></li>
 <li>LCD_FCR_BLINK_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga1ab05cab944d6911f3ea12c683c4da9f">stm32l476xx.h</a></li>
 <li>LCD_FCR_BLINK_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga989d4e0b019f1ad923e903152d9391de">stm32l476xx.h</a></li>
 <li>LCD_FCR_BLINK_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga11bfff7448a7d577afe1d05203dccfaf">stm32l476xx.h</a></li>
+<li>LCD_FCR_BLINK_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf2d51f442e956aab7e848752770eab9a">stm32l476xx.h</a></li>
 <li>LCD_FCR_BLINKF&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga0c4bce5d67305640a8d581483ff68502">stm32l476xx.h</a></li>
 <li>LCD_FCR_BLINKF_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gafd10a6e9b9a0124317a03f4da8d42f0e">stm32l476xx.h</a></li>
 <li>LCD_FCR_BLINKF_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3a9930d11bb778d0c1cb4c2c97e1d77e">stm32l476xx.h</a></li>
 <li>LCD_FCR_BLINKF_2&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaaff7dc633b07c2df975ae030cf074391">stm32l476xx.h</a></li>
 <li>LCD_FCR_BLINKF_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga20116fcfe0a15724c25e76ca0eaa4aa2">stm32l476xx.h</a></li>
+<li>LCD_FCR_BLINKF_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gacd241ff344e4069e70e02ef02424e259">stm32l476xx.h</a></li>
 <li>LCD_FCR_CC&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga983bbe7a0d28e2ec90613ae091c49109">stm32l476xx.h</a></li>
 <li>LCD_FCR_CC_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5f6e4f982be62b336908e5de428f410e">stm32l476xx.h</a></li>
 <li>LCD_FCR_CC_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga287da2fa10a3d67624d6ded92093bf01">stm32l476xx.h</a></li>
 <li>LCD_FCR_CC_2&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4746b780884c6e8f466e5a1dde2f2837">stm32l476xx.h</a></li>
 <li>LCD_FCR_CC_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga148d8e2502cec7ddd7fef261c61584ae">stm32l476xx.h</a></li>
+<li>LCD_FCR_CC_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6483fe7a1d14a8146c966e4b3b9da18c">stm32l476xx.h</a></li>
 <li>LCD_FCR_DEAD&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3ffc36386c01f57b590e112a9d033a61">stm32l476xx.h</a></li>
 <li>LCD_FCR_DEAD_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6eb94c7ac631988791d732096abe0e38">stm32l476xx.h</a></li>
 <li>LCD_FCR_DEAD_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4843bf446f93b7b61f57d21dfa0f9ed6">stm32l476xx.h</a></li>
 <li>LCD_FCR_DEAD_2&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga89db21c68833f67d7ac005f0dcaabea8">stm32l476xx.h</a></li>
 <li>LCD_FCR_DEAD_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9dd04501758526002cc2fad44ddf9a85">stm32l476xx.h</a></li>
+<li>LCD_FCR_DEAD_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga449251ed94f60e3c9f874b7dd7be08aa">stm32l476xx.h</a></li>
 <li>LCD_FCR_DIV&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2530d4faede144d475c7ffecac76a064">stm32l476xx.h</a></li>
 <li>LCD_FCR_DIV_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga0e922a8476dd1f8729006da4607e8c1c">stm32l476xx.h</a></li>
+<li>LCD_FCR_DIV_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2cb7704565ff7c8dea4646c5b2d19d6a">stm32l476xx.h</a></li>
 <li>LCD_FCR_HD&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gabb56fb376147906eb7721ce5485fd9bd">stm32l476xx.h</a></li>
 <li>LCD_FCR_HD_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa60caae4d2486c7c541386db6c4fd664">stm32l476xx.h</a></li>
+<li>LCD_FCR_HD_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga57232f7f4eb17d68de37daeefea6fc7a">stm32l476xx.h</a></li>
 <li>LCD_FCR_PON&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga88601874331aec2df88db92c766cef7e">stm32l476xx.h</a></li>
 <li>LCD_FCR_PON_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6000d35c986e02ad994377ddff7f0116">stm32l476xx.h</a></li>
 <li>LCD_FCR_PON_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6e4b9748e9b5d5fbed815703263cea68">stm32l476xx.h</a></li>
 <li>LCD_FCR_PON_2&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga77924f460c41623e94426355bcf8c1c5">stm32l476xx.h</a></li>
 <li>LCD_FCR_PON_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac94043398f059f197d619cc5ff3e0220">stm32l476xx.h</a></li>
+<li>LCD_FCR_PON_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf843353a5026c238565c80caa455e857">stm32l476xx.h</a></li>
 <li>LCD_FCR_PS&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaea016a68295da006c27124544d10413f">stm32l476xx.h</a></li>
 <li>LCD_FCR_PS_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2899710c3e07f288959b5777212561a5">stm32l476xx.h</a></li>
+<li>LCD_FCR_PS_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9cff5d5cf510fdbade75bfa9f51eff67">stm32l476xx.h</a></li>
 <li>LCD_FCR_SOFIE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga93b0c2155e8a5433ac5a8f939ddc5daf">stm32l476xx.h</a></li>
 <li>LCD_FCR_SOFIE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab8998f460920b85637d62c4fd1b5d33e">stm32l476xx.h</a></li>
+<li>LCD_FCR_SOFIE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga78b8bacdac4a32233bf2cda0b817a6dd">stm32l476xx.h</a></li>
 <li>LCD_FCR_UDDIE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gad248b9bb8b5c851269efa899c871213d">stm32l476xx.h</a></li>
 <li>LCD_FCR_UDDIE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga06f0d83b37471d845c62e5dc105a0890">stm32l476xx.h</a></li>
+<li>LCD_FCR_UDDIE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga0e6e15572ff59ca0c1c016985fa83693">stm32l476xx.h</a></li>
 <li>LCD_IRQn&#160;:&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a161916b33cc34138d17e57eaa8464568">stm32l476xx.h</a></li>
 <li>LCD_RAM_SEGMENT_DATA&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa9b1f11891e4cb10b1a0898731b1f1ca">stm32l476xx.h</a></li>
 <li>LCD_RAM_SEGMENT_DATA_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga34511e69a9a097a868533514e988e073">stm32l476xx.h</a></li>
+<li>LCD_RAM_SEGMENT_DATA_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga077ae9c7f92b097bfe1a1d77a0856233">stm32l476xx.h</a></li>
 <li>LCD_SR_ENS&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3c4ee676b44117516e00a1b26dd236c7">stm32l476xx.h</a></li>
 <li>LCD_SR_ENS_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gad1f6537173c9ab9f3af17160c687cd49">stm32l476xx.h</a></li>
+<li>LCD_SR_ENS_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8863e4ab97254f5f1c762e71fe80583f">stm32l476xx.h</a></li>
 <li>LCD_SR_FCRSR&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga1318e3c0ca61e23fabd6768d3f118b90">stm32l476xx.h</a></li>
 <li>LCD_SR_FCRSR_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga62e716cb7d8b8cbe9b0f908cc1419f3d">stm32l476xx.h</a></li>
+<li>LCD_SR_FCRSR_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga7d4a416361ec6b0fbe91cd07f775746e">stm32l476xx.h</a></li>
 <li>LCD_SR_RDY&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae3d84dae053fd48fa2e262836732d3d9">stm32l476xx.h</a></li>
 <li>LCD_SR_RDY_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae9ca39e5e459804916e9d854616a7972">stm32l476xx.h</a></li>
+<li>LCD_SR_RDY_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4dcfc00df6c718f5e1ed56d196316c02">stm32l476xx.h</a></li>
 <li>LCD_SR_SOF&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga394cb9312119b288d21c60701706488e">stm32l476xx.h</a></li>
 <li>LCD_SR_SOF_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga09e683a36d941c0b089dc011992aecde">stm32l476xx.h</a></li>
+<li>LCD_SR_SOF_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab49990ad0eee3c2a7cd3e12d24f15a4d">stm32l476xx.h</a></li>
 <li>LCD_SR_UDD&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gabee96fbee4ff2e98bf625b80b6ab010c">stm32l476xx.h</a></li>
 <li>LCD_SR_UDD_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga661fb7bee4e9a51cd4e67c23b3a0a623">stm32l476xx.h</a></li>
+<li>LCD_SR_UDD_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf8dc7135ba35cdb11cb0b144a1b57ef4">stm32l476xx.h</a></li>
 <li>LCD_SR_UDR&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4bf114a777bdeb33d47941c1497df317">stm32l476xx.h</a></li>
 <li>LCD_SR_UDR_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga71ef495a94f446c3b96d950fb722816a">stm32l476xx.h</a></li>
+<li>LCD_SR_UDR_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaaa9733d229899208ed41a17de0c49602">stm32l476xx.h</a></li>
+<li>LPTIM1&#160;:&#160;<a class="el" href="group___peripheral__declaration.html#ga02dc619f9b5ac74c5b90f1d17560d16a">stm32l476xx.h</a></li>
+<li>LPTIM1_BASE&#160;:&#160;<a class="el" href="group___peripheral__memory__map.html#ga012ceb003fbb615eedb39a8d7f31c9c6">stm32l476xx.h</a></li>
 <li>LPTIM1_IRQn&#160;:&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8aa52967af3850dd051e31eee8807171c6">stm32l476xx.h</a></li>
+<li>LPTIM2&#160;:&#160;<a class="el" href="group___peripheral__declaration.html#ga43f2e57fca0162644dc98f485da13ce6">stm32l476xx.h</a></li>
 <li>LPTIM2_BASE&#160;:&#160;<a class="el" href="group___peripheral__memory__map.html#ga74dc5e8a0008c0e16598591753b71b17">stm32l476xx.h</a></li>
 <li>LPTIM2_IRQn&#160;:&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a5e28ae70dfc1e247104f6ef44437257b">stm32l476xx.h</a></li>
 <li>LPTIM_ARR_ARR&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac708b2613ec085499446b969b89e90eb">stm32l476xx.h</a></li>
 <li>LPTIM_ARR_ARR_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8c5a1383d56848f5030c2c2557f8621a">stm32l476xx.h</a></li>
+<li>LPTIM_ARR_ARR_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gabad0ac8b37df965dd6402cca20fdd0bb">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_CKFLT&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga967fdd5160e383d5740de6c393ae76a5">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_CKFLT_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9d8880e8aa2748a1c125bb93711f764d">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_CKFLT_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaafbe9abc3d0f44a37db62172a80afdb9">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_CKFLT_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaff87664b8380f74d415c408fac75d8ef">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_CKFLT_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gafe9732853338654f66fe51d6a6f9f837">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_CKPOL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga0b93ee347b6a137a97020e71fe2a44ff">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_CKPOL_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6779ec640b23cf833dd2105b8a220af5">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_CKPOL_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gad084d831c97bad9c75bc5fb870f4c605">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_CKPOL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga47dbd26a12c5443fd0955647b4d39a93">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_CKPOL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga93565f8804d86eb6b10c699241d543b1">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_CKSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae51756ab9cdc0e908f6f272ccc3e221a">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_CKSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3f72372ea98b1648628c895894c613a2">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_CKSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf1e4c4cf0fd7105b535892c7a10e1aa4">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_COUNTMODE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga360d483b0d8b2a36bf8634319cf3c4a0">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_COUNTMODE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga347fd1dcb47397008e30d1c1f371361a">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_COUNTMODE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5e50d972d4a24782712301bf2d632ae0">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_ENC&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gacd13a5203732ee6743bf9025ad9f9172">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_ENC_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga27f19afb5440831244036ec045d842ab">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_ENC_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9b057945543edba5a0b79df5fe9a583e">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_PRELOAD&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gad5dc1fa00988177012c9cb933e50db5d">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_PRELOAD_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga77ab0c368193e5c00b8961d10f4c9e51">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_PRELOAD_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5563d14ff71e36211e358a0eeda8a0b5">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_PRESC&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gadd72b0a5dbce113393e4d367b49f5d0c">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_PRESC_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf54ff2bff54f5ff370979c5310f60c16">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_PRESC_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4dee510fa2963d13fdf4aa81bb995e9a">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_PRESC_2&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga703c870efbbe78646002653cf2333a74">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_PRESC_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gadae330680ff9e06c3d69b55523ad85e5">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_PRESC_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa35291fd86def97e8c27c5749badfd91">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TIMOUT&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2ca64047a63144f4d0d4663d1d6ee6da">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TIMOUT_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf9f05dd8291e7351c085cf9fc2549c76">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_TIMOUT_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga672cd9c43d091c2db4781c6e9b2043e4">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRGFLT&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga1fbec2ad1910a83bb7ffbf4f2f9ade9c">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRGFLT_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac0c0cb2093b00a0e32bc31f71c946c9d">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRGFLT_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga014ecb2c212432123a6ee2a01dfc4cce">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRGFLT_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3d0bc1fc6d1ba7310a96dc3e40e94cf1">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_TRGFLT_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga1516877a8f950690f02d215362bb5b72">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRIGEN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gadbf1ffffa1a91f49efb93dc6a1571ea4">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRIGEN_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5e2a7ee9793909a72ca469ac52cebf6f">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRIGEN_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga533f47720800bf4619d3f576043b6ce9">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRIGEN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga30f58ca145e568f4be8eadfd7b3f0b6d">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_TRIGEN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga160a914484592698b174ecb64b7c77bf">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRIGSEL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga519aa19bd79204f1eb94a1d378655634">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRIGSEL_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga268e349e4278ec2f405603d1bc82eb2d">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRIGSEL_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab8c3ef431ee899309d6a8b518fc8af88">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRIGSEL_2&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3470980d3523263818a124f1642fbbdc">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_TRIGSEL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga206eab17762f56791b93d8c3ec9c5f15">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_TRIGSEL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab31dace3620124a37078ccdc260f355a">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_WAVE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga21d04d4b6c31e68728a6c515aa36571c">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_WAVE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gacab9d7a59b17326ad6cedabb70c0faf3">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_WAVE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa9bf1bcfbb869bb8c12a6389cd678fdd">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_WAVPOL&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf953b0b77f31228a0ddac549eb0b470e">stm32l476xx.h</a></li>
 <li>LPTIM_CFGR_WAVPOL_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa9cccc4a18860c1b4a1500945b0dc6d7">stm32l476xx.h</a></li>
+<li>LPTIM_CFGR_WAVPOL_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae98435524773e234e766a4fdbaf407e5">stm32l476xx.h</a></li>
 <li>LPTIM_CMP_CMP&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8e0da614536f546b3420c0801d6df70f">stm32l476xx.h</a></li>
 <li>LPTIM_CMP_CMP_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga7d9327679862c756efafdbb860dcb394">stm32l476xx.h</a></li>
+<li>LPTIM_CMP_CMP_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gada5643bfded457f91880778f7db67656">stm32l476xx.h</a></li>
 <li>LPTIM_CNT_CNT&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf3b069fc9f9436dbc473cee09bb67aae">stm32l476xx.h</a></li>
 <li>LPTIM_CNT_CNT_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaf423bd32750bf9bda6194a024f9815b8">stm32l476xx.h</a></li>
+<li>LPTIM_CNT_CNT_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gad81cb635eb99877bdd13613c39ca4d50">stm32l476xx.h</a></li>
 <li>LPTIM_CR_CNTSTRT&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga7c8912f46b6f529d6c632ad2de408ff3">stm32l476xx.h</a></li>
 <li>LPTIM_CR_CNTSTRT_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa04b4aa158a5189ff3981bcccb9756e1">stm32l476xx.h</a></li>
+<li>LPTIM_CR_CNTSTRT_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga289cfd728541ed33acdb6e023b19f9ca">stm32l476xx.h</a></li>
 <li>LPTIM_CR_ENABLE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8a1f4b2d79870055c5c7b622a301ad73">stm32l476xx.h</a></li>
 <li>LPTIM_CR_ENABLE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3bf077af8a00be1e670e37294915fd2a">stm32l476xx.h</a></li>
+<li>LPTIM_CR_ENABLE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaade535c6c5758858bd51334fc8ab6a49">stm32l476xx.h</a></li>
 <li>LPTIM_CR_SNGSTRT&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa0c59145554d8bfa0d636f225a932514">stm32l476xx.h</a></li>
 <li>LPTIM_CR_SNGSTRT_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa9c4bdf05747cce9157336fa8399b7e8">stm32l476xx.h</a></li>
+<li>LPTIM_CR_SNGSTRT_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga9ac129e479d844619e29c2384fc33426">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_ARRMCF&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaaf43a4be174c9303faef371ec31ab44c">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_ARRMCF_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae7a9b52575f7bb462d282dab0754c0fc">stm32l476xx.h</a></li>
+<li>LPTIM_ICR_ARRMCF_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8838d365e13b4c9de7d954989e7e3892">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_ARROKCF&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3e0e5526e60b99a2a4958145207bff7d">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_ARROKCF_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga46450f790d87d73e5159faeecd99d226">stm32l476xx.h</a></li>
+<li>LPTIM_ICR_ARROKCF_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gacf56de4c8d0c89755297f0b062983b5b">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_CMPMCF&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac1a73f097347bc05382105a527ee7f2e">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_CMPMCF_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5d0e27b84a9db60669043f14f3d89ec8">stm32l476xx.h</a></li>
+<li>LPTIM_ICR_CMPMCF_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga18b506dcf4acdd6741977de00402c73b">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_CMPOKCF&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga407e8ab4f0c1dfdca950ca20c5f2527d">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_CMPOKCF_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3023d4f15c022e8a57d9d499423efbd6">stm32l476xx.h</a></li>
+<li>LPTIM_ICR_CMPOKCF_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3bcc238eda370f1999eb9e4c622a0d01">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_DOWNCF&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gad7d337943cd5849f0b67df2bae113ffe">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_DOWNCF_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga28120f6c8dc80f5014fb7fe6fedc6d73">stm32l476xx.h</a></li>
+<li>LPTIM_ICR_DOWNCF_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga19850a5ffe670eb179503fa1be9e3622">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_EXTTRIGCF&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga0bdc0939c831c305f180c9d1518b852f">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_EXTTRIGCF_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gafe35b22bd38a6b942b777a1ee9fb0c63">stm32l476xx.h</a></li>
+<li>LPTIM_ICR_EXTTRIGCF_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaee44edb9f638e0b13a269a13c013f0b8">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_UPCF&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga94cea7a7a350f428dc1255dd6d143969">stm32l476xx.h</a></li>
 <li>LPTIM_ICR_UPCF_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae5829e2bd6ea624ccbcb9724f03e9a1d">stm32l476xx.h</a></li>
+<li>LPTIM_ICR_UPCF_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga34a94627a5c2f998f5ea8d7a57f035d1">stm32l476xx.h</a></li>
 <li>LPTIM_IER_ARRMIE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gabddf28358beda70d5cabb8bbd2f7acd7">stm32l476xx.h</a></li>
 <li>LPTIM_IER_ARRMIE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab6521147a135322a518bbf0bf60c394d">stm32l476xx.h</a></li>
+<li>LPTIM_IER_ARRMIE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga30bc158ab0a4ed0cb11b74a2f260fb3d">stm32l476xx.h</a></li>
 <li>LPTIM_IER_ARROKIE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8e16757ed47e0ee03238f7ac41f54119">stm32l476xx.h</a></li>
 <li>LPTIM_IER_ARROKIE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaac72d70b2dafa3445301ce2907ba39b3">stm32l476xx.h</a></li>
+<li>LPTIM_IER_ARROKIE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac1d1f4b63657f81d98c810fb981be8b2">stm32l476xx.h</a></li>
 <li>LPTIM_IER_CMPMIE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga84f1c6ec830c564596756452fac0f057">stm32l476xx.h</a></li>
 <li>LPTIM_IER_CMPMIE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae4ab547325c45d174b52dab47fb10ae3">stm32l476xx.h</a></li>
+<li>LPTIM_IER_CMPMIE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5420b7e7fdb5dafc0287743411ffb6b0">stm32l476xx.h</a></li>
 <li>LPTIM_IER_CMPOKIE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gac117a13cff0f470f7e9645e479301684">stm32l476xx.h</a></li>
 <li>LPTIM_IER_CMPOKIE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga50650b47231f11edf550ffcbc0c510a7">stm32l476xx.h</a></li>
+<li>LPTIM_IER_CMPOKIE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae5f9215cbbefa3f09ee58766418af015">stm32l476xx.h</a></li>
 <li>LPTIM_IER_DOWNIE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga2e63fa15734a5d03c1879752ac4ea3e4">stm32l476xx.h</a></li>
 <li>LPTIM_IER_DOWNIE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gafcf0d38445df80d079702aae01174e30">stm32l476xx.h</a></li>
+<li>LPTIM_IER_DOWNIE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga943de8e961e0ec350de2fc45b9ca1eb5">stm32l476xx.h</a></li>
 <li>LPTIM_IER_EXTTRIGIE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8e2214a5cacaee65aa8487788edac8d1">stm32l476xx.h</a></li>
 <li>LPTIM_IER_EXTTRIGIE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8a5799cd746b83f50ce3cc0e5e432f56">stm32l476xx.h</a></li>
+<li>LPTIM_IER_EXTTRIGIE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6ad517b45bbd7fd664a9ffb734949ca2">stm32l476xx.h</a></li>
 <li>LPTIM_IER_UPIE&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6f4fea67fb509ddc013229335c241211">stm32l476xx.h</a></li>
 <li>LPTIM_IER_UPIE_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga647df93a691567bdda645f15e5dbf0b3">stm32l476xx.h</a></li>
+<li>LPTIM_IER_UPIE_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga20e48c6d4270508030ddd5d92996452b">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_ARRM&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga8dca1da3466dc935eebf232c120a42f7">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_ARRM_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga738f282188e8958763a12993436b396b">stm32l476xx.h</a></li>
+<li>LPTIM_ISR_ARRM_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga1d60b2a5aa3042e705fac690ddd82ad9">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_ARROK&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gab444687af1f8f9863455191ad061a1d1">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_ARROK_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gacaaa9e9c0a0295592da0aa99997aa10a">stm32l476xx.h</a></li>
+<li>LPTIM_ISR_ARROK_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga225e79481e3488e2018b7066cc36c15d">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_CMPM&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaad268979549e2ab5d4e0227e37964e29">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_CMPM_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga4dd7e374f2dc01057c4b2b4a073de293">stm32l476xx.h</a></li>
+<li>LPTIM_ISR_CMPM_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3c2a253575aa4bcd2c8097f2e9f5c528">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_CMPOK&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3cad30aa68cb71dd75c78c01ee3ae870">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_CMPOK_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga3fa25d178519d9d1e07d0a8dd33d5d81">stm32l476xx.h</a></li>
+<li>LPTIM_ISR_CMPOK_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga58bb3764cb71aa8b10e3dd579d81d566">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_DOWN&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gae419eeabea5979ae2658ab6597cb8223">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_DOWN_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga6924a3b6ec9a7541387f1d40e0726abd">stm32l476xx.h</a></li>
+<li>LPTIM_ISR_DOWN_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga78026fe91462066bf46f3d20cfb59dde">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_EXTTRIG&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5d6fe3ef932a42040b0f9530eae1d014">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_EXTTRIG_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gabe7231122f4aa937f6e5496f9a375032">stm32l476xx.h</a></li>
+<li>LPTIM_ISR_EXTTRIG_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga5744b7eeec364753bad9ec53583ddc83">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_UP&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa5c22c593384daf21fbf0648c7157609">stm32l476xx.h</a></li>
 <li>LPTIM_ISR_UP_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga517db9f5fee8e5be22e9ed9de34338d7">stm32l476xx.h</a></li>
+<li>LPTIM_ISR_UP_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga06f3149d0ec6718d910a43f12b69df19">stm32l476xx.h</a></li>
 <li>LPTIM_OR_OR&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga124f0c6d21ae7a3be7d9db1d8b22676d">stm32l476xx.h</a></li>
 <li>LPTIM_OR_OR_0&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#gaa9be41dfe8310f51f1db3554b438adff">stm32l476xx.h</a></li>
 <li>LPTIM_OR_OR_1&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga686096d3d97e19825b09f8804d9aae99">stm32l476xx.h</a></li>
 <li>LPTIM_OR_OR_Msk&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga09277ff64d91eb2fdf28cbd8ebcc98e4">stm32l476xx.h</a></li>
+<li>LPTIM_OR_OR_Pos&#160;:&#160;<a class="el" href="group___peripheral___registers___bits___definition.html#ga35232808a093600056fe6b6a54aefa54">stm32l476xx.h</a></li>
+<li>LPUART1&#160;:&#160;<a class="el" href="group___peripheral__declaration.html#ga73eb37d103f4e4f2d18ec3d3f5208ab9">stm32l476xx.h</a></li>
+<li>LPUART1_BASE&#160;:&#160;<a class="el" href="group___peripheral__memory__map.html#ga42584c807077cea9525819eaf29c7e34">stm32l476xx.h</a></li>
 <li>LPUART1_IRQn&#160;:&#160;<a class="el" href="group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8af5ac0e39fc168694d2b7d39018c6cc0a">stm32l476xx.h</a></li>
 <li>LSI_STARTUP_TIME&#160;:&#160;<a class="el" href="group___hardware___constant___definition.html#gab9ea77371b070034ca2a56381a7e9de7">stm32l476xx.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>
