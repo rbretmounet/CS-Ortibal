@@ -3,8 +3,7 @@ var group___c_m_s_i_s___s_cn_s_c_b =
     [ "System Tick Timer (SysTick)", "group___c_m_s_i_s___sys_tick.html", "group___c_m_s_i_s___sys_tick" ],
     [ "SCnSCB_Type", "struct_s_cn_s_c_b___type.html", [
       [ "ACTLR", "group___c_m_s_i_s__core___debug_functions.html#ga13af9b718dde7481f1c0344f00593c23", null ],
-      [ "ICTR", "group___c_m_s_i_s__core___debug_functions.html#ga34ec1d771245eb9bd0e3ec9336949762", null ],
-      [ "RESERVED0", "group___c_m_s_i_s__core___debug_functions.html#gaf75fb31df4666b9dfc611c2546e35ac6", null ]
+      [ "ICTR", "group___c_m_s_i_s__core___debug_functions.html#ga34ec1d771245eb9bd0e3ec9336949762", null ]
     ] ],
     [ "SCnSCB_ACTLR_DISDEFWBUF_Msk", "group___c_m_s_i_s___s_cn_s_c_b.html#ga6cda7b7219232a008ec52cc8e89d5d08", null ],
     [ "SCnSCB_ACTLR_DISDEFWBUF_Pos", "group___c_m_s_i_s___s_cn_s_c_b.html#gafa2eb37493c0f8dae77cde81ecf80f77", null ],

@@ -108,8 +108,9 @@ $(document).ready(function(){initNavTree('stm32l4xx_8h.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gab826667865e4b774c90e9866b34c67cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___library__configuration__section.html#gab826667865e4b774c90e9866b34c67cc">STM32L4</a></td></tr>
-<tr class="memdesc:gab826667865e4b774c90e9866b34c67cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">STM32 Family.  <br /></td></tr>
+<tr class="memitem:gab826667865e4b774c90e9866b34c67cc"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STM32L4</b></td></tr>
+<tr class="memdesc:gab826667865e4b774c90e9866b34c67cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">STM32 Family. <br /></td></tr>
 <tr class="separator:gab826667865e4b774c90e9866b34c67cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad4521baecdabba9531048aef710a6bb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___library__configuration__section.html#gad4521baecdabba9531048aef710a6bb9">__STM32L4_CMSIS_VERSION_MAIN</a>&#160;&#160;&#160;(0x01)</td></tr>
 <tr class="memdesc:gad4521baecdabba9531048aef710a6bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comment the line below if you will not use the peripherals drivers. In this case, these drivers will not be included and the application code will be based on direct access to peripherals registers.  <br /></td></tr>
@@ -122,21 +123,29 @@ Macros</h2></td></tr>
 <tr class="separator:gae44471dbb98e99cacc665d7a80e18259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2db0eff678684f33447be14b855aee80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___library__configuration__section.html#ga2db0eff678684f33447be14b855aee80">__STM32L4_CMSIS_VERSION</a></td></tr>
 <tr class="separator:ga2db0eff678684f33447be14b855aee80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffaf7c3f537d7a3370b1bbdda67a2bf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__types.html#gaffaf7c3f537d7a3370b1bbdda67a2bf6">IS_FUNCTIONAL_STATE</a>(STATE)&#160;&#160;&#160;(((STATE) == <a class="el" href="group___exported__types.html#ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a>) || ((STATE) == <a class="el" href="group___exported__types.html#ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf">ENABLE</a>))</td></tr>
+<tr class="memitem:gaffaf7c3f537d7a3370b1bbdda67a2bf6"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_FUNCTIONAL_STATE</b>(STATE)&#160;&#160;&#160;(((STATE) == DISABLE) || ((STATE) == ENABLE))</td></tr>
 <tr class="separator:gaffaf7c3f537d7a3370b1bbdda67a2bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26474f43799fbade9cf300e21dd3a91a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__macros.html#ga26474f43799fbade9cf300e21dd3a91a">SET_BIT</a>(REG,  BIT)&#160;&#160;&#160;((REG) |= (BIT))</td></tr>
+<tr class="memitem:ga26474f43799fbade9cf300e21dd3a91a"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SET_BIT</b>(REG,  BIT)&#160;&#160;&#160;((REG) |= (BIT))</td></tr>
 <tr class="separator:ga26474f43799fbade9cf300e21dd3a91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga133aae6fc0d41bffab39ab223a7001de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__macros.html#ga133aae6fc0d41bffab39ab223a7001de">CLEAR_BIT</a>(REG,  BIT)&#160;&#160;&#160;((REG) &amp;= ~(BIT))</td></tr>
+<tr class="memitem:ga133aae6fc0d41bffab39ab223a7001de"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CLEAR_BIT</b>(REG,  BIT)&#160;&#160;&#160;((REG) &amp;= ~(BIT))</td></tr>
 <tr class="separator:ga133aae6fc0d41bffab39ab223a7001de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga822bb1bb9710d5f2fa6396b84e583c33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__macros.html#ga822bb1bb9710d5f2fa6396b84e583c33">READ_BIT</a>(REG,  BIT)&#160;&#160;&#160;((REG) &amp; (BIT))</td></tr>
+<tr class="memitem:ga822bb1bb9710d5f2fa6396b84e583c33"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>READ_BIT</b>(REG,  BIT)&#160;&#160;&#160;((REG) &amp; (BIT))</td></tr>
 <tr class="separator:ga822bb1bb9710d5f2fa6396b84e583c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1378fbdda39f40b85420df55f41460ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__macros.html#ga1378fbdda39f40b85420df55f41460ef">CLEAR_REG</a>(REG)&#160;&#160;&#160;((REG) = (0x0))</td></tr>
+<tr class="memitem:ga1378fbdda39f40b85420df55f41460ef"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CLEAR_REG</b>(REG)&#160;&#160;&#160;((REG) = (0x0))</td></tr>
 <tr class="separator:ga1378fbdda39f40b85420df55f41460ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga32f78bffcaf6d13023dcd7f05e0c4d57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__macros.html#ga32f78bffcaf6d13023dcd7f05e0c4d57">WRITE_REG</a>(REG,  VAL)&#160;&#160;&#160;((REG) = (VAL))</td></tr>
+<tr class="memitem:ga32f78bffcaf6d13023dcd7f05e0c4d57"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WRITE_REG</b>(REG,  VAL)&#160;&#160;&#160;((REG) = (VAL))</td></tr>
 <tr class="separator:ga32f78bffcaf6d13023dcd7f05e0c4d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae7f188a4d26c9e713a48414783421071"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__macros.html#gae7f188a4d26c9e713a48414783421071">READ_REG</a>(REG)&#160;&#160;&#160;((REG))</td></tr>
+<tr class="memitem:gae7f188a4d26c9e713a48414783421071"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>READ_REG</b>(REG)&#160;&#160;&#160;((REG))</td></tr>
 <tr class="separator:gae7f188a4d26c9e713a48414783421071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6553c99f510c3bab8cc0a91602053247"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__macros.html#ga6553c99f510c3bab8cc0a91602053247">MODIFY_REG</a>(REG,  CLEARMASK,  SETMASK)&#160;&#160;&#160;<a class="el" href="group___exported__macros.html#ga32f78bffcaf6d13023dcd7f05e0c4d57">WRITE_REG</a>((REG), (((<a class="el" href="group___exported__macros.html#gae7f188a4d26c9e713a48414783421071">READ_REG</a>(REG)) &amp; (~(CLEARMASK))) | (SETMASK)))</td></tr>
+<tr class="memitem:ga6553c99f510c3bab8cc0a91602053247"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MODIFY_REG</b>(REG,  CLEARMASK,  SETMASK)&#160;&#160;&#160;WRITE_REG((REG), (((READ_REG(REG)) &amp; (~(CLEARMASK))) | (SETMASK)))</td></tr>
 <tr class="separator:ga6553c99f510c3bab8cc0a91602053247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5daccb3b4245b833e81ff60fd1f4cf80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__macros.html#ga5daccb3b4245b833e81ff60fd1f4cf80">ATOMIC_SET_BIT</a>(REG,  BIT)</td></tr>
 <tr class="separator:ga5daccb3b4245b833e81ff60fd1f4cf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,26 +159,28 @@ Macros</h2></td></tr>
 <tr class="separator:ga72150176ac8514f3a9f71b354d344661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8774e17ec273484ebb30efd3f9307f3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__macros.html#ga8774e17ec273484ebb30efd3f9307f3a">ATOMIC_MODIFYH_REG</a>(REG,  CLEARMSK,  SETMASK)</td></tr>
 <tr class="separator:ga8774e17ec273484ebb30efd3f9307f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47a8870d71d55cefb3df47cd8c815ec8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__macros.html#ga47a8870d71d55cefb3df47cd8c815ec8">POSITION_VAL</a>(VAL)&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaf32ee2525f946bce31504904f3ef8243">__CLZ</a>(<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaf944a7b7d8fd70164cca27669316bcf7">__RBIT</a>(VAL)))</td></tr>
+<tr class="memitem:ga47a8870d71d55cefb3df47cd8c815ec8"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>POSITION_VAL</b>(VAL)&#160;&#160;&#160;(<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaf32ee2525f946bce31504904f3ef8243">__CLZ</a>(<a class="el" href="group___c_m_s_i_s___core___instruction_interface.html#gaf944a7b7d8fd70164cca27669316bcf7">__RBIT</a>(VAL)))</td></tr>
 <tr class="separator:ga47a8870d71d55cefb3df47cd8c815ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga39d4411201fb731279ad5a409b2b80d7"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group___exported__types.html#ga89136caac2e14c55151f527ac02daaff">FlagStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__types.html#ga39d4411201fb731279ad5a409b2b80d7">ITStatus</a></td></tr>
+<tr class="memitem:ga39d4411201fb731279ad5a409b2b80d7"><td class="memItemLeft" align="right" valign="top">
+typedef enum FlagStatus&#160;</td><td class="memItemRight" valign="bottom"><b>ITStatus</b></td></tr>
 <tr class="separator:ga39d4411201fb731279ad5a409b2b80d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga89136caac2e14c55151f527ac02daaff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__types.html#ga89136caac2e14c55151f527ac02daaff">FlagStatus</a> { <a class="el" href="group___exported__types.html#gga89136caac2e14c55151f527ac02daaffa589b7d94a3d91d145720e2fed0eb3a05">RESET</a> = 0
-, <a class="el" href="group___exported__types.html#gga89136caac2e14c55151f527ac02daaffab44c8101cc294c074709ec1b14211792">SET</a> = !RESET
+<tr class="memitem:ga89136caac2e14c55151f527ac02daaff"><td class="memItemLeft" align="right" valign="top"><a id="ga89136caac2e14c55151f527ac02daaff" name="ga89136caac2e14c55151f527ac02daaff"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>FlagStatus</b> { <b>RESET</b> = 0
+, <b>SET</b> = !RESET
  }</td></tr>
 <tr class="separator:ga89136caac2e14c55151f527ac02daaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9a7e9a35d2513ec15c3b537aaa4fba1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__types.html#gac9a7e9a35d2513ec15c3b537aaa4fba1">FunctionalState</a> { <a class="el" href="group___exported__types.html#ggac9a7e9a35d2513ec15c3b537aaa4fba1ad3a9df141be0ccf10389b640f492b26d">DISABLE</a> = 0
-, <a class="el" href="group___exported__types.html#ggac9a7e9a35d2513ec15c3b537aaa4fba1a7d46875fa3ebd2c34d2756950eda83bf">ENABLE</a> = !DISABLE
+<tr class="memitem:gac9a7e9a35d2513ec15c3b537aaa4fba1"><td class="memItemLeft" align="right" valign="top"><a id="gac9a7e9a35d2513ec15c3b537aaa4fba1" name="gac9a7e9a35d2513ec15c3b537aaa4fba1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>FunctionalState</b> { <b>DISABLE</b> = 0
+, <b>ENABLE</b> = !DISABLE
  }</td></tr>
 <tr class="separator:gac9a7e9a35d2513ec15c3b537aaa4fba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8333b96c67f83cba354b3407fcbb6ee8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exported__types.html#ga8333b96c67f83cba354b3407fcbb6ee8">ErrorStatus</a> { <a class="el" href="group___exported__types.html#gga8333b96c67f83cba354b3407fcbb6ee8ac7f69f7c9e5aea9b8f54cf02870e2bf8">SUCCESS</a> = 0
-, <a class="el" href="group___exported__types.html#gga8333b96c67f83cba354b3407fcbb6ee8a2fd6f336d08340583bd620a7f5694c90">ERROR</a> = !SUCCESS
+<tr class="memitem:ga8333b96c67f83cba354b3407fcbb6ee8"><td class="memItemLeft" align="right" valign="top"><a id="ga8333b96c67f83cba354b3407fcbb6ee8" name="ga8333b96c67f83cba354b3407fcbb6ee8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ErrorStatus</b> { <b>SUCCESS</b> = 0
+, <b>ERROR</b> = !SUCCESS
  }</td></tr>
 <tr class="separator:ga8333b96c67f83cba354b3407fcbb6ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

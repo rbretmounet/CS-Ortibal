@@ -18,7 +18,6 @@ var group___c_m_s_i_s___s_c_b =
       [ "MMFAR", "group___c_m_s_i_s__core___debug_functions.html#ga2d03d0b7cec2254f39eb1c46c7445e80", null ],
       [ "MMFR", "group___c_m_s_i_s__core___debug_functions.html#ga80d8984e85c56da9097b2997389d1abd", null ],
       [ "PFR", "group___c_m_s_i_s__core___debug_functions.html#ga470fb15cbd417d76f0efac74a3e765b6", null ],
-      [ "RESERVED0", "group___c_m_s_i_s__core___debug_functions.html#ga0f14d7906e3d94032eef78edb5dce46a", null ],
       [ "SCR", "group___c_m_s_i_s__core___debug_functions.html#ga3a4840c6fa4d1ee75544f4032c88ec34", null ],
       [ "SHCSR", "group___c_m_s_i_s__core___debug_functions.html#ga7b5ae9741a99808043394c4743b635c4", null ],
       [ "SHP", "group___c_m_s_i_s__core___debug_functions.html#ga9b05f74580fc93daa7fe2f0e1c9c5663", null ],

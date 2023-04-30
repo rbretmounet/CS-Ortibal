@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vrefbuf_5ftypedef_0',['VREFBUF_TypeDef',['../struct_v_r_e_f_b_u_f___type_def.html',1,'']]]
+  ['wwdg_5ftypedef_0',['WWDG_TypeDef',['../struct_w_w_d_g___type_def.html',1,'']]]
 ];

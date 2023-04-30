@@ -1,10 +1,6 @@
 var dir_b596f468b52957496e4f78b80e029268 =
 [
-    [ "doxygen_markdowns", "dir_36c8825b9d6df712b2bfc8211182e5d7.html", null ],
+    [ "peripherals", "dir_b0d8c39f387951ff28ebbf0020f52873.html", "dir_b0d8c39f387951ff28ebbf0020f52873" ],
     [ "system", "dir_e321622a6122e6e5c1fc0713c9d0f6a0.html", "dir_e321622a6122e6e5c1fc0713c9d0f6a0" ],
-    [ "main.c", "main_8c.html", "main_8c" ],
-    [ "stm32l4xx_hal_msp.c", "stm32l4xx__hal__msp_8c.html", "stm32l4xx__hal__msp_8c" ],
-    [ "syscalls.c", "syscalls_8c.html", "syscalls_8c" ],
-    [ "sysmem.c", "sysmem_8c.html", "sysmem_8c" ],
-    [ "system_stm32l4xx.c", "system__stm32l4xx_8c.html", "system__stm32l4xx_8c" ]
+    [ "system_config", "dir_554a1f620a70754deec435943c8b4f01.html", "dir_554a1f620a70754deec435943c8b4f01" ]
 ];

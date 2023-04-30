@@ -15,6 +15,5 @@ var searchData=
   ['tim8_5fcc_5firqn_12',['TIM8_CC_IRQn',['../group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a637750639eff4e2b4aae80ed6f3cf67f',1,'stm32l476xx.h']]],
   ['tim8_5ftrg_5fcom_5firqn_13',['TIM8_TRG_COM_IRQn',['../group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a01458aa0285988970fb26ba382d62bcb',1,'stm32l476xx.h']]],
   ['tim8_5fup_5firqn_14',['TIM8_UP_IRQn',['../group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8af20a30306a1b6d4fc8a2da095a2ca7e9',1,'stm32l476xx.h']]],
-  ['true_15',['true',['../main_8c.html#af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b',1,'main.c']]],
-  ['tsc_5firqn_16',['TSC_IRQn',['../group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8afdbb36a3cd235dc3dbf379e5ba53ced6',1,'stm32l476xx.h']]]
+  ['tsc_5firqn_15',['TSC_IRQn',['../group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8afdbb36a3cd235dc3dbf379e5ba53ced6',1,'stm32l476xx.h']]]
 ];

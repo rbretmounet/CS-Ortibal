@@ -7,8 +7,7 @@ var group___c_m_s_i_s___f_p_u =
       [ "FPDSCR", "group___c_m_s_i_s__core___debug_functions.html#ga58d1989664a06db6ec2e122eefa9f04a", null ],
       [ "MVFR0", "group___c_m_s_i_s__core___debug_functions.html#ga4f19014defe6033d070b80af19ef627c", null ],
       [ "MVFR1", "group___c_m_s_i_s__core___debug_functions.html#ga66f8cfa49a423b480001a4e101bf842d", null ],
-      [ "MVFR2", "group___c_m_s_i_s__core___debug_functions.html#ga479130e53a8b3c36fd8ee38b503a3911", null ],
-      [ "RESERVED0", "group___c_m_s_i_s__core___debug_functions.html#ga241528934cfe7c83b959e7d40b6fcb7f", null ]
+      [ "MVFR2", "group___c_m_s_i_s__core___debug_functions.html#ga479130e53a8b3c36fd8ee38b503a3911", null ]
     ] ],
     [ "FPU_FPCAR_ADDRESS_Msk", "group___c_m_s_i_s___f_p_u.html#ga517d89370c81325c5387b9c3085ac554", null ],
     [ "FPU_FPCAR_ADDRESS_Pos", "group___c_m_s_i_s___f_p_u.html#gaf45377b7e45be8517ddbcf2028b80ae7", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mpu_5ftype_0',['MPU_Type',['../struct_m_p_u___type.html',1,'']]]
+  ['nvic_5ftype_0',['NVIC_Type',['../struct_n_v_i_c___type.html',1,'']]]
 ];

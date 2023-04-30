@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pwr_5ftypedef_0',['PWR_TypeDef',['../struct_p_w_r___type_def.html',1,'']]]
+  ['quadspi_5ftypedef_0',['QUADSPI_TypeDef',['../struct_q_u_a_d_s_p_i___type_def.html',1,'']]]
 ];

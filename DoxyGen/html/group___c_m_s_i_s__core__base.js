@@ -10,8 +10,6 @@ var group___c_m_s_i_s__core__base =
     [ "FPU_BASE", "group___c_m_s_i_s__core__base.html#ga4dcad4027118c098c07bcd575f1fbb28", null ],
     [ "ITM", "group___c_m_s_i_s__core__base.html#gabae7cdf882def602cb787bb039ff6a43", null ],
     [ "ITM_BASE", "group___c_m_s_i_s__core__base.html#gadd76251e412a195ec0a8f47227a8359e", null ],
-    [ "MPU", "group___c_m_s_i_s__core__base.html#gaad8182e72fe5037a6ba1eb65a1554e0b", null ],
-    [ "MPU_BASE", "group___c_m_s_i_s__core__base.html#gaa0805ccd2bc4e42d63adb0618d2af571", null ],
     [ "NVIC", "group___c_m_s_i_s__core__base.html#gac8e97e8ce56ae9f57da1363a937f8a17", null ],
     [ "NVIC_BASE", "group___c_m_s_i_s__core__base.html#gaa0288691785a5f868238e0468b39523d", null ],
     [ "SCB", "group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01", null ],

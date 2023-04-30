@@ -4,7 +4,10 @@
  *  Created on: Apr 29, 2023
  *      Author: Tim S. , nithinsenthil , Raphael
  */
-
+/**
+ * @defgroup IMU IMU
+ * @{
+ */
 #include "imu.h"
 
 /**

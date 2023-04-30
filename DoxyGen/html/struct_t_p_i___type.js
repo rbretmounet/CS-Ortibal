@@ -14,13 +14,6 @@ var struct_t_p_i___type =
     [ "ITATBCTR0", "group___c_m_s_i_s__core___debug_functions.html#gaaa573b2e073e76e93c51ecec79c616d0", null ],
     [ "ITATBCTR2", "group___c_m_s_i_s__core___debug_functions.html#gab358319b969d3fed0f89bbe33e9f1652", null ],
     [ "ITCTRL", "group___c_m_s_i_s__core___debug_functions.html#gaaa4c823c10f115f7517c82ef86a5a68d", null ],
-    [ "RESERVED0", "group___c_m_s_i_s__core___debug_functions.html#ga756b2f48761ff7c56b52c1f21bbbf8c2", null ],
-    [ "RESERVED1", "group___c_m_s_i_s__core___debug_functions.html#ga963e02abdcf2dd9aab284eb91c3db671", null ],
-    [ "RESERVED2", "group___c_m_s_i_s__core___debug_functions.html#ga303a5a79824abcd146935bc0297bc380", null ],
-    [ "RESERVED3", "group___c_m_s_i_s__core___debug_functions.html#ga19254af92003a2007715754e67ffc625", null ],
-    [ "RESERVED4", "group___c_m_s_i_s__core___debug_functions.html#ga972a3b0bbe1bceb70171b2a3529eaeff", null ],
-    [ "RESERVED5", "group___c_m_s_i_s__core___debug_functions.html#ga198d726053e26a795f818ed0aa8544c5", null ],
-    [ "RESERVED7", "group___c_m_s_i_s__core___debug_functions.html#ga86c2c07941016ecbdf2f0ec959c7b2bd", null ],
     [ "SPPR", "group___c_m_s_i_s__core___debug_functions.html#ga12f79d4e3ddc69893ba8bff890d04cc5", null ],
     [ "SSPSR", "group___c_m_s_i_s__core___debug_functions.html#ga037901d7cb870199ac51d9ad0ef9fd1a", null ],
     [ "TRIGGER", "group___c_m_s_i_s__core___debug_functions.html#ga4d4cd2357f72333a82a1313228287bbd", null ]

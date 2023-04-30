@@ -6,11 +6,5 @@ var struct_n_v_i_c___type =
     [ "IP", "group___c_m_s_i_s__core___debug_functions.html#ga9a4341692e45d089a113986a3d344e98", null ],
     [ "ISER", "group___c_m_s_i_s__core___debug_functions.html#ga99fe3791941bf69b7c1edf13e0b5383a", null ],
     [ "ISPR", "group___c_m_s_i_s__core___debug_functions.html#ga58a1d427f4f45aa4bba77115ec25a2f9", null ],
-    [ "RESERVED0", "group___c_m_s_i_s__core___debug_functions.html#ga93c66a8842929d5f8e0d691a97261cc2", null ],
-    [ "RESERVED1", "group___c_m_s_i_s__core___debug_functions.html#gac27bd36347cfc18a01252538cc2bbef7", null ],
-    [ "RESERVED2", "group___c_m_s_i_s__core___debug_functions.html#ga80bce60f3405a1cde3d621eea35ac6b6", null ],
-    [ "RESERVED3", "group___c_m_s_i_s__core___debug_functions.html#gadf6616e950b18b3ef9c9c64e535b3ee2", null ],
-    [ "RESERVED4", "group___c_m_s_i_s__core___debug_functions.html#gade202178a4bd7c973b7db69d30046f50", null ],
-    [ "RESERVED5", "group___c_m_s_i_s__core___debug_functions.html#gab105e118183b4a205c3c1dddcea70d62", null ],
     [ "STIR", "group___c_m_s_i_s__core___debug_functions.html#ga37de89637466e007171c6b135299bc75", null ]
 ];

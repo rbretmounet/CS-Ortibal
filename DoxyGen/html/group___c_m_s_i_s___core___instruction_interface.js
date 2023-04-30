@@ -2,9 +2,6 @@ var group___c_m_s_i_s___core___instruction_interface =
 [
     [ "CMSIS SIMD Intrinsics", "group___c_m_s_i_s___s_i_m_d__intrinsics.html", null ],
     [ "__BKPT", "group___c_m_s_i_s___core___instruction_interface.html#ga15ea6bd3c507d3e81c3b3a1258e46397", null ],
-    [ "__CMSIS_GCC_OUT_REG", "group___c_m_s_i_s___core___instruction_interface.html#gabc17e391c13c71702366c67cba39c276", null ],
-    [ "__CMSIS_GCC_RW_REG", "group___c_m_s_i_s___core___instruction_interface.html#ga03179f79efee45c226dddfb8d824ad83", null ],
-    [ "__CMSIS_GCC_USE_REG", "group___c_m_s_i_s___core___instruction_interface.html#ga9d94dee7402367961d2cf0accc00fd97", null ],
     [ "__NOP", "group___c_m_s_i_s___core___instruction_interface.html#ga0b13f3617dd4af2cd2eb3a311073f717", null ],
     [ "__SEV", "group___c_m_s_i_s___core___instruction_interface.html#gafa58e60fcd2176ad58f96947466ea1fa", null ],
     [ "__WFE", "group___c_m_s_i_s___core___instruction_interface.html#gaf0330712223f4cfb6091e4ab84775f73", null ],

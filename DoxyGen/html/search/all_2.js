@@ -36,11 +36,10 @@ var searchData=
   ['bkp7r_33',['BKP7R',['../struct_r_t_c___type_def.html#a9934af6ae6b3f5660204d48ceb2f3192',1,'RTC_TypeDef']]],
   ['bkp8r_34',['BKP8R',['../struct_r_t_c___type_def.html#a0e7fca11f1c953270ee0ee6028860add',1,'RTC_TypeDef']]],
   ['bkp9r_35',['BKP9R',['../struct_r_t_c___type_def.html#abadf1ac26350bf00575428be6a05708b',1,'RTC_TypeDef']]],
-  ['bool_36',['bool',['../main_8c.html#af6a258d8f3ee5206d682d799316314b1',1,'main.c']]],
-  ['brr_37',['BRR',['../struct_g_p_i_o___type_def.html#aab918bfbfae459789db1fd0b220c7f21',1,'GPIO_TypeDef::BRR()'],['../struct_s_w_p_m_i___type_def.html#a24dca3d3fef0dbae21b72d6c9f98ac82',1,'SWPMI_TypeDef::BRR()'],['../struct_u_s_a_r_t___type_def.html#a6ef06ba9d8dc2dc2a0855766369fa7c9',1,'USART_TypeDef::BRR()']]],
-  ['bsrr_38',['BSRR',['../struct_g_p_i_o___type_def.html#acd6f21e08912b484c030ca8b18e11cd6',1,'GPIO_TypeDef']]],
-  ['btcr_39',['BTCR',['../struct_f_m_c___bank1___type_def.html#a161ea3265a8e17e5c7ef12f7ea19ff52',1,'FMC_Bank1_TypeDef']]],
-  ['btr_40',['BTR',['../struct_c_a_n___type_def.html#accad1e4155459a13369f5ad0e7c6da29',1,'CAN_TypeDef']]],
-  ['busfault_5firqn_41',['BusFault_IRQn',['../group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a8693500eff174f16119e96234fee73af',1,'stm32l476xx.h']]],
-  ['bwtr_42',['BWTR',['../struct_f_m_c___bank1_e___type_def.html#abd27ba74f0c9b180f713e7fad065a8d9',1,'FMC_Bank1E_TypeDef']]]
+  ['brr_36',['BRR',['../struct_g_p_i_o___type_def.html#aab918bfbfae459789db1fd0b220c7f21',1,'GPIO_TypeDef::BRR()'],['../struct_s_w_p_m_i___type_def.html#a24dca3d3fef0dbae21b72d6c9f98ac82',1,'SWPMI_TypeDef::BRR()'],['../struct_u_s_a_r_t___type_def.html#a6ef06ba9d8dc2dc2a0855766369fa7c9',1,'USART_TypeDef::BRR()']]],
+  ['bsrr_37',['BSRR',['../struct_g_p_i_o___type_def.html#acd6f21e08912b484c030ca8b18e11cd6',1,'GPIO_TypeDef']]],
+  ['btcr_38',['BTCR',['../struct_f_m_c___bank1___type_def.html#a161ea3265a8e17e5c7ef12f7ea19ff52',1,'FMC_Bank1_TypeDef']]],
+  ['btr_39',['BTR',['../struct_c_a_n___type_def.html#accad1e4155459a13369f5ad0e7c6da29',1,'CAN_TypeDef']]],
+  ['busfault_5firqn_40',['BusFault_IRQn',['../group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a8693500eff174f16119e96234fee73af',1,'stm32l476xx.h']]],
+  ['bwtr_41',['BWTR',['../struct_f_m_c___bank1_e___type_def.html#abd27ba74f0c9b180f713e7fad065a8d9',1,'FMC_Bank1E_TypeDef']]]
 ];
