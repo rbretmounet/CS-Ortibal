@@ -78,5 +78,6 @@ var searchData=
   ['msr_75',['MSR',['../struct_c_a_n___type_def.html#af98b957a4e887751fbd407d3e2cf93b5',1,'CAN_TypeDef']]],
   ['mvfr0_76',['MVFR0',['../group___c_m_s_i_s__core___debug_functions.html#ga4f19014defe6033d070b80af19ef627c',1,'FPU_Type']]],
   ['mvfr1_77',['MVFR1',['../group___c_m_s_i_s__core___debug_functions.html#ga66f8cfa49a423b480001a4e101bf842d',1,'FPU_Type']]],
-  ['mvfr2_78',['MVFR2',['../group___c_m_s_i_s__core___debug_functions.html#ga479130e53a8b3c36fd8ee38b503a3911',1,'FPU_Type']]]
+  ['mvfr2_78',['MVFR2',['../group___c_m_s_i_s__core___debug_functions.html#ga479130e53a8b3c36fd8ee38b503a3911',1,'FPU_Type']]],
+  ['my_20club_20repository_20documentation_79',['My Club Repository Documentation',['../index.html',1,'']]]
 ];
