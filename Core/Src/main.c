@@ -882,7 +882,7 @@ int main() {
 		nop(100000);
 	}
 
-	while(1) { // blinky 
+	while(1) { // blinky
 		op_led_c(!gpio_read(GPIOB, 11));
 		nop(1000000);
 		int16_t ax = op1_imu_read_acel_x();
