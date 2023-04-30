@@ -93,6 +93,7 @@ Navigate to the project directory `~/orbital_r1/Debug/` and select the file that
 ## Resources
 - [EGit Tutorial](https://eclipsesource.com/blogs/tutorials/egit-tutorial/)
 - [DoxyGen](https://www.doxygen.nl/manual/index.html)
+
 STM32L476 vendor documentation 
 - [Webpage](https://www.st.com/en/microcontrollers-microprocessors/stm32l476zg.html) - software support and complete information
 - [Datasheet](https://www.st.com/resource/en/datasheet/stm32l476zg.pdf) - overview of features and electrical specifications 
