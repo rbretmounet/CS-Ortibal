@@ -77,6 +77,8 @@ In order to so you must right click `orbital_r1` and select `properties` at the 
 
 ## Developing on the board
 ### Connecting the board
+The current ST-Link Board has a few pins on the other side, which have a note next to them marking which pin connects to which pin on the Orbital Platform's SWD ports.
+![image](https://github.com/rbretmounet/CS-Ortibal/blob/4-update-readme/photos/st_link_SWD.jpg)
 Connect the ST-Link Board to the Orbital Platform via the SWD pins.
 ![image](https://github.com/rbretmounet/CS-Ortibal/blob/4-update-readme/photos/SWD_pinout.jpg)
 Connect the board to your computer's USB port and open up `STM32 ST-LINK Utility.exe`.
