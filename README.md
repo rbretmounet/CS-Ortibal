@@ -78,7 +78,7 @@ In order to so you must right click `orbital_r1` and select `properties` at the 
 ## Developing on the board
 ### Connecting the board
 Connect the ST-Link Board to the Orbital Platform via the SWD pins.
-![SWD_Pins](https://github.com/rbretmounet/CS-Orbital/photos/4-update-readme/SWD_pinout.jpg?raw=true)
+![SWD_Pinout](https://github.com/rbretmounet/CS-Ortibal/tree/4-update-readme/photos/SWD_pinout.jpg)
 Connect the board to your computer's USB port and open up `STM32 ST-LINK Utility.exe`.
 Navigate to `Target -> Connect` the device memory should popluate with addresses if successful.
 ### Flashing the board
