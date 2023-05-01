@@ -58,7 +58,7 @@ void gpio_set(GPIO_TypeDef * port, int pin, int value);
  * @param port The GPIO port to read from.
  * @param pin The pin number to read.
  *
- * @returns The value of the GPIO pin (1 or 0).
+ * @returns The value of the GPIO pin (1 or 0) or -1 if the pin could not be read.
  */
 int gpio_read(GPIO_TypeDef * port, int pin);
 

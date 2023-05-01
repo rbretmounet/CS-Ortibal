@@ -60,7 +60,7 @@ void init_clocks() {
 		| 1 << 20 // PLLQEN (PLL48M1CLK) output enabled
 		| 0x0 << 17 // PLLP default
 		| 0 << 16 // PLLSAI3 not enabled
-		 | 10 << 8 // PLLN = 10
+		| 10 << 8 // PLLN = 10
 	//	| 20 << 8 // OVERCLOCK! for testing only
 		| 0 << 4 // PLLM = 1
 		| 0x2; // HSI16 as input clock to PLLs
