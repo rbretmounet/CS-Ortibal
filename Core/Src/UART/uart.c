@@ -2,7 +2,7 @@
  * uart.c
  *
  *  Created on: May 6th, 2023
- *      Author:  , Raphael
+ *      Author:  Darsh, Raphael
  */
 
 #include "uart.h"
