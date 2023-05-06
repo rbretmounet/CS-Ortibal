@@ -48,7 +48,8 @@ void init_clocks() {
 		| 1 << 22 // enable i2c2 //test change
 		| 1 << 15 // enable spi3
 		| 1 << 14 // enable spi2
-		| 1 << 10; // enable rtc apb
+		| 1 << 10 // enable rtc apb
+		| 1 << 18; // enable USART3
 	RCC->APB2ENR = 1; // enable syscfg
 	FLASH->ACR = 0x600 | 4 | 1<<8; // flash access latency to four wait states, prefetch enable lol
 	//FLASH->ACR = 0x604; // OVERCLOCK! for testing only
