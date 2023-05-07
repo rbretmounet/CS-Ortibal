@@ -1,33 +1,37 @@
-// opr1-quickstart1 
-// Quick start for Orbital Platform R1 
-// TCS 202304. Yume Research & Friends. 
-// The above attribution must be included regardless of license. 
-// This is not permissively licensed software. 
+/*
+ * UART debugger testing
+ */
 
-//system_config access
-#include "system_config/system_config.h"
-#include "system_config/gpio.h"
-#include "system_config/i2c.h"
-
-//peripherals access
+#include "UART/uart.h"
 #include "peripherals/led.h"
-#include "peripherals/imu.h"
-#include "peripherals/mag.h"
 
-#include "stm32l476xx.h"
-#include <math.h> // for sqrt 
+void uart_gpio_clock_init() {
+	// Enable the UART3 peripheral clock.
+	RCC->APB1ENR1 |= RCC_APB1ENR1_USART3EN;
 
-// IMU, Gyro Tests
+	// Configure the UART pins (GPIO pins) for UART3.
+	RCC->AHB2ENR |= RCC_AHB2ENR_GPIOCEN;	// Enable GPIO clock for port C pins
+
+	// Configure GPIO pins
+	GPIOC->MODER &= ~(GPIO_MODER_MODE4_Msk | GPIO_MODER_MODE5_Msk);
+	GPIOC->MODER |= (GPIO_MODER_MODE4_1 | GPIO_MODER_MODE5_1);  // Alternative function mode
+
+	GPIOC->AFR[0] &= ~(GPIO_AFRL_AFSEL4_Msk | GPIO_AFRL_AFSEL5_Msk);
+	GPIOC->AFR[0] |= (7U << GPIO_AFRL_AFSEL4_Pos) | (7U << GPIO_AFRL_AFSEL5_Pos);  // AF7 (UART3) selected
+}
+
 int main() {
 	init_clocks();
 	init_gpio();
 	init_nvic();
 
+	uart_gpio_clock_init();
+
+	uart3_init();
+
 	while(1) { 
-		// implement the UART
-
-
-
+		uart3_display("Hello");
+		nop(1000);
 	}
 }
 

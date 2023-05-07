@@ -8,7 +8,7 @@
 #include "gpio.h"
 
 /**
- * Initializes the GPIO pins for the microcontroller.
+ * Initializes the GPIO pins for the leds, buttons, and UART.
  *
  * @param None
  *
@@ -39,9 +39,6 @@ void init_gpio() {
 	GPIOD->MODER = 0x00005555; // leds D7 to D0
 	GPIOE->MODER = 0x1 << (2*2); // led
 	GPIOG->MODER = 0x01445000; // leds
-	// TX = bits 7 & 6 (10)
-	// RX = bits 9 & 8 (10)
-	GPIOC->MODER = 0x140; // configure TX and RX pins for UART to alternate function mode
 }
 
 /**
