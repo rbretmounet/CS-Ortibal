@@ -1,11 +1,12 @@
 /*
- * system_handlers.c
+ * interrupt_handlers.c
  *
- *  Created on: Apr 29, 2023
- *      Author: Tim S. , nithinsenthil , Raphael
+ *  - Apr 29, 2023 (Creation)
+ *      Author       : Tim S.
+ *      Contributors : nithinsenthil , Raphael
+ *      Log          : wrote the Systick_Handler
  */
 
-#include "../peripherals/led.h"
 #include "interrupt_handlers.h"
 
 // initializing Global (external) variables

@@ -1,16 +1,17 @@
 /*
  * gpio.h
  *
- *  Created on: Apr 29, 2023
- *      Author: Tim S. , nithinsenthil , Raphael
+ *  - Apr 29, 2023 (Creation)
+ *      Author       : Tim S.
+ *      Contributors : nithinsenthil , Raphael
+ *      Log          : All the gpio functions defined.
  */
 
 #ifndef SRC_GPIO_H_
 #define SRC_GPIO_H_
 
-
-#include "stm32l476xx.h"
-#include "system_config.h"
+#include "../../system/stm32l476xx.h"
+#include "../clock_nvic_config.h"
 
 /**
  * Initializes the GPIO pins for the microcontroller.

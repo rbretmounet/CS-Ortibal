@@ -1,14 +1,16 @@
 /*
  * i2c.c
  *
- *  Created on: Apr 29, 2023
- *      Author: Tim S. , nithinsenthil , Raphael
+ *  - Apr 29, 2023 (Creation)
+ *      Author       : Tim S.
+ *      Contributors : nithinsenthil , Raphael
+ *      Log          : Created the I2C bitbang functions
  */
 
 #include "i2c.h"
 
 /**
- * Sets the line mode of a GPIO pin for SoftI2C communication.
+ * Sets the line mode of a GPIO pin for Software I2C communication.
  *
  * @param port The GPIO port to set the line mode for.
  * @param pin The pin number to set the line mode for.
@@ -47,7 +49,7 @@ void init_softi2c(GPIO_TypeDef * scl_port, int scl_pin, GPIO_TypeDef * sda_port,
 }
 
 /**
- * Delays the execution of the program for a short period of time to allow for proper timing in the SoftI2C protocol.
+ * Delays the execution of the program for a short period of time to allow for proper timing in the Software I2C protocol.
  *
  * @returns None
  */
@@ -76,7 +78,7 @@ void softi2c_sig_start(GPIO_TypeDef * scl_port, int scl_pin, GPIO_TypeDef * sda_
 }
 
 /**
- * Generates a repeated start signal for the SoftI2C protocol.
+ * Generates a repeated start signal for the Software I2C protocol.
  *
  * @param scl_port The GPIO port for the SCL line.
  * @param scl_pin The GPIO pin for the SCL line.
@@ -118,7 +120,7 @@ void softi2c_sig_stop(GPIO_TypeDef * scl_port, int scl_pin, GPIO_TypeDef * sda_p
 }
 
 /**
- * Sends an 8-bit data over a software I2C bus.
+ * Sends an 8-bit data over an I2C bus.
  *
  * @param scl_port The GPIO port of the SCL line.
  * @param scl_pin The GPIO pin of the SCL line.
@@ -140,14 +142,14 @@ void softi2c_send8(GPIO_TypeDef * scl_port, int scl_pin, GPIO_TypeDef * sda_port
 }
 
 /**
- * Reads 8 bits of data from a SoftI2C bus.
+ * Reads 8 bits of data from an I2C bus.
  *
  * @param scl_port The GPIO port of the SCL line.
  * @param scl_pin The GPIO pin of the SCL line.
  * @param sda_port The GPIO port of the SDA line.
  * @param sda_pin The GPIO pin of the SDA line.
  *
- * @returns The 8 bits of data read from the SoftI2C bus.
+ * @returns The 8 bits of data read from the Software I2C bus.
  */
 int softi2c_read8(GPIO_TypeDef * scl_port, int scl_pin, GPIO_TypeDef * sda_port, int sda_pin) {
 	int data = 0;
@@ -183,14 +185,14 @@ void softi2c_send_nack(GPIO_TypeDef * scl_port, int scl_pin, GPIO_TypeDef * sda_
 }
 
 /**
- * Reads a single byte from a SoftI2C device with a NACK signal.
+ * Reads a single byte from an I2C device with a NACK signal.
  *
  * @param scl_port The GPIO port of the SCL line.
  * @param scl_pin The GPIO pin of the SCL line.
  * @param sda_port The GPIO port of the SDA line.
  * @param sda_pin The GPIO pin of the SDA line.
  *
- * @returns The byte read from the SoftI2C device.
+ * @returns The byte read from the I2C device.
  */
 int softi2c_read_nack(GPIO_TypeDef * scl_port, int scl_pin, GPIO_TypeDef * sda_port, int sda_pin) {
 	softi2c_line_mode(scl_port, scl_pin, 0);
@@ -205,7 +207,7 @@ int softi2c_read_nack(GPIO_TypeDef * scl_port, int scl_pin, GPIO_TypeDef * sda_p
 }
 
 /**
- * Writes data to a register of a device using software I2C protocol.
+ * Writes data to a register of a device using software I2C.
  *
  * @param scl_port The GPIO port of the SCL pin.
  * @param scl_pin The pin number of the SCL pin.
@@ -231,7 +233,7 @@ int softi2c_write_reg(GPIO_TypeDef * scl_port, int scl_pin, GPIO_TypeDef * sda_p
 }
 
 /**
- * Reads a register from a device using software I2C protocol.
+ * Reads a register from a device using software I2C.
  *
  * @param scl_port The GPIO port of the SCL pin.
  * @param scl_pin The GPIO pin number of the SCL pin.

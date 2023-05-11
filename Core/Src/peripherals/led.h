@@ -1,14 +1,16 @@
 /*
  * led.h
  *
- *  Created on: Apr 29, 2023
- *      Author: Tim S. , nithinsenthil , Raphael
+ *  - Apr 29, 2023 (Creation)
+ *      Author       : Tim S.
+ *      Contributors : nithinsenthil , Raphael
+ *      Log          : Led Control functions written
  */
 
 #ifndef SRC_LED_H_
 #define SRC_LED_H_
 
-#include "../system_config/gpio.h"
+#include "../system_config/GPIO/gpio.h"
 
 /**
  * Sets the state of a LED A connected to a GPIO pin.
