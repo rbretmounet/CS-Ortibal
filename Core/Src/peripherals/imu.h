@@ -1,14 +1,16 @@
 /*
  * imu.h
  *
- *  Created on: Apr 29, 2023
- *      Author: Tim S. , nithinsenthil , Raphael
+ *  - Apr 29, 2023 (Creation)
+ *      Author       : Tim S.
+ *      Contributors : nithinsenthil , Raphael
+ *      Log          : IMU Control functions written
  */
 
 #ifndef SRC_PERIPHERALS_IMU_H_
 #define SRC_PERIPHERALS_IMU_H_
 
-#include "../system_config/i2c.h"
+#include "../system_config/I2C/i2c.h"
 
 //Macros
 #define IMU_ADDR 0x6A

@@ -1,14 +1,16 @@
 /*
  * system_config.h
  *
- *  Created on: Apr 29, 2023
- *      Author: Tim S. , nithinsenthil , Raphael
+ *  - Created on: Apr 29, 2023
+ *      Author       : Tim S.
+ *      Contributors : nithinsenthil , Raphael
+ *      Log          : All necessary clock registers configured
  */
 
 #ifndef SRC_SYSTEM_CONFIG_H_
 #define SRC_SYSTEM_CONFIG_H_
 
-#include "stm32l476xx.h"
+#include "../system/stm32l476xx.h"
 
 typedef enum { false, true } bool;
 
@@ -32,7 +34,7 @@ void init_clocks();
 
 /**
  * Initializes the Nested Vector Interrupt Controller (NVIC) for the SysTick timer.
- * The SysTick timer is used for generating periodic interrupts.
+ * The SysTick timer is used for generating periodic (1ms) interrupts.
  *
  * @param None
  *

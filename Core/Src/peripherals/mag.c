@@ -1,9 +1,12 @@
 /*
  * mag.c
  *
- *  Created on: Apr 29, 2023
- *      Author: Tim S. , nithinsenthil , Raphael
+ *  - Apr 29, 2023 (Creation)
+ *      Author       : Tim S.
+ *      Contributors : nithinsenthil , Raphael
+ *      Log          : Magnetometer Control functions written
  */
+
 
 #include "mag.h"
 
