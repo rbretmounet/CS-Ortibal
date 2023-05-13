@@ -8,7 +8,6 @@
  */
 
 #include "interrupt_handlers.h"
-
 // initializing Global (external) variables
 int systick_time = 0;	// systick interrupt counter
 
@@ -47,3 +46,17 @@ void SysTick_Handler() {
 		op_led_ag(0);
 	}
 }
+void EXTI15_10_IRQHandler(){
+	printMsg("Here");
+	if (EXTI->PR1 & EXTI_PR1_PIF10)    // If the PA1 triggered the interrupt
+	{
+		op_led_c(1);
+		Button_Handler();
+		EXTI->PR1 |= EXTI_PR1_PIF10;  // Clear the interrupt flag by writing a 1
+	}
+}
+void Button_Handler(){
+	printMsg("Button Pressed!\n");
+}
+
+

@@ -128,6 +128,9 @@ void init_nvic() {
 	__disable_irq();
 	SysTick->LOAD = (core_MHz / 8) * 1000; // configure for 1 ms period, use AHB/8
 	SysTick->CTRL = 0x3; // use AHB/8 as input clock, enable interrupts and counter
+	NVIC_SetPriority(EXTI15_10_IRQn, 1);  // Set Priority
+	NVIC_EnableIRQ(EXTI15_10_IRQn); //
 	NVIC_EnableIRQ(SysTick_IRQn);
+
 	__enable_irq();
 }

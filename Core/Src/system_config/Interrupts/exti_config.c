@@ -1,0 +1,10 @@
+#include "exti_config.h"
+
+
+void EXTI_init(){
+	//printMsg("EXTI INIT");
+	SYSCFG->EXTICR[3] &= ~SYSCFG_EXTICR3_EXTI10;
+	SYSCFG->EXTICR[3] |= SYSCFG_EXTICR3_EXTI10_PB;
+	EXTI->IMR1 |= EXTI_IMR1_IM10;
+	EXTI->RTSR1 |= EXTI_RTSR1_RT10;
+}

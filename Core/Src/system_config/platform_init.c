@@ -9,6 +9,7 @@
 #include "platform_init.h"
 #include "./UART/uart.h"
 #include "./I2C/i2c.h"
+#include "./Interrupts/exti_config.h"
 
 /*
  * Configures the system's various features,
@@ -22,7 +23,7 @@ void init_platform() {
 	init_clocks();	// initialize the clocks
 	init_gpio();	// intitialize the GPIO pins
 	init_nvic();	// initialize the NVIC
-
+	EXTI_init();
 	init_softi2c(OP1_I2C2);		// initialize the sotfware implemented I2C for I2C Bus 2
 	uart_init(USART3, 9600);	// initialize the hardware for USART Bus 3
 }

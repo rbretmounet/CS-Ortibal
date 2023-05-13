@@ -12,6 +12,7 @@
 
 #include "../../peripherals/led.h"
 #include "../clock_nvic_config.h"
+#include "../../tools/print_scan.h"
 
 /**
  * Interrupt handler for the SysTick timer.
@@ -23,4 +24,13 @@
  */
 void SysTick_Handler();
 
+void Button_Handler();
+/**
+ * Interrupt handler for the Button Press.
+ * Increments the systick_time variable and updates the status of the heartbeat and activity LEDs.
+ *
+ * @param None
+ *
+ * @returns None
+ */
 #endif /* SRC_SYSTEM_CONFIG_INTERRUPT_HANDLERS_H_ */
