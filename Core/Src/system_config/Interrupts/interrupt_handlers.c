@@ -1,15 +1,28 @@
 /*
  * interrupt_handlers.c
  *
+ * 	- May 14-16, 2023
+ * 		Author       : Raphael, Darsh, Parteek
+ *      Contributors : nithilsenthil, Huey, Raymond, Kevin
+ *      Log          : wrote the Button Handlers
+ *
  *  - Apr 29, 2023 (Creation)
  *      Author       : Tim S.
  *      Contributors : nithinsenthil , Raphael
  *      Log          : wrote the Systick_Handler
  */
 
-#include "interrupt_handlers.h"
+#include "../../peripherals/led.h"
+#include "../clock_nvic_config.h"
+#include "../../tools/print_scan.h"
+
+
 // initializing Global (external) variables
 int systick_time = 0;	// systick interrupt counter
+
+// prototypes for functions defined later
+void Button0_Handler();
+void Button1_Handler();
 
 /**
  * Interrupt handler for the SysTick timer.
@@ -20,11 +33,7 @@ int systick_time = 0;	// systick interrupt counter
  * @returns None
  */
 void SysTick_Handler() {
-
 	systick_time++;
-
-	// use d7 to d0 to display system time
-//	GPIOD->ODR = (GPIOD->ODR & 0xFFFFFF00) | (systick_time >> 4) & 0xFF;
 
 	// heartbeat led
 	if (!(systick_time % 1000)) {
@@ -46,17 +55,56 @@ void SysTick_Handler() {
 		op_led_ag(0);
 	}
 }
+
+/*
+ * Interrupt Handler for GPIO Pins 10 - 15 (all ports)
+ * Figures out which pin caused the interrupt, then calls it's respective handler
+ *
+ * @param None
+ *
+ * @returns None
+ */
 void EXTI15_10_IRQHandler(){
-	printMsg("Here");
-	if (EXTI->PR1 & EXTI_PR1_PIF10)    // If the PA1 triggered the interrupt
-	{
-		op_led_c(1);
-		Button_Handler();
-		EXTI->PR1 |= EXTI_PR1_PIF10;  // Clear the interrupt flag by writing a 1
+	/*
+	 * General Procedure
+	 * 		- Check which pins caused the interrupt by checking the Pending Request Register
+	 * 		- For the request that is pending, clear the interrupt flag by writing a
+	 * 		  1 to the same Pending Request Register
+	 * 		- Call the Interrupt Handler for whatever is connected to that pin (or the pin itself)
+	 */
+
+	if (EXTI->PR1 & EXTI_PR1_PIF10) {		// Button 0
+		EXTI->PR1 |= EXTI_PR1_PIF10;
+		Button0_Handler();
+	}
+	else if (EXTI->PR1 & EXTI_PR1_PIF11) {	// Button 1
+		EXTI->PR1 |= EXTI_PR1_PIF11;
+		Button0_Handler();
 	}
 }
-void Button_Handler(){
-	printMsg("Button Pressed!\n");
+
+/**
+ * Interrupt Handler for Button 0
+ * Prints a message to the console
+ *
+ * @param None
+ *
+ * @returns None
+ */
+void Button0_Handler(){
+	printMsg("Button 0 Pressed!\n");
+}
+
+/**
+ * Interrupt Handler for Button 1
+ * Prints a message to the console
+ *
+ * @param None
+ *
+ * @returns None
+ */
+void Button1_Handler(){
+	printMsg("Button 1 Pressed!\n");
 }
 
 
