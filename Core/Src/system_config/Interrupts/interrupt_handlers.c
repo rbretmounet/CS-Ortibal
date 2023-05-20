@@ -79,7 +79,7 @@ void EXTI15_10_IRQHandler(){
 	}
 	else if (EXTI->PR1 & EXTI_PR1_PIF11) {	// Button 1
 		EXTI->PR1 |= EXTI_PR1_PIF11;
-		Button0_Handler();
+		Button1_Handler();
 	}
 }
 
