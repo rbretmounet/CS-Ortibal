@@ -9,10 +9,12 @@
 #define SRC_PERIPHERALS_IMU_H_
 
 #include "../system_config/i2c.h"
-
+/** \addtogroup IMU
+ *  @{
+ */
 //Macros
 #define IMU_ADDR 0x6A
-#define IMU_ODR_OFF 		0
+#define IMU_ODR_OFF 		0 //!< Offset
 #define IMU_ODR_12_5_Hz 	1
 #define IMU_ODR_26_Hz 		2
 #define IMU_ODR_52_Hz 		3
@@ -33,7 +35,7 @@
 #define IMU_FS_1000_dps 	8
 #define IMU_FS_2000_dps 	12
 #define IMU_FS_4000_dps 	1
-
+/** @}*/
 /**
  * Configures the accelerometer control register of an IMU device.
  *

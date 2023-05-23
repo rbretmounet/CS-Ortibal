@@ -5,6 +5,15 @@
  *      Author: Tim S. , nithinsenthil , Raphael
  */
 
+/**
+ * @defgroup led LED
+ *  This is the LED group
+ *  @{
+ */
+
+/** @page mypage2 This is a section in LED
+ *  Text of the first section
+ */
 #include "led.h"
 
 /**
@@ -85,3 +94,4 @@ void op_led_dx(int pin, int value) {
 	if (pin & 0xFFFFFF00) return;	// not a valid D led pin numebr
 	gpio_set(GPIOD, pin, value);
 }
+/** @} */ // end of LED Group

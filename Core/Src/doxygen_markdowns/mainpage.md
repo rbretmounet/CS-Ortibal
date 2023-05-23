@@ -32,8 +32,11 @@
  
  /*! \page api_documentation API Documentation
 	Document any APIs that are part of your codebase, including functions, classes, and methods. Use Doxygen's special commands to provide detailed information about parameters, return values, and any other relevant details.
+	
 	\section peripherals Peripherals
-*/
+	
+  */
+
 /*! \page code_conventions Code Conventions
  * Document any conventions or standards that are used in the codebase, such as naming conventions, coding style, or design patterns.
 */

@@ -4,10 +4,18 @@
  *  Created on: Apr 29, 2023
  *      Author: Tim S. , nithinsenthil , Raphael
  */
+
 /**
  * @defgroup IMU IMU
- * @{
+ *  This is the IMU group
+ *  @{
  */
+
+/** @page mypage1 This is a section in group 5
+ *  Text of the first section
+ */
+
+
 #include "imu.h"
 
 /**
@@ -121,3 +129,4 @@ int16_t op1_imu_read_gyro_z() {
 int16_t op1_imu_read_temp() {
 	return softi2c_read_reg_hl(OP1_I2C2, IMU_ADDR, 0x21, 0x20);
 }
+/** @} */ // end of IMU Group

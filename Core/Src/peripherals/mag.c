@@ -4,7 +4,15 @@
  *  Created on: Apr 29, 2023
  *      Author: Tim S. , nithinsenthil , Raphael
  */
+/**
+ * @defgroup mag MAG
+ *  This is the MAG group
+ *  @{
+ */
 
+/** @page mypage3 This is a section in MAG
+ *  Text of the first section
+ */
 #include "mag.h"
 
 /**
@@ -77,3 +85,5 @@ int16_t op1_mag_read_z() {
 int16_t op1_mag_read_temp() {
 	return softi2c_read_reg_hl(OP1_I2C2, MAG_ADDR, 0x08, 0x07);
 }
+
+/** @} */ // end of MAG Group
