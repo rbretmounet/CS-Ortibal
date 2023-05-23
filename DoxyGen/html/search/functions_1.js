@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['itm_5fcheckchar_0',['ITM_CheckChar',['../group___c_m_s_i_s__core___debug_functions.html#gae61ce9ca5917735325cd93b0fb21dd29',1,'core_cm4.h']]],
-  ['itm_5freceivechar_1',['ITM_ReceiveChar',['../group___c_m_s_i_s__core___debug_functions.html#gac3ee2c30a1ac4ed34c8a866a17decd53',1,'core_cm4.h']]],
-  ['itm_5fsendchar_2',['ITM_SendChar',['../group___c_m_s_i_s__core___debug_functions.html#gac90a497bd64286b84552c2c553d3419e',1,'core_cm4.h']]]
+  ['busfault_5fhandler_0',['BusFault_Handler',['../stm32l4xx__it_8c.html#a850cefb17a977292ae5eb4cafa9976c3',1,'stm32l4xx_it.c']]]
 ];

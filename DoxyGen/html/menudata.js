@@ -28,7 +28,11 @@ var menudata={children:[
 {text:"Getting Started",url:"md___users_raphaelbret_mounet__s_t_m32_cube_i_d_e_workspace_1_12_0_orbital_r1__core__src_doxygen_markdowns_mainpage.html#getting_started"},
 {text:"Code Structure",url:"md___users_raphaelbret_mounet__s_t_m32_cube_i_d_e_workspace_1_12_0_orbital_r1__core__src_doxygen_markdowns_mainpage.html#code_structure"},
 {text:"Code Examples",url:"md___users_raphaelbret_mounet__s_t_m32_cube_i_d_e_workspace_1_12_0_orbital_r1__core__src_doxygen_markdowns_mainpage.html#code_examples"},
-{text:"API Documentation",url:"api_documentation.html"},
+{text:"API Documentation",url:"usergroup0.html",children:[
+{text:"Peripherals",url:"usergroup1.html",children:[
+{text:"IMU",url:"group___i_m_u.html"},
+{text:"LED",url:"group__led.html"},
+{text:"MAG",url:"group__mag.html"}]}]},
 {text:"Code Conventions",url:"code_conventions.html"},
 {text:"Contributing Guidelines",url:"@ref contributing_guidelines"},
 {text:"Changelog",url:"@ref changelog"},

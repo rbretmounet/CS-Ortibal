@@ -29,7 +29,13 @@ var NAVTREE =
     [ "Getting Started", "md___users_raphaelbret_mounet__s_t_m32_cube_i_d_e_workspace_1_12_0_orbital_r1__core__src_doxygen_markdowns_mainpage.html#getting_started", null ],
     [ "Code Structure", "md___users_raphaelbret_mounet__s_t_m32_cube_i_d_e_workspace_1_12_0_orbital_r1__core__src_doxygen_markdowns_mainpage.html#code_structure", null ],
     [ "Code Examples", "md___users_raphaelbret_mounet__s_t_m32_cube_i_d_e_workspace_1_12_0_orbital_r1__core__src_doxygen_markdowns_mainpage.html#code_examples", null ],
-    [ "API Documentation", "api_documentation.html", null ],
+    [ "API Documentation", "usergroup0.html", [
+      [ "Peripherals", "usergroup1.html", [
+        [ "IMU", "group___i_m_u.html", null ],
+        [ "LED", "group__led.html", null ],
+        [ "MAG", "group__mag.html", null ]
+      ] ]
+    ] ],
     [ "Code Conventions", "code_conventions.html", null ],
     [ "Contributing Guidelines", "@ref contributing_guidelines", null ],
     [ "Changelog", "@ref changelog", null ],

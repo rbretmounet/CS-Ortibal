@@ -1,13 +1,17 @@
 var searchData=
 [
-  ['op1_5fimu_5facel_5fctrl_0',['op1_imu_acel_ctrl',['../group___i_m_u.html#ga036726be4850b2c8308b1b70cabcd000',1,'op1_imu_acel_ctrl(int acel_rate, int acel_scale, int digital_filter_on):&#160;imu.c'],['../group___i_m_u.html#ga036726be4850b2c8308b1b70cabcd000',1,'op1_imu_acel_ctrl(int acel_rate, int acel_scale, int digital_filter_on):&#160;imu.c']]],
-  ['op1_5fimu_5fgyro_5fctrl_1',['op1_imu_gyro_ctrl',['../group___i_m_u.html#ga1a9765dbe86c5d4166283b51b67e03dc',1,'op1_imu_gyro_ctrl(int gyro_rate, int gyro_scale):&#160;imu.c'],['../group___i_m_u.html#ga1a9765dbe86c5d4166283b51b67e03dc',1,'op1_imu_gyro_ctrl(int gyro_rate, int gyro_scale):&#160;imu.c']]],
-  ['op1_5fimu_5finit_2',['op1_imu_init',['../group___i_m_u.html#ga19d0b5ae0aae4b9dd0c013e89c24758b',1,'op1_imu_init(int acel_rate, int acel_scale, int gyro_rate, int gyro_scale):&#160;imu.c'],['../group___i_m_u.html#ga19d0b5ae0aae4b9dd0c013e89c24758b',1,'op1_imu_init(int acel_rate, int acel_scale, int gyro_rate, int gyro_scale):&#160;imu.c']]],
-  ['op1_5fimu_5fread_5facel_5fx_3',['op1_imu_read_acel_x',['../group___i_m_u.html#gae6e78a360d51fcaa0b5ad8572cb82508',1,'op1_imu_read_acel_x():&#160;imu.c'],['../group___i_m_u.html#gae6e78a360d51fcaa0b5ad8572cb82508',1,'op1_imu_read_acel_x():&#160;imu.c']]],
-  ['op1_5fimu_5fread_5facel_5fy_4',['op1_imu_read_acel_y',['../group___i_m_u.html#ga113ed7e1006306a6472976402986a871',1,'op1_imu_read_acel_y():&#160;imu.c'],['../group___i_m_u.html#ga113ed7e1006306a6472976402986a871',1,'op1_imu_read_acel_y():&#160;imu.c']]],
-  ['op1_5fimu_5fread_5facel_5fz_5',['op1_imu_read_acel_z',['../group___i_m_u.html#ga2615bed9ad77440c4369cd78ce5f3541',1,'op1_imu_read_acel_z():&#160;imu.c'],['../group___i_m_u.html#ga2615bed9ad77440c4369cd78ce5f3541',1,'op1_imu_read_acel_z():&#160;imu.c']]],
-  ['op1_5fimu_5fread_5fgyro_5fx_6',['op1_imu_read_gyro_x',['../group___i_m_u.html#ga05ae887917633fa99ae66c990c55a566',1,'op1_imu_read_gyro_x():&#160;imu.c'],['../group___i_m_u.html#ga05ae887917633fa99ae66c990c55a566',1,'op1_imu_read_gyro_x():&#160;imu.c']]],
-  ['op1_5fimu_5fread_5fgyro_5fy_7',['op1_imu_read_gyro_y',['../group___i_m_u.html#ga514726ca33b9863ace50cb3f5e006462',1,'op1_imu_read_gyro_y():&#160;imu.c'],['../group___i_m_u.html#ga514726ca33b9863ace50cb3f5e006462',1,'op1_imu_read_gyro_y():&#160;imu.c']]],
-  ['op1_5fimu_5fread_5fgyro_5fz_8',['op1_imu_read_gyro_z',['../group___i_m_u.html#ga36d6955630aa74efe72c1ccddd03d714',1,'op1_imu_read_gyro_z():&#160;imu.c'],['../group___i_m_u.html#ga36d6955630aa74efe72c1ccddd03d714',1,'op1_imu_read_gyro_z():&#160;imu.c']]],
-  ['op1_5fimu_5fread_5ftemp_9',['op1_imu_read_temp',['../group___i_m_u.html#ga2657fa75a479829670be2b872bc0dda7',1,'op1_imu_read_temp():&#160;imu.c'],['../group___i_m_u.html#ga2657fa75a479829670be2b872bc0dda7',1,'op1_imu_read_temp():&#160;imu.c']]]
+  ['hal_5fadc_5fmspdeinit_0',['HAL_ADC_MspDeInit',['../stm32l4xx__hal__msp_8c.html#a39b0f8e80268ab3e660ead921ad4b22f',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fadc_5fmspinit_1',['HAL_ADC_MspInit',['../stm32l4xx__hal__msp_8c.html#aa30863492d5c3103e3e8ce8a63dadd07',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fi2c_5fmspdeinit_2',['HAL_I2C_MspDeInit',['../stm32l4xx__hal__msp_8c.html#a2ec8d9b09854c732e2feed549278f048',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fi2c_5fmspinit_3',['HAL_I2C_MspInit',['../stm32l4xx__hal__msp_8c.html#abe01a202c27b23fc150aa66af3130073',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fmspinit_4',['HAL_MspInit',['../stm32l4xx__hal__msp_8c.html#ae4fb8e66865c87d0ebab74a726a6891f',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fqspi_5fmspdeinit_5',['HAL_QSPI_MspDeInit',['../stm32l4xx__hal__msp_8c.html#aef70fea205effccab34a1ade5ba93510',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fqspi_5fmspinit_6',['HAL_QSPI_MspInit',['../stm32l4xx__hal__msp_8c.html#ade8059377d8637fabb9a22fa1d50b558',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5frtc_5fmspdeinit_7',['HAL_RTC_MspDeInit',['../stm32l4xx__hal__msp_8c.html#a8767bc3a4d472d39a688090ab10ba6ce',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5frtc_5fmspinit_8',['HAL_RTC_MspInit',['../stm32l4xx__hal__msp_8c.html#aee6eddaa309c8c9829f1ca794d8f99c5',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fspi_5fmspdeinit_9',['HAL_SPI_MspDeInit',['../stm32l4xx__hal__msp_8c.html#abadc4d4974af1afd943e8d13589068e1',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fspi_5fmspinit_10',['HAL_SPI_MspInit',['../stm32l4xx__hal__msp_8c.html#a17f583be14b22caffa6c4e56dcd035ef',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fuart_5fmspdeinit_11',['HAL_UART_MspDeInit',['../stm32l4xx__hal__msp_8c.html#a718f39804e3b910d738a0e1e46151188',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fuart_5fmspinit_12',['HAL_UART_MspInit',['../stm32l4xx__hal__msp_8c.html#a0e553b32211877322f949b14801bbfa7',1,'stm32l4xx_hal_msp.c']]],
+  ['hardfault_5fhandler_13',['HardFault_Handler',['../stm32l4xx__it_8c.html#a2bffc10d5bd4106753b7c30e86903bea',1,'stm32l4xx_it.c']]]
 ];

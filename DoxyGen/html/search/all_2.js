@@ -40,6 +40,7 @@ var searchData=
   ['bsrr_37',['BSRR',['../struct_g_p_i_o___type_def.html#acd6f21e08912b484c030ca8b18e11cd6',1,'GPIO_TypeDef']]],
   ['btcr_38',['BTCR',['../struct_f_m_c___bank1___type_def.html#a161ea3265a8e17e5c7ef12f7ea19ff52',1,'FMC_Bank1_TypeDef']]],
   ['btr_39',['BTR',['../struct_c_a_n___type_def.html#accad1e4155459a13369f5ad0e7c6da29',1,'CAN_TypeDef']]],
-  ['busfault_5firqn_40',['BusFault_IRQn',['../group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a8693500eff174f16119e96234fee73af',1,'stm32l476xx.h']]],
-  ['bwtr_41',['BWTR',['../struct_f_m_c___bank1_e___type_def.html#abd27ba74f0c9b180f713e7fad065a8d9',1,'FMC_Bank1E_TypeDef']]]
+  ['busfault_5fhandler_40',['BusFault_Handler',['../stm32l4xx__it_8c.html#a850cefb17a977292ae5eb4cafa9976c3',1,'stm32l4xx_it.c']]],
+  ['busfault_5firqn_41',['BusFault_IRQn',['../group___peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a8693500eff174f16119e96234fee73af',1,'stm32l476xx.h']]],
+  ['bwtr_42',['BWTR',['../struct_f_m_c___bank1_e___type_def.html#abd27ba74f0c9b180f713e7fad065a8d9',1,'FMC_Bank1E_TypeDef']]]
 ];
