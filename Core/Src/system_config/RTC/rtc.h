@@ -9,7 +9,8 @@
 #ifndef SRC_RTC_H_
 #define SRC_RTC_H_
 
-#include "../system/stm32l476xx.h"
+#include "../../system/stm32l476xx.h"
+#include <stdint.h>
 
 /*
  * Functions to interface with the STM32L476ZG's Internal RTC
@@ -18,31 +19,32 @@
  * RCC registers, in system_config/clock_nvic_config : rtc_clock_config()
  */
 
-#define January    uint8_t(1)
-#define February   uint8_t(2)
-#define March      uint8_t(3)
-#define April      uint8_t(4)
-#define May        uint8_t(5)
-#define June	   uint8_t(6)
-#define July       uint8_t(7)
-#define August     uint8_t(8)
-#define September  uint8_t(9)
-#define October    uint8_t(10)
-#define November   uint8_t(11)
-#define December   uint8_t(12)
+#define January    1
+#define February   2
+#define March      3
+#define April      4
+#define May        5
+#define June	   6
+#define July       7
+#define August     8
+#define September  9
+#define October    10
+#define November   11
+#define December   12
 
-#define Monday     uint8_t(1)
-#define Tuesday    uint8_t(2)
-#define Wednesday  uint8_t(3)
-#define Thursday   uint8_t(4)
-#define Friday     uint8_t(5)
-#define Saturday   uint8_t(6)
-#define Sunday     uint8_t(7)
+#define Monday     1
+#define Tuesday    2
+#define Wednesday  3
+#define Thursday   4
+#define Friday     5
+#define Saturday   6
+#define Sunday     7
 
 /*
  * Sets the appropriate pre-scalers based on the oscillator source of the RTC.
  *
  * @param None
+ *
  * @returns None
  */
 void rtc_update_prescaler();
@@ -52,10 +54,14 @@ void rtc_update_prescaler();
  * NOTE : rtc.h provides a few definitions to use for 'month' and 'day'
  * NOTE : 'year' refers only to the tens and ones digits, so 23 in 2023
  *
- * @param None
+ * @param year   The tens and ones digits of year to be set.
+ * @param month  The month to be set. Has usable declarations in rtc.h
+ * @param date   The date to be set.
+ * @param day    The day to be set. Has usable declarations in rtc.h
+ *
  * @returns None
  */
-void rtc_set_calendar(uint8_t year, uint8_t month, uint8_t date, uint8_ day);
+void rtc_set_calendar(uint8_t year, uint8_t month, uint8_t date, uint8_t day);
 
 /*
  * Sets a Time on the RTC
@@ -64,17 +70,10 @@ void rtc_set_calendar(uint8_t year, uint8_t month, uint8_t date, uint8_ day);
  * @param minute  The minute to be set
  * @param second  The second to be set
  * @param None
+ *
  * @returns None
  */
 void rtc_set_time(uint8_t hour, uint8_t minute, uint8_t second);
-
-/*
- *
- *
- * @param None
- * @returns None
- */
-void rtc_get_date();
 
 /*
  * Returns the current RTC Time.
@@ -83,6 +82,7 @@ void rtc_get_date();
  * @param hour    Where the function stores the current hour value
  * @param minute  Where the function stores the current minute value
  * @param second  Where the function stores the current second value
+ *
  * @returns None
  */
 void rtc_get_time(uint8_t *hour, uint8_t *minute, uint8_t *second);

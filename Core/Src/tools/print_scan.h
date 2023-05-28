@@ -20,6 +20,6 @@
  *
  * @returns None
  */
-void printMsg(char message[]);
+void printMsg(char *message, ...);
 
 #endif // SRC_PRINT_SCAN_H_

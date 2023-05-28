@@ -31,14 +31,20 @@ int ag_counter = 0;
 #define HSE 'x'
 
 /**
- * Selects LSI clock for the RTC to use, and enables the RTC's Clock Source
- * NOTE : The 'clock_source' has some defined values in
+ * Selects and Oscillator for the RTC to use, and enables the RTC's Clock Source.
+ * NOTE : The selected Oscillator must be turned on beforehand.
  *
- * @param None
+ * @param clock_source   An character to specify which oscillator the RTC uses. There are predefined options in clock_nvic_config.h
+ * @param forced_config  Setting this to 'false' results in the configuration not taking place in case the RTC is pre-initialized
  * @returns None
  *
  */
-void rtc_clock_config(char clock_source) {
+void rtc_clock_config(char clock_source, bool forced_config) {
+	// do nothing if clock is already configured
+	if ((RTC->ISR & RTC_ISR_INITS) && !forced_config) {
+		return;
+	}
+
 	// store the current clock configuration, in case of bad input
 	uint32_t temp = RCC->BDCR | RCC_BDCR_RTCSEL;
 
@@ -75,22 +81,6 @@ void rtc_clock_config(char clock_source) {
  * @returns None
  */
 void init_clocks() {
-	// read chip identification information. only useful when watching memory through debugger
-	volatile int id_w_x = (*(uint32_t*)(UID_BASE) & 0xFFFF0000) >> 16;
-	volatile int id_w_y = *(uint32_t*)(UID_BASE) & 0xFFFF;
-	volatile int id_w_n = *(uint32_t*)(UID_BASE+0x4) & 0xFF;
-	volatile int id_lot_l = *(uint32_t*)(UID_BASE+0x4) & 0xFFFFFF00;
-	volatile int id_lot_h = *(uint32_t*)(UID_BASE+0x8);
-	volatile char id_lot[7] = {
-		(id_lot_l >> 8) & 0xFF,//test
-		(id_lot_l >> 16) & 0xFF,
-		(id_lot_l >> 24) & 0xFF,
-		(id_lot_h) & 0xFF,
-		(id_lot_h >> 8) & 0xFF,
-		(id_lot_h >> 16) & 0xFF,
-		(id_lot_h >> 24) & 0xFF
-	};
-
 	// enable clock to different peripherals
 	RCC->AHB2ENR =
 		  RCC_AHB2ENR_GPIOAEN	// enable GPIO Port A
@@ -112,7 +102,6 @@ void init_clocks() {
 		| RCC_APB1ENR1_SPI3EN 		// enable SPI3
 		| RCC_APB1ENR1_SPI2EN 		// enable SPI2
 		| RCC_APB1ENR1_USART3EN;		// enable USART3
-	//	| RCC_APB1ENR1_RTCAPBEN;	// enable RTC APB
 
 	// enable Syscfg
 	RCC->APB2ENR = RCC_APB2ENR_SYSCFGEN;
@@ -128,8 +117,8 @@ void init_clocks() {
 	RCC->CR |= RCC_CR_HSION; 				// enable HSI
 	RCC->CSR |= RCC_CSR_LSION;				// Turn on the LSI Oscillator
 	while (!(RCC->CSR & RCC_CSR_LSIRDY));	// wait for the LSI Oscillator to stabilize
-	RCC->BDCR |= RCC_BDCR_LSEON;			// Turn on the LSE Oscillator
-	while (!(RCC->BDCR & RCC_BDCR_LSERDY));	// wait for the LSE Oscillator to stabilize
+//	RCC->BDCR |= RCC_BDCR_LSEON;			// Turn on the LSE Oscillator
+//	while (!(RCC->BDCR & RCC_BDCR_LSERDY));	// wait for the LSE Oscillator to stabilize
 
 	// configure Phased Lock Loop
 	RCC->PLLCFGR =
@@ -159,7 +148,7 @@ void init_clocks() {
 	// system clock to PLL
 	RCC->CFGR = RCC_CFGR_SW;
 
-	rtc_clock_config(LSI);
+	rtc_clock_config(LSI, false);
 
 	core_MHz = 80;
 }
