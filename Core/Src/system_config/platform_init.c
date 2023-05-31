@@ -15,6 +15,7 @@
 #include "./UART/uart.h"
 #include "./I2C/i2c.h"
 #include "./RTC/rtc.h"
+#include "./Interrupts/exti_config.h"
 
 /*
  * Configures the system's various features,
@@ -27,6 +28,8 @@
 void init_platform() {
 	init_clocks();	// initialize the clocks
 	init_gpio();	// intitialize the GPIO pins
+	EXTI_init();	// configure for GPIO interrupt
+
 	init_nvic();	// initialize the NVIC
 
 	rtc_update_prescaler(0);  // ensure the RTC is working properly

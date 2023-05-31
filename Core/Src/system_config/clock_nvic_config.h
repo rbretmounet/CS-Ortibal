@@ -1,5 +1,5 @@
 /*
- * system_config.h
+ * clock_nvic_config.h
  *
  *  - Created on: Apr 29, 2023
  *      Author       : Tim S.
@@ -7,18 +7,13 @@
  *      Log          : All necessary clock registers configured
  */
 
-#ifndef SRC_SYSTEM_CONFIG_H_
-#define SRC_SYSTEM_CONFIG_H_
+#ifndef SRC_CLOCK_NVIC_CONFIG_H_
+#define SRC_CLOCK_NVIC_CONFIG_H_
 
 #include "../system/stm32l476xx.h"
+#include "../globals.h"
 
 typedef enum {false, true} bool;
-
-// Global Variables
-extern int core_MHz;
-extern int systick_time;
-extern int heartbeat_counter;
-extern int ag_counter;
 
 void nop(int nop_loops);
 
@@ -33,8 +28,10 @@ void nop(int nop_loops);
 void init_clocks();
 
 /**
- * Initializes the Nested Vector Interrupt Controller (NVIC) for the SysTick timer.
- * The SysTick timer is used for generating periodic (1ms) interrupts.
+ * Initializes the Nested Vector Interrupt Controller (NVIC) for
+ * 		- Systick Timer (1ms)
+ * 		- GPIO Pins 10-15
+ * 			- Buttons 0 & 1
  *
  * @param None
  *
@@ -62,5 +59,4 @@ void backup_domain_control_enable();
  */
 void backup_domain_control_disable();
 
-
-#endif /* SRC_SYSTEM_CONFIG_H_ */
+#endif /* SRC_CLOCK_NVIC_CONFIG_H_ */

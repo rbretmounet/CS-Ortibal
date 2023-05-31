@@ -9,9 +9,10 @@
 int count = 0;
 
 
+int interrupt_count = 0;
+
 int main() {
 	init_platform();
-
 	uint8_t hour, minute, sec;
 	while(1) {
 		// Read and Display the RTC Time
