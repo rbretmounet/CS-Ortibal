@@ -13,7 +13,7 @@
 #include "../system/stm32l476xx.h"
 #include "../globals.h"
 
-typedef enum { false, true } bool;
+typedef enum {false, true} bool;
 
 void nop(int nop_loops);
 
@@ -38,5 +38,25 @@ void init_clocks();
  * @returns None
  */
 void init_nvic();
+
+/**
+ * Enables writing access to registers powered by the Backup Domain
+ *    Key registers include RCC's BDRC, and several key RTC registers
+ *
+ * @param None
+ *
+ * @returns None
+ */
+void backup_domain_control_enable();
+
+/**
+ * Disables writing access to registers powered by the Backup Domain
+ *    Key registers include RCC's BDRC, and several key RTC registers
+ *
+ * @param None
+ *
+ * @returns None
+ */
+void backup_domain_control_disable();
 
 #endif /* SRC_CLOCK_NVIC_CONFIG_H_ */

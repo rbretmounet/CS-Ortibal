@@ -1,6 +1,11 @@
 /*
  * platform_init.c
  *
+ *	- May 22, 2023
+ *		Authod : Darsh
+ *		Contributors : Parteek
+ *		Log : Backup Power, and RTC Init
+ *
  *  - May 11, 2023 (Creation)
  *  	Author : Darsh
  *  	Log    : Created the platform initialization function
@@ -9,6 +14,7 @@
 #include "platform_init.h"
 #include "./UART/uart.h"
 #include "./I2C/i2c.h"
+#include "./RTC/rtc.h"
 #include "./Interrupts/exti_config.h"
 
 /*
@@ -26,6 +32,7 @@ void init_platform() {
 
 	init_nvic();	// initialize the NVIC
 
-	init_softi2c(OP1_I2C2);		// initialize the sotfware implemented I2C for I2C Bus 2
-	uart_init(USART3, 9600);	// initialize the hardware for USART Bus 3
+	rtc_update_prescaler(0);  // ensure the RTC is working properly
+	init_softi2c(OP1_I2C2);		  // initialize the sotfware implemented I2C for I2C Bus 2
+	uart_init(USART3, 9600);	  // initialize the hardware for USART Bus 3
 }
