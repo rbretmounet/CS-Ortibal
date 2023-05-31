@@ -18,6 +18,9 @@
  * @returns None
  */
 void rtc_open_writing_priveledge() {
+	// Allow Backup Domain Writing Access
+	backup_domain_control_enable();
+
 	// Enable RTC Write Priveledge
 	RTC->WPR = 0xCA;
 	RTC->WPR = 0x53;
@@ -40,6 +43,9 @@ void rtc_close_writing_priveledge() {
 
 	// Enable RTC Write Protection
 	RTC->WPR = 0xFF;
+
+	// Close Backup Domain Writing Access
+	backup_domain_control_disable();
 }
 
 /*
@@ -49,7 +55,12 @@ void rtc_close_writing_priveledge() {
  *
  * @returns None
  */
-void rtc_update_prescaler() {
+void rtc_update_prescaler(int forced_config) {
+	// do nothing if clock is already configured
+	if ((RTC->ISR & RTC_ISR_INITS) && !forced_config) {
+		return;
+	}
+
 	rtc_open_writing_priveledge();
 
 	// check which oscillator the rtc is using,

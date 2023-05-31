@@ -47,7 +47,7 @@
  *
  * @returns None
  */
-void rtc_update_prescaler();
+void rtc_update_prescaler(int forced_config);
 
 /*
  * Sets the Year, Month, Date, and Day in the RTC

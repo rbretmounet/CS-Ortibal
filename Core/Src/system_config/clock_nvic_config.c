@@ -39,11 +39,13 @@ int ag_counter = 0;
  * @returns None
  *
  */
-void rtc_clock_config(char clock_source, bool forced_config) {
+void rtc_clock_config(char clock_source, int forced_config) {
 	// do nothing if clock is already configured
 	if ((RTC->ISR & RTC_ISR_INITS) && !forced_config) {
 		return;
 	}
+
+	backup_domain_control_enable();
 
 	// store the current clock configuration, in case of bad input
 	uint32_t temp = RCC->BDCR | RCC_BDCR_RTCSEL;
@@ -69,6 +71,8 @@ void rtc_clock_config(char clock_source, bool forced_config) {
 
 	// Enable the RTC Clock
 	RCC->BDCR |= RCC_BDCR_RTCEN;
+
+	backup_domain_control_disable();
 }
 
 /**
@@ -148,7 +152,7 @@ void init_clocks() {
 	// system clock to PLL
 	RCC->CFGR = RCC_CFGR_SW;
 
-	rtc_clock_config(LSI, false);
+	rtc_clock_config(LSI, 0);
 
 	core_MHz = 80;
 }
@@ -166,6 +170,31 @@ void init_nvic() {
 	SysTick->CTRL = 0x3; // use AHB/8 as input clock, enable interrupts and counter
 	NVIC_EnableIRQ(SysTick_IRQn);
 	__enable_irq();
+}
+
+
+/**
+ * Enables writing access to registers powered by the Backup Domain
+ *    Key registers include RCC's BDRC, and several key RTC registers
+ *
+ * @param None
+ *
+ * @returns None
+ */
+void backup_domain_control_enable() {
+	PWR->CR1 |= PWR_CR1_DBP;
+}
+
+/**
+ * Disables writing access to registers powered by the Backup Domain
+ *    Key registers include RCC's BDRC, and several key RTC registers
+ *
+ * @param None
+ *
+ * @returns None
+ */
+void backup_domain_control_disable() {
+	PWR->CR1 &= ~PWR_CR1_DBP;
 }
 
 
