@@ -1,5 +1,10 @@
 /*
- * system_config.c
+ * clock_nvic_config.c
+ *
+ *	- May 14-16, 2023
+ * 		Author       : Raphael, Darsh, Parteek
+ *      Contributors : nithilsenthil, Huey, Raymond, Kevin
+ *      Log          : Enabled interrupts for the buttons
  *
  *	- May 11, 2023
  *		Author : Darsh
@@ -117,8 +122,10 @@ void init_clocks() {
 }
 
 /**
- * Initializes the Nested Vector Interrupt Controller (NVIC) for the SysTick timer.
- * The SysTick timer is used for generating periodic (1ms) interrupts.
+ * Initializes the Nested Vector Interrupt Controller (NVIC) for
+ * 		- Systick Timer (1ms)
+ * 		- GPIO Pins 10-15
+ * 			- Buttons 0 & 1
  *
  * @param None
  *
@@ -126,8 +133,21 @@ void init_clocks() {
  */
 void init_nvic() {
 	__disable_irq();
-	SysTick->LOAD = (core_MHz / 8) * 1000; // configure for 1 ms period, use AHB/8
-	SysTick->CTRL = 0x3; // use AHB/8 as input clock, enable interrupts and counter
+
+	// configure for 1 ms period
+	SysTick->LOAD = (core_MHz / 8) * 1000;
+	// use AHB/8 as input clock, and enable counter interrupt
+	SysTick->CTRL = 0x3;
 	NVIC_EnableIRQ(SysTick_IRQn);
+
+	/*
+	 * Pins PB10 and PB11 are connected to buttons and trigger an interrupt
+	 * Thus the interrrupt must be configured.
+	 */
+
+	// Set a high priority for pin 10-15 interrupts, and enable the interrupts
+	NVIC_SetPriority(EXTI15_10_IRQn, 1);
+	NVIC_EnableIRQ(EXTI15_10_IRQn);
+
 	__enable_irq();
 }
