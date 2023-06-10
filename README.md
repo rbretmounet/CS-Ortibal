@@ -1,37 +1,29 @@
 
 # Computer Systems Oribtal 
 Welcome to the GitHub repository for the Space And Systems Satellite Club's Computer Systems Team! Our goal is to design and build a CubeSat that will be launched into space. This repository contains the code for our team's computer systems, which will be responsible for controlling and monitoring the CubeSat's various subsystems.
+
 ## Getting Started
 To get started with our code, you'll need to have a basic understanding of programming and the tools we're using. We're primarily using C++ for our code. You'll also need to follow the instructions listed in the following sections:
-- [Prerequisites](#Prerequisites)
-- [Running Locally](#Running-Locally)
+- [Prerequisites & Requirements](#Prerequisites & Requirements)
+- [EGit Tutorial](#EGit Tutorial)
 - [Developing on the board](#Developing-on-the-board)
 
 
 
 
-## Prerequisites
+## Prerequisites & Requirements
+
 A list of software that must be installed before hand:
 
-STM32CubeIDE:
-```bash
-https://www.st.com/en/development-tools/stm32cubeide.html#get-software
-```
-STM32 ST-LINK Utility:
-```bash
-https://www.st.com/en/development-tools/stsw-link004.html
-```
+###[GNU ARM Toolchain](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain)
+The Toolchain can be installed in any folder of your liking, as long as it the 
 
-## Contributing
+###[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html#get-software)
 
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-Please adhere to this project's `code of conduct`.
+####EGit
 
 
-## Running Locally
+## EGit Tutorial
 ### Create a personal access token
 A personal access token is need for EGit authorization.
 To start go to
@@ -96,4 +88,10 @@ STM32L476 vendor documentation
 - [Datasheet](https://www.st.com/resource/en/datasheet/stm32l476zg.pdf) - overview of features and electrical specifications 
 - [Reference manual](https://www.st.com/resource/en/reference_manual/rm0351-stm32l47xxx-stm32l48xxx-stm32l49xxx-and-stm32l4axxx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf) - details of every peripheral and subsystem 
 - [Programming manual](https://www.st.com/resource/en/programming_manual/pm0214-stm32-cortexm4-mcus-and-mpus-programming-manual-stmicroelectronics.pdf) - details of microarchitecture, not necessary unless
+
+
+## Contributing
+Contributions are always welcome!
+See `contributing.md` for ways to get started.
+Please adhere to this project's `code of conduct`.
 
