@@ -15,12 +15,12 @@ To get started with our code, you'll need to have a basic understanding of progr
 
 A list of software that must be installed before hand:
 
-###[GNU ARM Toolchain](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain)
+### [GNU ARM Toolchain](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain)
 The Toolchain can be installed in any folder of your liking, as long as it the 
 
-###[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html#get-software)
+### [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html#get-software)
 
-####EGit
+#### EGit
 
 
 ## EGit Tutorial
