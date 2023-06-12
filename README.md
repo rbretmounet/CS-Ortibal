@@ -64,20 +64,54 @@ In order to do so you must right click `orbital_r1` and select `properties` at t
 
 
 ## Developing on the board
-### Connecting the board
-The current ST-Link Board has a few pins on the other side, which have a note next to them marking which pin connects to which pin on the Orbital Platform's SWD ports.
+### Physically connecting to the board
+We use ST-LINK V2 to connect to the board. The ST-LINK USB Connector already has wires attached to it, with labels on each wire.
+IMAGE
+The Orbital Platform has a connector port on it's topside, with labels that correspond to the wires on the ST-LINK Connector. 
+IMAGE
+Connect those wires in the order:
+```
+Platform --  Wire
+------------------
+   3     --   Pwr
+   G     --   Gnd
+   C     --   Clk
+   D     --   Dt
+   R     --   Rst
+```
+If the compuer is powered on, the Platform should start getting power, and start running whatever program is loaded on it. Since the `Heartbeat` LED blinks every second, it's blinking will be a clear indication of things working.
+IMAGE
 
-<img src="https://github.com/rbretmounet/CS-Ortibal/blob/4-update-readme/photos/st_link_SWD.jpg" width="400" height="380">
+#### USB Connector has no Wires
+If, for some odd reason, the ST-LINK USB Connector doesn't have any wires connected to it already, new wires will be needed to connect the Connector to the Platform. The order for connecting the wires is:
+```
+Platform -- Connector
+   3     --   3.3V
+   G     --   GND
+   C     --   SCLK
+   D     --   SDATA
+   R     --   RESET
+```
 
-Connect the ST-Link Board to the Orbital Platform via the SWD pins.
+### Flashing the Platform
+With ST-LINK V2, fashing can be done right through the CUBE IDE. Before flashing, make sure the Orbital Platform is connected. Then make sure the REALOP Project is open in the IDE. Flashing can be done by pressing the `Run` in the top pane of the IDE.
+IMAGE
+This will first rebuild the project
+IMAGE
+and then try connecting to the Platform
+IMAGE
+Once both are done, it will flash the program onto the Platform
+NOTE: Once this is completed, the Platform will start running the code immediately.
 
-<img src="https://github.com/rbretmounet/CS-Ortibal/blob/4-update-readme/photos/SWD_pinout.jpg" width="400" height="380">
+### Debugging the Platform
+In order to debug, make sure to have a breakpoint at some line in your code (ideally close to whichever thing you think is failing). Then, make sure the Platform is physically connected. Press the `Debug` icon on the top pane. There will be a prompt to enter the `Debugger Layout`. Press `Yes`.
+IMAGE
+The debugger will open up
+IMAGE
+The project will be built and flashed onto the Platform, and the IDE will have the normal tools found on most debuggers (such as single stepping, stepping over, watching expressions, looking at registers, etc), and will stop execution once it hits a breakpoint).
+NOTE: The Startup file might open whenver the program starts. This is normal behavior.
 
-Connect the board to your computer's USB port and open up `STM32 ST-LINK Utility.exe`.
-Navigate to `Target -> Connect` the device memory should popluate with addresses if successful.
-### Flashing the board
-Navigate to  `Target->Program`. The application with ask your for a file that ends in `.bin,.srec, or .hex`. If `STM32CubeIDE` is correctly configured [See how to configure](#Setting-up-the-project-properties). These files are generated in the projects `Debug` folder. 
-Navigate to the project directory `~/orbital_r1/Debug/` and select the file that ends in the correct file format.
+
 ## Resources
 - [EGit Tutorial](https://eclipsesource.com/blogs/tutorials/egit-tutorial/)
 - [DoxyGen](https://www.doxygen.nl/manual/index.html)
